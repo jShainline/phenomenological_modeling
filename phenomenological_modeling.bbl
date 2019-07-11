@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+
+\bibitem{sh2019_jap}
+J.M. Shainline, S.M. Buckley, A.N. McCaughan, J.~Chiles,
+  M.~Castellanos-Beltran, C.A. Donnelly, M.L. Schneider, A.~Jafari-Salim, R.P.
+  Mirin, and S.W. Nam.
+\newblock Superconducting optoelectronic loop neurons.
+\newblock {\em J. Appl. Phys.}, 2019.
+
+\bibitem{geki2002}
+W.~Gerstner and W.~Kistler.
+\newblock {\em Spiking neuron models}.
+\newblock Cambridge University Press, Cambridge, first edition, 2002.
+
+\end{thebibliography}
