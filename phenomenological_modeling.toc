@@ -1,2 +1,8 @@
 \contentsline {section}{\numberline {1}Introduction}{1}
-\contentsline {section}{\numberline {2}The Spike Response Model}{1}
+\contentsline {section}{\numberline {2}Leaky Integrators}{4}
+\contentsline {section}{\numberline {3}The Spike Response Model}{4}
+\contentsline {section}{\numberline {4}Phenomenological Model of Synapses}{4}
+\contentsline {section}{\numberline {5}Phenomenological Model of Point Neurons}{5}
+\contentsline {section}{\numberline {6}Phenomenological Model of Dendrites}{6}
+\contentsline {section}{\numberline {7}Treatment of Synaptic Plasticity}{6}
+\contentsline {section}{\numberline {8}Acknowledgements}{6}
