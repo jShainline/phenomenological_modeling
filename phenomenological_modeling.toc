@@ -4,5 +4,6 @@
 \contentsline {section}{\numberline {4}Phenomenological Model of Synapses}{4}
 \contentsline {section}{\numberline {5}Phenomenological Model of Point Neurons}{5}
 \contentsline {section}{\numberline {6}Phenomenological Model of Dendrites}{6}
-\contentsline {section}{\numberline {7}Treatment of Synaptic Plasticity}{6}
-\contentsline {section}{\numberline {8}Acknowledgements}{6}
+\contentsline {section}{\numberline {7}Subthreshold Membrane Oscillations}{6}
+\contentsline {section}{\numberline {8}Treatment of Synaptic Plasticity}{6}
+\contentsline {section}{\numberline {9}Acknowledgements}{6}

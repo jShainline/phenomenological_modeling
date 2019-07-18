@@ -121,9 +121,9 @@ In the circuit of Fig.\,\ref{fig:circuits}(a), the dynamical quantity that passe
 \label{eq:leaky_integrator__SI_loop}
 \frac{dI_{si}(t)}{dt} = \alpha r_{fq}(I_b,t)-\tau_{si}^{-1}I_{si}(t).
 \end{equation}
-Here we expect $\alpha = \Phi_0/L_{si}$, but it can be considered simply a scale factor mapping input rate to current. Also, though current is added to the SI loop in increments of discrete flux quanta, we are dealing with pretty large number of flux quanta (10-1000 per synaptic firing event), so treating $r_{fq}$ as a continuous function is probably acceptable.
+Here we expect $\alpha = \Phi_0/L_{si}$, but it can be considered simply a scale factor mapping input rate to current. Also, though current is added to the SI loop in increments of discrete flux quanta, we are dealing with pretty large numbers of flux quanta (10-1000 per synaptic firing event), so treating $r_{fq}$ as a continuous function is probably acceptable.
 
-Based on this model, we can reduce all synaptic activity to the solution of first-order ODEs if we know $r_{fq}$ and the complete list of arrival times, $\bar{t}$. But in certain contexts it would be advantageous if we could avoid solving ODEs and instead simply write down the form of the response. To do this it is helpful to consider a few limits.
+Based on this model, we can reduce all synaptic activity to the solution of first-order ODEs if we know $r_{fq}$ and the complete list of arrival times, $\bar{t}$. But in certain contexts it would be advantageous if we could avoid solving ODEs and instead simply write down the form of the response.
 
 ...
 
@@ -132,21 +132,30 @@ Based on this model, we can reduce all synaptic activity to the solution of firs
 We arrive at the expression
 \begin{equation}
 \label{eq:I_si}
-I_{si}(\bar{t};t) = \sum_{f: t>t^{(f)}} f[I_{si}(t^{(f)})](1-e^{-(t-t^{(f)})/\tau_r})e^{-(t-t^{(f)})/\tau_{si}},
+I_{si}(\bar{t};t) = \sum_{q: t>t_{q}} f[I_{si}(t_{q})]\phantom{a}g[t-t_q,I_{si}(t_{q})]\phantom{a}e^{-(t-t_{q})/\tau_{si}},
 \end{equation}
-where $\bar{t}$ is the set of all firing times: $\bar{t} = \{t^{(f)}\}$. Equation \ref{eq:I_si} depends on the self-referential prefactor
+where $\bar{t}$ is the set of all firing times, $\bar{t} = \{t_q\}$, and $\tau_{si}$ is the $L/r$ leak rate of the SI loop chosen in design, set in hardware, and can be different for each synapse. In this summation, the notation $q:t>t_q$ refers to the fact that we are summing over synaptic firing events, and terms in the sum should not contribute at times before the time of the associated firing event. Equation \ref{eq:I_si} depends on the prefactor $f[I_{si}(t_q)]$ that depends on the value of $I_{si}$ at the time of the synaptic firing event:
 \begin{equation}
 \label{eq:I_si__prefactor}
-f(I_{si}) = \mathrm{min}\bigg(I_0\bigg[1-\bigg(\frac{I_{si}}{I_{si}^{sat}}\bigg)^{\gamma_1}\bigg]^{\gamma_2},I_{si}^{sat}-I_{si}\bigg).
+f[I_{si}(t_q)] = \mathrm{min}\bigg(I_0\bigg[1-\bigg(\frac{I_{si}(t_q)}{I_{si}^{sat}}\bigg)^{\gamma_1}\bigg]^{\gamma_2},I_{si}^{sat}-I_{si}(t_q)\bigg).
 \end{equation}
+Equation \ref{eq:I_si} also depends on the rising term
+\begin{equation}
+\label{eq:I_si__rising_term}
+g[t-t_q,I_{si}(t_q)]= 
+\begin{cases}
+   \bigg(\frac{t-t_q}{\tau_+}\bigg)^{\gamma_3} & \text{for }t-t_q<\tau_+\text{,}\\
+    1              & \text{otherwise.}
+\end{cases}
+\end{equation}
+Equation \ref{eq:I_si} with the prefactor of Eq.\,\ref{eq:I_si__prefactor} and the rising term of Eq.\,\ref{eq:I_si__rising_term} provide an accurate model of the synaptic response to an arbitrary pulse sequence specified by $\bar{t}$. These equations have three exponents, $\gamma_1$, $\gamma_2$, and $\gamma_3$. These have been determined from numerical experiments, and the values of $\gamma_1 = 0.9$, $\gamma_2 = 0.158$, and $\gamma_3 = 3/4$ achieve good fits to circuit models over a broad range of operating conditions. We can treat these exponents as known constants. The model also depends on two other factors: $I_0$ and $\tau_+$. These two factors both depend on the synaptic current bias (and therefore the synaptic weight), and should more appropriately be written $I_0[I_{sy}(t_q)]$ and $\tau_+[I_{sy}(t_q)]$. 
 
 In the model of Eqs.\,\ref{eq:I_si} and \ref{eq:I_si__prefactor} we have come up with the form of the synaptic response kernel. Namely, 
 \begin{equation}
 \label{eq:I_si__synaptic_response_kernel}
 \epsilon(\bar{t};t) \propto I_{si}(\bar{t};t).
 \end{equation}
-
-We must demonstrate that this captures the behavior of the circuits under consideration. We can accomplish this by comparing the model to circuits simulated with WRSpice.
+This is the essence of the spike response model of loop neuron synapses. Before showing how to employ this in the context of a neuron, we first consider the accuracy of the model in capturing the behavior of the circuits under consideration. We can accomplish this by comparing the model to circuits simulated with WRSpice.
 
 (Insert relevant figs. here)
 
