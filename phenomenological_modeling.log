@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.3.13)  19 JUL 2019 11:22
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.3.13)  19 JUL 2019 16:44
 entering extended mode
 **phenomenological_modeling.tex
 
@@ -354,7 +354,11 @@ Package: authblk 2001/02/27 1.3 (PWD)
 \c@affil=\count115
 )
 (C:\Users\jms4\Documents\GitHub\phenomenological_modeling\phenomenological_mode
-ling.aux)
+ling.aux
+
+LaTeX Warning: Label `eq:I0_vs_Isy' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
@@ -428,10 +432,6 @@ Package caption Info: End \AtBeginDocument code.
 \makeMPintoPDFobject=\count121
 \everyMPtoPDFconversion=\toks22
 )
-(C:\Users\jms4\Documents\GitHub\phenomenological_modeling\phenomenological_mode
-ling.toc)
-\tf@toc=\write3
-
 
 pdfTeX warning: pdflatex (file C:/Users/jms4/Documents/GitHub/phenomenological_
 modeling/_01__schematic.pdf): PDF inclusion: found PDF version <1.7>, but at mo
@@ -439,116 +439,245 @@ st version <1.5> allowed
 <_01__schematic.pdf, id=1, 489.38733pt x 181.67876pt>
 File: _01__schematic.pdf Graphic file (type pdf)
  <use _01__schematic.pdf>
-Package pdftex.def Info: _01__schematic.pdf used on input line 54.
+Package pdftex.def Info: _01__schematic.pdf used on input line 55.
 (pdftex.def)             Requested size: 489.38731pt x 181.68106pt.
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 55.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 56.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 55.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 56.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 55.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 56.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 55.
+(Font)              <10> on input line 56.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 55.
+(Font)              <7> on input line 56.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 55.
-LaTeX Font Info:    Try loading font information for U+msa on input line 55.
+(Font)              <5> on input line 56.
+LaTeX Font Info:    Try loading font information for U+msa on input line 56.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 55.
+LaTeX Font Info:    Try loading font information for U+msb on input line 56.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 55.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 56.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmss.fd"
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [1
 
-{C:/Users/jms4/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/jms4/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/jms
+4/Documents/GitHub/phenomenological_modeling/_01__schematic.pdf>]
 
 pdfTeX warning: pdflatex (file C:/Users/jms4/Documents/GitHub/phenomenological_
 modeling/_02__circuits.pdf): PDF inclusion: found PDF version <1.7>, but at mos
 t version <1.5> allowed
-<_02__circuits.pdf, id=14, 489.38733pt x 177.32951pt>
+<_02__circuits.pdf, id=57, 489.38733pt x 177.32951pt>
 File: _02__circuits.pdf Graphic file (type pdf)
  <use _02__circuits.pdf>
-Package pdftex.def Info: _02__circuits.pdf used on input line 61.
+Package pdftex.def Info: _02__circuits.pdf used on input line 64.
 (pdftex.def)             Requested size: 489.38731pt x 177.33177pt.
 
-[2 <C:/Users/jms4/Documents/GitHub/phenomenological_modeling/_01__schematic.pdf
->] [3 <C:/Users/jms4/Documents/GitHub/phenomenological_modeling/_02__circuits.p
-df>]
+[2 <C:/Users/jms4/Documents/GitHub/phenomenological_modeling/_02__circuits.pdf>
+] [3]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 109.
+(Font)              <8> on input line 111.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 109.
- [4] [5]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 170.
+(Font)              <6> on input line 111.
+ [4]
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 155.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [6]
-[7] [8]
+)
+
+pdfTeX warning: pdflatex (file C:/Users/jms4/Documents/GitHub/phenomenological_
+modeling/_I0_vs_Isy.pdf): PDF inclusion: found PDF version <1.7>, but at most v
+ersion <1.5> allowed
+<_I0_vs_Isy.pdf, id=135, 1220.56pt x 724.7075pt>
+File: _I0_vs_Isy.pdf Graphic file (type pdf)
+ <use _I0_vs_Isy.pdf>
+Package pdftex.def Info: _I0_vs_Isy.pdf used on input line 174.
+(pdftex.def)             Requested size: 489.38731pt x 290.57452pt.
+
+
+pdfTeX warning: pdflatex (file C:/Users/jms4/Documents/GitHub/phenomenological_
+modeling/_tau_rise_vs_Isy.pdf): PDF inclusion: found PDF version <1.7>, but at 
+most version <1.5> allowed
+<_tau_rise_vs_Isy.pdf, id=136, 1222.50722pt x 733.20226pt>
+File: _tau_rise_vs_Isy.pdf Graphic file (type pdf)
+
+<use _tau_rise_vs_Isy.pdf>
+Package pdftex.def Info: _tau_rise_vs_Isy.pdf used on input line 185.
+(pdftex.def)             Requested size: 489.38731pt x 293.51065pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex (file C:/Users/jms4/Documents/GitHub/phenomenological_
+modeling/_time_traces__varying_Isy.pdf): PDF inclusion: found PDF version <1.7>
+, but at most version <1.5> allowed
+<_time_traces__varying_Isy.pdf, id=137, 2523.4275pt x 1441.385pt>
+File: _time_traces__varying_Isy.pdf Graphic file (type pdf)
+
+<use _time_traces__varying_Isy.pdf>
+Package pdftex.def Info: _time_traces__varying_Isy.pdf used on input line 199.
+(pdftex.def)             Requested size: 489.38731pt x 279.51839pt.
+
+
+pdfTeX warning: pdflatex (file C:/Users/jms4/Documents/GitHub/phenomenological_
+modeling/_error_vs_Isy.pdf): PDF inclusion: found PDF version <1.7>, but at mos
+t version <1.5> allowed
+<_error_vs_Isy.pdf, id=138, 1212.53pt x 749.20901pt>
+File: _error_vs_Isy.pdf Graphic file (type pdf)
+ <use _error_vs_Isy.pdf>
+Package pdftex.def Info: _error_vs_Isy.pdf used on input line 206.
+(pdftex.def)             Requested size: 489.38731pt x 302.38768pt.
+
+
+pdfTeX warning: pdflatex (file C:/Users/jms4/Documents/GitHub/phenomenological_
+modeling/_time_traces__varying_tau_si.pdf): PDF inclusion: found PDF version <1
+.7>, but at most version <1.5> allowed
+<_time_traces__varying_tau_si.pdf, id=139, 2525.435pt x 1445.4pt>
+File: _time_traces__varying_tau_si.pdf Graphic file (type pdf)
+
+<use _time_traces__varying_tau_si.pdf>
+Package pdftex.def Info: _time_traces__varying_tau_si.pdf used on input line 21
+2.
+(pdftex.def)             Requested size: 489.38731pt x 280.07643pt.
+
+
+pdfTeX warning: pdflatex (file C:/Users/jms4/Documents/GitHub/phenomenological_
+modeling/_error_vs_tau_si.pdf): PDF inclusion: found PDF version <1.7>, but at 
+most version <1.5> allowed
+<_error_vs_tau_si.pdf, id=140, 1249.60846pt x 724.16948pt>
+File: _error_vs_tau_si.pdf Graphic file (type pdf)
+
+<use _error_vs_tau_si.pdf>
+Package pdftex.def Info: _error_vs_tau_si.pdf used on input line 219.
+(pdftex.def)             Requested size: 489.38731pt x 283.6073pt.
+
+
+pdfTeX warning: pdflatex (file C:/Users/jms4/Documents/GitHub/phenomenological_
+modeling/_time_traces__varying_L_si.pdf): PDF inclusion: found PDF version <1.7
+>, but at most version <1.5> allowed
+<_time_traces__varying_L_si.pdf, id=141, 3789.81863pt x 720.21875pt>
+File: _time_traces__varying_L_si.pdf Graphic file (type pdf)
+
+<use _time_traces__varying_L_si.pdf>
+Package pdftex.def Info: _time_traces__varying_L_si.pdf used on input line 225.
+
+(pdftex.def)             Requested size: 489.38731pt x 92.99432pt.
+ [5]
+Overfull \vbox (15.25507pt too high) has occurred while \output is active []
+
+
+[6 <C:/Users/jms4/Documents/GitHub/phenomenological_modeling/_I0_vs_Isy.pdf> <C
+:/Users/jms4/Documents/GitHub/phenomenological_modeling/_tau_rise_vs_Isy.pdf>]
+[7 <C:/Users/jms4/Documents/GitHub/phenomenological_modeling/_time_traces__vary
+ing_Isy.pdf>]
+
+LaTeX Warning: Text page 8 contains only floats.
+
+
+Overfull \vbox (3.59798pt too high) has occurred while \output is active []
+
+
+[8 <C:/Users/jms4/Documents/GitHub/phenomenological_modeling/_error_vs_Isy.pdf>
+ <C:/Users/jms4/Documents/GitHub/phenomenological_modeling/_time_traces__varyin
+g_tau_si.pdf>] [9 <C:/Users/jms4/Documents/GitHub/phenomenological_modeling/_er
+ror_vs_tau_si.pdf> <C:/Users/jms4/Documents/GitHub/phenomenological_modeling/_t
+ime_traces__varying_L_si.pdf>] [10] [11]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 299.
+
+
+pdfTeX warning: pdflatex (file C:/Users/jms4/Documents/GitHub/phenomenological_
+modeling/_finding_gammas.pdf): PDF inclusion: found PDF version <1.7>, but at m
+ost version <1.5> allowed
+<_finding_gammas.pdf, id=411, 2537.48pt x 1557.82pt>
+File: _finding_gammas.pdf Graphic file (type pdf)
+ <use _finding_gammas.pdf>
+Package pdftex.def Info: _finding_gammas.pdf used on input line 302.
+(pdftex.def)             Requested size: 489.38731pt x 300.43394pt.
+
+[12 <C:/Users/jms4/Documents/GitHub/phenomenological_modeling/_finding_gammas.p
+df>]
+
+pdfTeX warning: pdflatex (file C:/Users/jms4/Documents/GitHub/phenomenological_
+modeling/_I0_vs_tau_si.pdf): PDF inclusion: found PDF version <1.7>, but at mos
+t version <1.5> allowed
+<_I0_vs_tau_si.pdf, id=798, 1249.60846pt x 725.67511pt>
+File: _I0_vs_tau_si.pdf Graphic file (type pdf)
+
+<use _I0_vs_tau_si.pdf>
+Package pdftex.def Info: _I0_vs_tau_si.pdf used on input line 317.
+(pdftex.def)             Requested size: 489.38731pt x 284.19695pt.
+
 (C:\Users\jms4\Documents\GitHub\phenomenological_modeling\phenomenological_mode
-ling.bbl) [9]
+ling.bbl) [13 <C:/Users/jms4/Documents/GitHub/phenomenological_modeling/_I0_vs_
+tau_si.pdf>]
 (C:\Users\jms4\Documents\GitHub\phenomenological_modeling\phenomenological_mode
-ling.aux) ) 
+ling.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4509 strings out of 493921
- 67103 string characters out of 3147285
- 123676 words of memory out of 3000000
- 7722 multiletter control sequences out of 15000+200000
- 71175 words of font info for 56 fonts, out of 3000000 for 9000
+ 4568 strings out of 493921
+ 68458 string characters out of 3147285
+ 127773 words of memory out of 3000000
+ 7774 multiletter control sequences out of 15000+200000
+ 72030 words of font info for 60 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,11n,39p,2284b,365s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Progr
-am Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/f
-onts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm
-/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}<C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
-mbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx9.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
-r12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/lm/lmr5.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-lm/lmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmri9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/lm/lmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
-msy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm1
-0.pfb>
-Output written on phenomenological_modeling.pdf (9 pages, 1246021 bytes).
+ 36i,11n,39p,2159b,363s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Fil
+es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/
+enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-r
+m.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx9.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
+lmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/lm/lmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
+mri9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on phenomenological_modeling.pdf (13 pages, 5470726 bytes).
 PDF statistics:
- 240 PDF objects out of 1000 (max. 8388607)
+ 915 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
