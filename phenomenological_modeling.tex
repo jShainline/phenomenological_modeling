@@ -183,16 +183,16 @@ Currents are in microamps. Equation \ref{eq:I0_vs_Isy} allows us to quickly calc
 \begin{figure}[h!]
 \centering
 \includegraphics[width=17.2cm]{_tau_rise_vs_Isy.pdf}
-\captionof{figure}{\label{fig:tau_rise_vs_Isy}Optimized values of $\tau_{\mathrm{rise}}(I_{sy})$ and a linear fit.}
+\captionof{figure}{\label{fig:tau_rise_vs_Isy}Optimized values of $\tau_+(I_{sy})$ and a linear fit.}
 \end{figure}
 
 Next we determine the time constant of the rising edge of the post-synaptic response, $\tau_{+}$. This is carried out with the same procedure as for $I_0(I_{sy})$, and the result is fit to a line. The data is shown in Fig.\,\ref{fig:tau_rise_vs_Isy}.
 We find the phenomenological functional form provides an excellent fit with
 \begin{equation}
 \label{eq:I0_vs_Isy}
-\tau_{\mathrm{rise}}\big(I_{sy}\big) =  1.294 I_{sy} - 43.01.
+\tau_+\big(I_{sy}\big) =  1.294 I_{sy} - 43.01.
 \end{equation}
-With $I_{sy}$ in microamps, this fit provides $\tau_{\mathrm{rise}}$ in nanoseconds.
+With $I_{sy}$ in microamps, this fit provides $\tau_+$ in nanoseconds.
 
 \begin{figure}[t!]
 \centering
@@ -300,7 +300,7 @@ After working out new circuits based on single-photon detectors working in conju
 \begin{figure}[h!]
 \centering
 \includegraphics[width=17.2cm]{_finding_gammas.pdf}
-\captionof{figure}{\label{fig:finding_gammas}Error as a function of $\gamma_1$ and $\gamma_2$. (a) $I_{sy} = x$\,\textmu A. (b) $I_{sy} = x$\,\textmu A. (c) $I_{sy} = x$\,\textmu A. (d) $I_{sy} = x$\,\textmu A. Note that we found $\gamma_1$ and $\gamma_2$ by finding decent fits for 11 values of $I_{sy}$ from 34\,\textmu A to 39\,\textmu A with $L_{si} = 50$\,nH and $r_{si} = 1\,\Omega$ and an input rate of synaptic firing events of 40\,MHz, but the values discovered provide good fits to behavior with all values of $I_{si}$, $L_{si}$, $r_{si}$, and input rate tested thus far. When determining $\gamma_1$ and $\gamma_2$, we used $\gamma_3 = 1$.}
+\captionof{figure}{\label{fig:finding_gammas}Error as a function of $\gamma_1$ and $\gamma_2$. (a) $I_{sy} = 34$\,\textmu A. (b) $I_{sy} = 35.5$\,\textmu A. (c) $I_{sy} = 37.5$\,\textmu A. (d) $I_{sy} = 39$\,\textmu A. Note that we found $\gamma_1$ and $\gamma_2$ by finding decent fits for 11 values of $I_{sy}$ from 34\,\textmu A to 39\,\textmu A with $L_{si} = 50$\,nH and $r_{si} = 1\,\Omega$ and an input rate of synaptic firing events of 40\,MHz, but the values discovered provide good fits to behavior with all values of $I_{si}$, $L_{si}$, $r_{si}$, and input rate tested thus far. When determining $\gamma_1$ and $\gamma_2$, we used $\gamma_3 = 1$.}
 \end{figure}
 To find $\gamma_1$, $\gamma_2$, and $\gamma_3$ I simulated the synaptic circuit across a range of operating conditions, calculated an error as a function of $\gamma_1$ and $\gamma_2$, and found values of these parameters that achieved low error for all operating conditions. The error is defined as
 \begin{equation}
