@@ -1,0 +1,49 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[       973,         39]
+NotebookOptionsPosition[       734,         26]
+NotebookOutlinePosition[      1077,         41]
+CellTagsIndexPosition[      1034,         38]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Isi", "[", "t_", "]"}], " ", "=", " ", 
+  RowBox[{"f", "["}]}]], "Input",
+ CellChangeTimes->{{3.77193900741399*^9, 3.771939020214636*^9}}]
+},
+WindowSize->{707, 867},
+WindowMargins->{{21, Automatic}, {Automatic, 27}},
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (October 6, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 173, 4, 31, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
