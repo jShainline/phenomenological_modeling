@@ -1,0 +1,32 @@
+Idr1 -> -((-Lj2 (-Ib3 L3 Lj3 - Ib2 (L3 Lj3 + L2 (L3 + Lj3))) + 
+        Ib1 (-Lj2 (-L3 Lj3 - L2 (L3 + Lj3)) + 
+           L1 (L3 Lj3 + L2 (L3 + Lj3) + Lj2 (L3 + Lj3)))) (-Ldr2 - 
+        Ljdr2) - 
+     Iflux (Lj2 (-L3 Lj3 - L2 (L3 + Lj3)) - 
+        L1 (L3 Lj3 + L2 (L3 + Lj3) + Lj2 (L3 + Lj3)) - (L3 Lj3 + 
+           L2 (L3 + Lj3) + Lj2 (L3 + Lj3)) (Ldr2 + 
+           Ljdr2)) M)/((Lj2 (-L3 Lj3 - L2 (L3 + Lj3)) - 
+        L1 (L3 Lj3 + L2 (L3 + Lj3) + Lj2 (L3 + Lj3))) (-Ldr2 - 
+        Ljdr2) - (Lj2 (-L3 Lj3 - L2 (L3 + Lj3)) - 
+        L1 (L3 Lj3 + L2 (L3 + Lj3) + Lj2 (L3 + Lj3)) - (L3 Lj3 + 
+           L2 (L3 + Lj3) + Lj2 (L3 + Lj3)) (Ldr2 + Ljdr2)) (Ldr1 + 
+        Ljdr1 + Lm2))
+
+
+Idr2 -> (Iflux M)/(
+  Ldr2 + Ljdr2) + ((Ldr1 + Ljdr1 + 
+       Lm2) ((-Lj2 (-Ib3 L3 Lj3 - Ib2 (L3 Lj3 + L2 (L3 + Lj3))) + 
+          Ib1 (-Lj2 (-L3 Lj3 - L2 (L3 + Lj3)) + 
+             L1 (L3 Lj3 + L2 (L3 + Lj3) + Lj2 (L3 + Lj3)))) (-Ldr2 - 
+          Ljdr2) - 
+       Iflux (Lj2 (-L3 Lj3 - L2 (L3 + Lj3)) - 
+          L1 (L3 Lj3 + L2 (L3 + Lj3) + Lj2 (L3 + Lj3)) - (L3 Lj3 + 
+             L2 (L3 + Lj3) + Lj2 (L3 + Lj3)) (Ldr2 + 
+             Ljdr2)) M))/((-Ldr2 - 
+       Ljdr2) ((Lj2 (-L3 Lj3 - L2 (L3 + Lj3)) - 
+          L1 (L3 Lj3 + L2 (L3 + Lj3) + Lj2 (L3 + Lj3))) (-Ldr2 - 
+          Ljdr2) - (Lj2 (-L3 Lj3 - L2 (L3 + Lj3)) - 
+          L1 (L3 Lj3 + L2 (L3 + Lj3) + Lj2 (L3 + Lj3)) - (L3 Lj3 + 
+             L2 (L3 + Lj3) + Lj2 (L3 + Lj3)) (Ldr2 + Ljdr2)) (Ldr1 + 
+          Ljdr1 + Lm2)))
+          
