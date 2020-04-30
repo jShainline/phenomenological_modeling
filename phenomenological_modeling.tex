@@ -23,33 +23,56 @@
 \begin{document}
     
 \begin{center}
-\LARGE{Phenomenological Modeling of Loop Neurons}\\ 
+\LARGE{Modeling Loop Neurons as Leaky Integrators}\\ 
 \vspace{0.3em}
-\large From: Jeff Shainline; To: Andrew Dienstfrey\\
+\large Physics and Hardware for Intelligence Project\\
 \vspace{0.0em}
 \textit{\small National Institute of Standards and Technology, Boulder, CO, 80305}\\
 \vspace{0.3em}
 \small \today
 
 \begin{abstract}
-This document contains notes regarding phenomenological models of loop neurons. In the case of point neurons, a spike-response model based on a phenomenological form of the post-synaptic potential is found to give good agreement with time-domain circuit simulations. When a dendritic tree is included, the dendrites must be treated with leaky integrator ODEs. In either case, the relevant equations can be efficiently stepped through in time. The purpose of this document is to facilitate further discussion between the team working on hardware and Andrew Dienstfrey.
+
 \vspace{1em}
 \end{abstract}
 
 \end{center}
 
-%\begin{multicols}{2}
+\begin{multicols}{2}
 
 %\setcounter{tocdepth}{1}
 %\setcounter{secnumdepth}{4}
 %\tableofcontents
 
 \section{\label{sec:introduction}Introduction}
-This document in its present form is basically just a set of notes that I hope to use to further the conversation you and I had in your office on June 19th, 2019. There are many exciting avenues to pursue that I think will be facilitated by an efficient numerical implementation of the models presented here, and I would benefit immensely from your insights when proceeding to numerically investigate more complex systems. The avenues of excitement are discussed in Sec.\,\ref{sec:future_directions}. First, I include a qualitative description of loop neuron operation before discussing the model.
+The computations performed by superconducting optoelectronic loop neurons are accomplished by circuits comprising single-photon detectors, Josephson junctions, and mutual inductors. These devices are most commonly modeled with SPICE circuit simulations carried out on a picosecond time scale to accurately capture the dynamics of the Josephson junctions. Simulation of networks of large numbers of these neurons become computationally intensive. From the perspective of the neural system, the picosecond dynamics of the JJs are not important, and one would prefer to treat each synapse, dendrite, and neuron as an input-output device with a model that accurately captures the circuit dynamics on the nanosecond to microsecond time scales while not explicitly treating the picosecond behavior of the underlying circuit elements.
 
-\section{\label{sec:qualitative_explanation_of_loop_neurons}Qualitative Explanation of Loop Neurons}
-We have introduced the concepts of loop neurons in a number of papers, and we have demonstrated many of the principles experimentally. This background is summarized in Appendix \ref{apx:background}. Perhaps even this qualitative explanation is unnecessary here. If so, feel free to skip to Sec.\,\ref{sec:leaky_integrators}.
+Here we introduce a phenomenological model of loop neurons and their constitutive elements that accurately captures the transfer characteristics of the circuits without solving the underlying circuit equations. Each synapse and dendrite is treated with a single, first-order ordinary differential equation that describes the output of the element as a function of its inputs and instantaneous internal state. These equations take the standard form of a leaky integrator with a nonlinear driving term. Each neuron performs passive summation of its synaptic and dendritic inputs. When the sum of the inputs reaches threshold, the neuron produces a spike. Refraction is treated with the same formalism as a strong inhibitory synapse receiving the neuron's spikes and directly contacting the neuron's cell body. When full circuit simulations are conducted, each synapse or dendrite require solving a system of seven equations at each time step, and time steps of 1\,ps are typical. The model presented here reduces the number of equations for each synapse or dendrite to one and allows simulation with time steps of 1\,ns. 
 
+We begin by motivating the form of the model based on circuit considerations. We then describe the means by which the form of the driving term in the leaky integrator is obtained. Error is quantified by comparison to full circuit simulations, and convergence is investigated as a function of time step size. Point neurons are considered to test the synaptic equations. Dendrites are treated next, and the similarity between synaptic and dendritic circuits permits a treatment with a similar form of leaky integrator equation. Dendritic accuracy is quantified, and an example of a neuron with a dendritic arbor is presented to illustrate the utility of the model. Throughout the work we compare and contrast loop neurons with their biological counterparts. 
+
+\section{\label{sec:leaky_integrators}Leaky Integrators}
+Several aspects of biological neurons are commonly modeled by leaky integrator equations. For example, the membrane potential may be treated with an ODE of the form
+\begin{equation}
+\label{eq:leaky_integrator}
+\frac{dV(t)}{dt} = f_{\mathrm{in}}(t)-\frac{V(t)}{\tau},
+\end{equation}
+where $V$ represents the membrane potential, $\tau$ is the leak rate of charge off the membrane capacitor, and $f_{\mathrm{in}}(t)$ represents an arbitrary time-varying input to the integrator due to synaptic and dendritic input currents. The leaky integrate-and-fire (LIF) model treats a system that follows Eq.\,\ref{eq:leaky_integrator}, but is also subject to the rule that when $V(t)$ reaches a threshold $\theta$, the neuron produces an action potential, and the value of $V(t)$ is set to a base value $V_0$. Additionally, standard LIF treatments commonly enforce an absolute refractory period wherein $V(t)$ is forced to remain below $\theta$ for some time $\tau_{\mathrm{ref}}$, or a relative refractory period wherein the magnitude of $\theta$ is temporarily increased.
+
+Equation \,\ref{eq:leaky_integrator}, supplemented with thresholding, reset, and refraction, captures essential features of biological neurons and widely employed in computational neuroscience. The LIF model has also become the \textit{de facto} standard for artificial neural systems. Neurons governed by this model have several important attributes for information processing. First, they perform a sliding temporal summation, so their present state contains information regarding the recent activities of their synaptic and dendritic inputs. Second, the existence of a threshold, and the production of a spike upon reaching threshold from below, amounts to a logical operation mapping multiple inputs to one output. The information processing performed by a single LIF neuron can be summarized by a signal in/activity out transfer function like those shown in Fig.\,\ref{fig:leaky_integrator}. The presence of a non-zero threshold causes the transfer function to have a non-zero turn-on point, and refraction introduces a maximum firing rate, causing the transfer function to roll over at strong inputs. This non-linear transfer function ensures the neuron outputs different information than the sum of its inputs, and hence it computes.
+%\begin{figure}[h!]
+%\centering
+%\includegraphics[width=8.6cm]{fig__leaky_integrator.pdf}
+%\captionof{figure}{\label{fig:leaky_integrator}}
+%\end{figure}
+
+While LIF neurons are useful for computation, it is not obvious their specifications render them optimal for any type of information processing. Nor does it appear that the LIF model of point neurons captures many of the subtleties of biological neurons that may augment their ability to glean information from their inputs. Nevertheless, the LIF model gives us a useful starting point in both computational neuroscience and development of hardware for artificial intelligence. Efforts to devise neuromorphic hardware must respond to two influences. Artificial neural systems must maintain a reasonably close resemblance to their biological forbears so that the complex information processing capable of cognition can be manifest in technological systems. This drives the designer to seek behavior similar to LIF. At the same time, realization of artificial neural systems in hardware requires us to respect the physics as well as practical fabrication and operation constraints of the devices being utilized. Together these influences provide guide rails as well as opportunities. We know we wish to start with something like leaky integrators, and we know our devices will encounter constraints that shape the ways in which they can be used, but we can also be on the lookout for means to augment what can be achieved with biological hardware.
+
+Superconducting optoelectronic loop neurons are one such endeavor that aspires to realize artificial neural systems with complexity comparable to the human brain. We next summarize the salient features of loop neurons before exploring the mathematical properties, which bear a strong resemblance to Eq.\,\ref{eq:leaky_integrator}, but also offer opportunities for augmentation.
+ 
+
+\section{\label{sec:overview_of_loop_neurons}Overview of Loop Neurons}
+We have introduced the concepts of loop neurons in a number of papers, and we have demonstrated many of the principles experimentally. This background is summarized in Appendix \ref{apx:background}. 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=17.2cm]{_01__schematic.pdf}
@@ -59,24 +82,17 @@ Schematic diagrams of two types of loop neuron are shown in Fig.\,\ref{fig:schem
 
 Operation of loop neurons is as follows. Photons from upstream neurons are received by a superconducting single-photon detector (SPD) at each synapse. Using a Josephson junction (JJ) in parallel with an SPD, synaptic detection events are converted into an integrated supercurrent which is stored in a superconducting loop. The circuit diagram of a synapse is shown in Fig.\,\ref{fig:circuits}(a). The amount of current that gets added to the integration loop during a photon detection event is determined by the synaptic weight. The synaptic weight is dynamically adjusted by another circuit combining SPDs and JJs, and all involved circuits are analog. When the integrated current of a given neuron reaches a (dynamically variable) threshold, an amplification cascade begins, resulting in the production of light from a waveguide-integrated semiconductor light emitter. The photons thus produced fan out through a network of dielectric waveguides and arrive at the synaptic terminals of other neurons where the process repeats. 
 
-\begin{figure}
+\begin{figure*}
 \centering
 \includegraphics[width=17.2cm]{_02__circuits.pdf}
 \captionof{figure}{\label{fig:circuits}Circuit diagrams. (a) A synapse combining a single-photon detector (SPD) in parallel with a Josephson junction (JJ). The generated signal is stored in the synaptic integration (SI) loop. (b) A dendrite using a similar circuit structure to (a) to perform nonlinear functions on multiple synaptic or dendritic inputs. The inputs are received by the dendritic receiving (DR) loop and, the outputs are stored in the dendritic integration (DI) loop. Inhibitory inputs (IH) can also be utilized.}
-\end{figure}
+\end{figure*}
 In loop neurons, a synapse consists of an SPD in parallel with a JJ (which together transduce photons to supercurrent), and a superconducting loop, which stores a current proportional to the number of detected photon arrival events. This loop is referred to as the synaptic integration (SI) loop. Within each neuron, the loops of many synapses are inductively coupled to a larger superconducting loop, referred to as the neuronal receiving (NR) loop, thereby inducing an integrated current proportional to a weighted sum of the currents in all the neuron's synapses. When the current in this NR loop reaches a threshold, the neuron produces a current pulse in the form of one or more flux quanta. This current is amplified and converted to voltage to produce photons from a semiconductor $p-i-n$ junction.
 
 The currents in the synaptic and neuronal loops are analogous to the membrane potential of biological neurons \cite{daab2001,geki2002}, and the states of flux in these loops are the principal dynamical variables of the synapses and neurons in the system. Inhibitory synapses can be achieved through mutual inductors with the opposite sign of coupling. Dendritic processing can be implemented straightforwardly by adding intermediate mutually inductively coupled loops between the synaptic and neuronal loops. Synapses can be grouped on dendritic loops capable of local, nonlinear processing and inhibition. Neurons with multiple levels of dendritic hierarchy can be implemented as multiple stages of integrating loops. The temporal scales of the SI and DI loops can be set with $L/r$ time constants. I expect all synaptic and dendritic signals to leak, enabling fading memory of recent activity. Also, I hypothesize that the ability to achieve a diversity of time constants through synapses and dendrites with many $L/r$ time constants will be advantageous, and I would like to investigate this in numerical studies.
 
 Synaptic memory is also implemented based on the stored flux in a loop, referred to as the synaptic storage (SS) loop. The state of flux in the SS loop determines the current bias to the synaptic receiver circuit discussed above. This current bias is the synaptic weight. In contrast to the SI and DI loops, the SS loop is intended to store long-term memory, and therefore I do not expect to add a resistance to this loop. If the SS loop is created with a superconducting wire of high inductance, the loop can hold many discrete states of flux, and therefore can implement many synaptic weights, if desired. Synapses with a pseudo-continuum of hundreds of stable synaptic levels between minimal and maximal saturation values are possible. Transitions between these levels can be induced based on the relative arrival times of photons from the pre-synaptic and post-synaptic neurons, thereby establishing a means for spike-timing-dependent plasticity with one photon required for each step of the memory-update process. Binary synapses are also possible, and just as we expect a diversity of $L/r$ time constants to be advantageous for tracking activity over time, we expect a diversity of synapses raging from binary to multistable to be advantageous for striking a balance between adaptability and long-term memory retention.
-
-\section{\label{sec:leaky_integrators}Leaky Integrators}
-At this point, I think a good model of loop neurons with a dendritic tree involves a combination of two models: a leaky integrator model for dendrites and a spike response model for synapses. To make sure we're on the same page, here is a the way I think about these two models. A leaky integrator obeys the equation
-\begin{equation}
-\label{eq:leaky_integrator}
-\frac{du(t)}{dt} = f_{\mathrm{in}}(t)-\tau^{-1}u(t).
-\end{equation}
-The function $f_{\mathrm{in}}(t)$ represents an arbitrary, time-varying input to the integrator, and $\tau$ gives the leak rate. The leaky integrate-and-fire model treats a system that follows Eq.\,\ref{eq:leaky_integrator}, but is also subject to the rule that when $u(t)$ reaches a threshold $\theta$, the system produces a pulse (spike, action potential, firing event), and the value of $u(t)$ is set to a base value $u_0$. Loop neurons can be made to behave exactly as leaky integrate-and-fire neurons in some circumstances, but I think they can perform better. In particular, the reset of $u$ after a firing event erases all information known to the neuron, and this seems wasteful. In general, I assume SI loops retain their states through neuronal firing events, and refraction is achieved through self-feedback from the output of the neuron to its cell body.  
+ 
 
 \section{\label{sec:spike_response_model}The Spike Response Model}
 The spike response model (SRM) is a phenomenological model of neuron behavior that is complimentary to integrate-and-fire models. The approach leverages closed-form expressions for the response of the membrane potential to synaptic activity and production of action potentials. We can construct similar models based on loop neuron circuits to facilitate numerical analysis of loop neurons and networks.
@@ -328,6 +344,6 @@ The optimal value of $I_0$ is found to depend weakly on $\tau_{si}$ at very smal
 \bibliographystyle{unsrt}
 \bibliography{phenomenological_modeling}
 
-%\end{multicols}
+\end{multicols}
 
 \end{document}

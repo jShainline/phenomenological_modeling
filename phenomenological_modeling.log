@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.11)  25 MAR 2020 10:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.11)  30 APR 2020 16:38
 entering extended mode
 **./phenomenological_modeling.tex
 (phenomenological_modeling.tex
@@ -538,16 +538,9 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-
-pdfTeX warning: pdflatex (file ./_01__schematic.pdf): PDF inclusion: found PDF 
-version <1.7>, but at most version <1.5> allowed
-<_01__schematic.pdf, id=1, 489.38733pt x 181.67876pt>
-File: _01__schematic.pdf Graphic file (type pdf)
-<use _01__schematic.pdf>
-Package pdftex.def Info: _01__schematic.pdf  used on input line 55.
-(pdftex.def)             Requested size: 489.38731pt x 181.68106pt.
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 5
 6.
+
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -581,194 +574,383 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-56.
+<_01__schematic.pdf, id=1, 253.16884pt x 181.67876pt>
+File: _01__schematic.pdf Graphic file (type pdf)
+<use _01__schematic.pdf>
+Package pdftex.def Info: _01__schematic.pdf  used on input line 69.
+(pdftex.def)             Requested size: 489.38731pt x 351.20885pt.
 
+Overfull \hbox (238.31252pt too wide) in paragraph at lines 69--70
+ [][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
+70.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ot1lmss.fd"
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [1
+)
 
-{C:/Users/jeffr/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./_01__sche
-matic.pdf>]
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
+
+LaTeX Warning: Reference `fig:schematic' on page 1 undefined on input line 72.
+
+
+LaTeX Warning: Reference `fig:schematic' on page 1 undefined on input line 72.
+
+
+LaTeX Warning: Reference `fig:schematic' on page 1 undefined on input line 72.
+
+[1
+
+{C:/Users/jeffr/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 
 pdfTeX warning: pdflatex (file ./_02__circuits.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<_02__circuits.pdf, id=57, 489.38733pt x 177.32951pt>
+<_02__circuits.pdf, id=17, 489.38733pt x 177.32951pt>
 File: _02__circuits.pdf Graphic file (type pdf)
 <use _02__circuits.pdf>
-Package pdftex.def Info: _02__circuits.pdf  used on input line 64.
+Package pdftex.def Info: _02__circuits.pdf  used on input line 78.
 (pdftex.def)             Requested size: 489.38731pt x 177.33177pt.
-[2 <./_02__circuits.pdf>] [3]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 111.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 111.
- [4]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-55.
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
+[][]\OT1/lmr/bx/n/14.4 Phenomenological Model of
+ []
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 118.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 118.
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 3 might be wrong on input line 126.
+
+
+[3 <./_02__circuits.pdf>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+62.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
+LaTeX Warning: Reference `fig:I0_vs_Isy' on page 4 undefined on input line 178.
+
+
+
+
 pdfTeX warning: pdflatex (file ./_I0_vs_Isy.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<_I0_vs_Isy.pdf, id=135, 1220.56pt x 724.7075pt>
+<_I0_vs_Isy.pdf, id=89, 1220.56pt x 724.7075pt>
 File: _I0_vs_Isy.pdf Graphic file (type pdf)
 <use _I0_vs_Isy.pdf>
-Package pdftex.def Info: _I0_vs_Isy.pdf  used on input line 174.
+Package pdftex.def Info: _I0_vs_Isy.pdf  used on input line 181.
 (pdftex.def)             Requested size: 489.38731pt x 290.57452pt.
+
+Overfull \hbox (238.31252pt too wide) in paragraph at lines 181--182
+ [][] 
+ []
+
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
 
 
 pdfTeX warning: pdflatex (file ./_tau_rise_vs_Isy.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<_tau_rise_vs_Isy.pdf, id=136, 1222.50722pt x 733.20226pt>
+<_tau_rise_vs_Isy.pdf, id=90, 1222.50722pt x 733.20226pt>
 File: _tau_rise_vs_Isy.pdf Graphic file (type pdf)
 <use _tau_rise_vs_Isy.pdf>
-Package pdftex.def Info: _tau_rise_vs_Isy.pdf  used on input line 185.
+Package pdftex.def Info: _tau_rise_vs_Isy.pdf  used on input line 192.
 (pdftex.def)             Requested size: 489.38731pt x 293.51065pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Overfull \hbox (238.31252pt too wide) in paragraph at lines 192--193
+ [][] 
+ []
+
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
+
+LaTeX Warning: Reference `fig:tau_rise_vs_Isy' on page 4 undefined on input lin
+e 196.
 
 
 
 pdfTeX warning: pdflatex (file ./_time_traces__varying_Isy.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<_time_traces__varying_Isy.pdf, id=137, 2523.4275pt x 1441.385pt>
+<_time_traces__varying_Isy.pdf, id=91, 2523.4275pt x 1441.385pt>
 File: _time_traces__varying_Isy.pdf Graphic file (type pdf)
 <use _time_traces__varying_Isy.pdf>
-Package pdftex.def Info: _time_traces__varying_Isy.pdf  used on input line 199.
+Package pdftex.def Info: _time_traces__varying_Isy.pdf  used on input line 206.
 
 (pdftex.def)             Requested size: 489.38731pt x 279.51839pt.
 
+Overfull \hbox (238.31252pt too wide) in paragraph at lines 206--207
+ [][] 
+ []
+
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
+
+LaTeX Warning: Reference `fig:time_traces__varying_Isy' on page 4 undefined on 
+input line 209.
+
+
+LaTeX Warning: Reference `fig:error_vs_Isy' on page 4 undefined on input line 2
+09.
+
+[4]
 
 pdfTeX warning: pdflatex (file ./_error_vs_Isy.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<_error_vs_Isy.pdf, id=138, 1212.53pt x 749.20901pt>
+<_error_vs_Isy.pdf, id=98, 1212.53pt x 749.20901pt>
 File: _error_vs_Isy.pdf Graphic file (type pdf)
 <use _error_vs_Isy.pdf>
-Package pdftex.def Info: _error_vs_Isy.pdf  used on input line 206.
+Package pdftex.def Info: _error_vs_Isy.pdf  used on input line 213.
 (pdftex.def)             Requested size: 489.38731pt x 302.38768pt.
+
+Overfull \hbox (238.31252pt too wide) in paragraph at lines 213--214
+ [][] 
+ []
+
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
 
 
 pdfTeX warning: pdflatex (file ./_time_traces__varying_tau_si.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<_time_traces__varying_tau_si.pdf, id=139, 2525.435pt x 1445.4pt>
+<_time_traces__varying_tau_si.pdf, id=99, 2525.435pt x 1445.4pt>
 File: _time_traces__varying_tau_si.pdf Graphic file (type pdf)
 <use _time_traces__varying_tau_si.pdf>
 Package pdftex.def Info: _time_traces__varying_tau_si.pdf  used on input line 2
-12.
+19.
 (pdftex.def)             Requested size: 489.38731pt x 280.07643pt.
+
+Overfull \hbox (238.31252pt too wide) in paragraph at lines 219--220
+ [][] 
+ []
+
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
+
+LaTeX Warning: Reference `fig:time_traces__varying_tau_si' on page 5 undefined 
+on input line 222.
+
+
+LaTeX Warning: Reference `fig:error_vs_tau_si' on page 5 undefined on input lin
+e 222.
+
 
 
 pdfTeX warning: pdflatex (file ./_error_vs_tau_si.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<_error_vs_tau_si.pdf, id=140, 1249.60846pt x 724.16948pt>
+<_error_vs_tau_si.pdf, id=100, 1249.60846pt x 724.16948pt>
 File: _error_vs_tau_si.pdf Graphic file (type pdf)
 <use _error_vs_tau_si.pdf>
-Package pdftex.def Info: _error_vs_tau_si.pdf  used on input line 219.
+Package pdftex.def Info: _error_vs_tau_si.pdf  used on input line 226.
 (pdftex.def)             Requested size: 489.38731pt x 283.6073pt.
+
+Overfull \hbox (238.31252pt too wide) in paragraph at lines 226--227
+ [][] 
+ []
+
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
 
 
 pdfTeX warning: pdflatex (file ./_time_traces__varying_L_si.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<_time_traces__varying_L_si.pdf, id=141, 3789.81863pt x 720.21875pt>
+<_time_traces__varying_L_si.pdf, id=101, 3789.81863pt x 720.21875pt>
 File: _time_traces__varying_L_si.pdf Graphic file (type pdf)
 <use _time_traces__varying_L_si.pdf>
-Package pdftex.def Info: _time_traces__varying_L_si.pdf  used on input line 225
+Package pdftex.def Info: _time_traces__varying_L_si.pdf  used on input line 232
 .
 (pdftex.def)             Requested size: 489.38731pt x 92.99432pt.
+
+Overfull \hbox (238.31252pt too wide) in paragraph at lines 232--233
+ [][] 
+ []
+
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
+
+LaTeX Warning: Reference `fig:time_traces__varying_L_si' on page 5 undefined on
+ input line 235.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--237
+[][]\OT1/lmr/bx/n/14.4 Phenomenological Model of
+ []
+
 [5]
-Overfull \vbox (15.25507pt too high) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 266--266
+[][]\OT1/lmr/bx/n/14.4 Phenomenological Model of
+ []
 
-
-[6 <./_I0_vs_Isy.pdf> <./_tau_rise_vs_Isy.pdf>] [7 <./_time_traces__varying_Isy
-.pdf>]
-
-LaTeX Warning: Text page 8 contains only floats.
-
-
-Overfull \vbox (3.59798pt too high) has occurred while \output is active []
-
-
-[8 <./_error_vs_Isy.pdf> <./_time_traces__varying_tau_si.pdf>] [9 <./_error_vs_
-tau_si.pdf> <./_time_traces__varying_L_si.pdf>] [10]
-<test_fig.png, id=408, 978.5358pt x 604.8999pt>
+[6]
+<test_fig.png, id=108, 978.5358pt x 604.8999pt>
 File: test_fig.png Graphic file (type png)
 <use test_fig.png>
-Package pdftex.def Info: test_fig.png  used on input line 285.
+Package pdftex.def Info: test_fig.png  used on input line 292.
 (pdftex.def)             Requested size: 489.38731pt x 302.52304pt.
- [11]
+
+Overfull \hbox (238.31252pt too wide) in paragraph at lines 292--293
+ [][] 
+ []
+
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 305.
+(Font)              <14.4> on input line 312.
 
 
 pdfTeX warning: pdflatex (file ./_finding_gammas.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<_finding_gammas.pdf, id=413, 2537.48pt x 1557.82pt>
+<_finding_gammas.pdf, id=110, 2537.48pt x 1557.82pt>
 File: _finding_gammas.pdf Graphic file (type pdf)
 <use _finding_gammas.pdf>
-Package pdftex.def Info: _finding_gammas.pdf  used on input line 308.
+Package pdftex.def Info: _finding_gammas.pdf  used on input line 315.
 (pdftex.def)             Requested size: 489.38731pt x 300.43394pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Overfull \hbox (238.31252pt too wide) in paragraph at lines 315--316
+ [][] 
+ []
 
-[12 <./test_fig.png>]
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
+[7]
+
+LaTeX Warning: Reference `fig:finding_gammas' on page 8 undefined on input line
+ 323.
+
+
 
 pdfTeX warning: pdflatex (file ./_I0_vs_tau_si.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<_I0_vs_tau_si.pdf, id=419, 1249.60846pt x 725.67511pt>
+<_I0_vs_tau_si.pdf, id=115, 1249.60846pt x 725.67511pt>
 File: _I0_vs_tau_si.pdf Graphic file (type pdf)
 <use _I0_vs_tau_si.pdf>
-Package pdftex.def Info: _I0_vs_tau_si.pdf  used on input line 323.
+Package pdftex.def Info: _I0_vs_tau_si.pdf  used on input line 330.
 (pdftex.def)             Requested size: 489.38731pt x 284.19695pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Overfull \hbox (238.31252pt too wide) in paragraph at lines 330--331
+ [][] 
+ []
 
-(phenomenological_modeling.bbl [13 <./_finding_gammas.pdf>]) [14 <./_I0_vs_tau_
-si.pdf>] (phenomenological_modeling.aux)
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
+
+Package multicol Warning: Floats and marginpars not allowed inside `multicols' 
+environment!.
+
+
+LaTeX Warning: Reference `fig:I0_vs_tau_si' on page 8 undefined on input line 3
+33.
+
+(phenomenological_modeling.bbl) [8] (phenomenological_modeling.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5327 strings out of 492452
- 79219 string characters out of 3129807
- 150168 words of memory out of 3000000
+ 5328 strings out of 492452
+ 79233 string characters out of 3129807
+ 168000 words of memory out of 3000000
  9567 multiletter control sequences out of 15000+200000
- 72030 words of font info for 60 fonts, out of 3000000 for 9000
+ 74976 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,11n,42p,2161b,368s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,11n,42p,2161b,462s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Fil
 es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/
-enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-r
-m.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Program
+enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-maths
+y.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx9.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
-lmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/lm/lmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
-mri9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on phenomenological_modeling.pdf (14 pages, 6016402 bytes).
+/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
+bx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx9.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi5.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
+r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/lm/lmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri9.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/symbols/msbm10.pfb>
+Output written on phenomenological_modeling.pdf (8 pages, 736971 bytes).
 PDF statistics:
- 921 PDF objects out of 1000 (max. 8388607)
+ 203 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
