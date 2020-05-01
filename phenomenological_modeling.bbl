@@ -13,11 +13,6 @@ J.M. Shainline, S.M. Buckley, A.N. McCaughan, J.~Chiles,
 \newblock Superconducting optoelectronic loop neurons.
 \newblock {\em J. Appl. Phys.}, 2019.
 
-\bibitem{sh2019_jstqe}
-J.M. Shainline.
-\newblock Fluxonic processing of photonic synapse events.
-\newblock {\em J. Spec. Top. Quant. Electron.}, 2019.
-
 \bibitem{daab2001}
 P.~Dayan and L.F. Abbott.
 \newblock {\em Theoretical Neuroscience}.
@@ -28,16 +23,19 @@ W.~Gerstner and W.~Kistler.
 \newblock {\em Spiking neuron models}.
 \newblock Cambridge University Press, Cambridge, first edition, 2002.
 
-\bibitem{shbu2017}
-J.M. Shainline, S.M. Buckley, R.P. Mirin, and S.W. Nam.
-\newblock Superconducting optoelectronic circuits for neuromorphic computing.
-\newblock {\em Phys. Rev. App.}, 7:034013, 2017.
+\bibitem{vatu1998}
+T.~Van Duzer and C.W. Turner.
+\newblock {\em Principles of superconductive devices and circuits}.
+\newblock Prentice Hall, USA, second edition, 1998.
 
-\bibitem{mcve2019}
-A.N. McCaughan, V.B. Verma, S.M. Buckley, A.N. Tait, S.W. Nam, and J.M.
-  Shainline.
-\newblock An ultrahigh-impedance superconducting thermal switch for interfacing
-  superconductors to semiconductors and optoelectronics.
-\newblock {\em arXiv}, 1903:10461, 2019.
+\bibitem{ka1999}
+Alan~M. Kadin.
+\newblock {\em Introduction to superconducting circuits}.
+\newblock John Wiley and Sons, USA, first edition, 1999.
+
+\bibitem{ti1996}
+M.~Tinkham.
+\newblock {\em Introduction to Superconductivity}.
+\newblock Dover, second edition, 1996.
 
 \end{thebibliography}
