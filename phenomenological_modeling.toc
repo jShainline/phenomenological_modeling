@@ -2,6 +2,6 @@
 \contentsline {section}{\numberline {2}Leaky Integrators}{2}% 
 \contentsline {section}{\numberline {3}Overview of Loop Neurons}{2}% 
 \contentsline {section}{\numberline {4}Synapses as Leaky Integrators}{3}% 
-\contentsline {section}{\numberline {5}Point Neurons}{4}% 
-\contentsline {section}{\numberline {6}Dendrites as Leaky Integrators}{4}% 
-\contentsline {section}{\numberline {7}Neurons with a Dendritic Arbor}{4}% 
+\contentsline {section}{\numberline {5}Point Neurons}{5}% 
+\contentsline {section}{\numberline {6}Dendrites as Leaky Integrators}{5}% 
+\contentsline {section}{\numberline {7}Neurons with a Dendritic Arbor}{5}% 

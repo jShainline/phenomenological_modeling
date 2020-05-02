@@ -38,4 +38,9 @@ M.~Tinkham.
 \newblock {\em Introduction to Superconductivity}.
 \newblock Dover, second edition, 1996.
 
+\bibitem{wh1991}
+S.R. Whiteley.
+\newblock Josephson junctions in spice3.
+\newblock {\em IEEE Tras. Mag.}, 27:2902, 1991.
+
 \end{thebibliography}
