@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.11)  1 MAY 2020 20:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.11)  9 MAY 2020 10:47
 entering extended mode
 **./phenomenological_modeling.tex
 (phenomenological_modeling.tex
@@ -425,7 +425,11 @@ Package: booktabs 2019/10/08 v1.6180339 publication quality tables
 \@lastruleclass=\count139
 \@thisrulewidth=\dimen143
 )
-(phenomenological_modeling.aux)
+(phenomenological_modeling.aux
+
+LaTeX Warning: Label `eq:leaky_integrator__SI_loop' multiply defined.
+
+)
 \openout1 = `phenomenological_modeling.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
@@ -443,8 +447,7 @@ LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
 7.
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 47.
@@ -584,23 +587,23 @@ LaTeX Warning: Reference `fig:leaky_integrator' on page 2 undefined on input li
 ne 78.
 
 
-LaTeX Warning: Reference `apx:background' on page 2 undefined on input line 91.
+LaTeX Warning: Reference `apx:background' on page 2 undefined on input line 90.
 
 
 
-LaTeX Warning: Reference `fig:schematic' on page 2 undefined on input line 93.
+LaTeX Warning: Reference `fig:schematic' on page 2 undefined on input line 92.
 
 
-LaTeX Warning: Reference `fig:schematic' on page 2 undefined on input line 93.
+LaTeX Warning: Reference `fig:schematic' on page 2 undefined on input line 92.
 
 
-LaTeX Warning: Reference `fig:schematic' on page 2 undefined on input line 93.
+LaTeX Warning: Reference `fig:schematic' on page 2 undefined on input line 92.
 
 
-LaTeX Warning: Citation `sh2019_jstqe' on page 2 undefined on input line 93.
+LaTeX Warning: Citation `sh2019_jstqe' on page 2 undefined on input line 92.
 
 
-LaTeX Warning: Reference `fig:circuits' on page 2 undefined on input line 95.
+LaTeX Warning: Reference `fig:circuits' on page 2 undefined on input line 94.
 
 [2]
 
@@ -610,7 +613,7 @@ lusion: found PDF version <1.7>, but at most version <1.5> allowed
 File: figures/_02__schematic__circuits.pdf Graphic file (type pdf)
 <use figures/_02__schematic__circuits.pdf>
 Package pdftex.def Info: figures/_02__schematic__circuits.pdf  used on input li
-ne 104.
+ne 103.
 (pdftex.def)             Requested size: 244.69386pt x 497.32834pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -620,115 +623,116 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3 <./figures/_02__schematic__circuits.pdf>]
 
-pdfTeX warning: pdflatex (file ./figures/_03__syn__circuit__rate_array.pdf): PD
-F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_03__syn__circuit__rate_array.pdf, id=66, 244.69417pt x 448.13121pt>
-File: figures/_03__syn__circuit__rate_array.pdf Graphic file (type pdf)
-<use figures/_03__syn__circuit__rate_array.pdf>
-Package pdftex.def Info: figures/_03__syn__circuit__rate_array.pdf  used on inp
-ut line 125.
-(pdftex.def)             Requested size: 244.69386pt x 448.13695pt.
+pdfTeX warning: pdflatex (file ./figures/_03__syn__fq_peaks.pdf): PDF inclusion
+: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_03__syn__fq_peaks.pdf, id=66, 489.38733pt x 258.92033pt>
+File: figures/_03__syn__fq_peaks.pdf Graphic file (type pdf)
+<use figures/_03__syn__fq_peaks.pdf>
+Package pdftex.def Info: figures/_03__syn__fq_peaks.pdf  used on input line 112
+.
+(pdftex.def)             Requested size: 489.38731pt x 258.92363pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4 <./figures/_03__syn__circuit__rate_array.pdf>]
-Underfull \hbox (badness 5475) in paragraph at lines 135--136
+pdfTeX warning: pdflatex (file ./figures/_03__syn__fq_delay_and_rate.pdf): PDF 
+inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_03__syn__fq_delay_and_rate.pdf, id=67, 244.69417pt x 304.96335pt>
+File: figures/_03__syn__fq_delay_and_rate.pdf Graphic file (type pdf)
+<use figures/_03__syn__fq_delay_and_rate.pdf>
+Package pdftex.def Info: figures/_03__syn__fq_delay_and_rate.pdf  used on input
+ line 117.
+(pdftex.def)             Requested size: 244.69386pt x 304.96722pt.
+
+
+pdfTeX warning: pdflatex (file ./figures/_03__syn__1jj__circuit__rate_array.pdf
+): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_03__syn__1jj__circuit__rate_array.pdf, id=68, 503.18489pt x 303.79198
+pt>
+File: figures/_03__syn__1jj__circuit__rate_array.pdf Graphic file (type pdf)
+<use figures/_03__syn__1jj__circuit__rate_array.pdf>
+Package pdftex.def Info: figures/_03__syn__1jj__circuit__rate_array.pdf  used o
+n input line 134.
+(pdftex.def)             Requested size: 489.38731pt x 295.47514pt.
+
+Underfull \hbox (badness 5475) in paragraph at lines 151--152
 []\OT1/cmr/m/n/10 Based on these con-sid-er-a-tions, we ex-pect that
  []
 
 
-LaTeX Warning: Reference `fig:to_be_added' on page 5 undefined on input line 13
-7.
+LaTeX Warning: Reference `fig:to_be_added' on page 4 undefined on input line 15
+3.
 
+[4]
 
 LaTeX Warning: Reference `fig:syn__circuit__rate_array__add_drive_signal' on pa
-ge 5 undefined on input line 139.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ge 5 undefined on input line 155.
 
 
 
 pdfTeX warning: pdflatex (file ./figures/_04__syn__cmpr__vary_Isy.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_04__syn__cmpr__vary_Isy.pdf, id=110, 489.38733pt x 270.30083pt>
+<figures/_04__syn__cmpr__vary_Isy.pdf, id=77, 489.38733pt x 270.30083pt>
 File: figures/_04__syn__cmpr__vary_Isy.pdf Graphic file (type pdf)
 <use figures/_04__syn__cmpr__vary_Isy.pdf>
 Package pdftex.def Info: figures/_04__syn__cmpr__vary_Isy.pdf  used on input li
-ne 149.
+ne 164.
 (pdftex.def)             Requested size: 489.38731pt x 270.30428pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 
 
 pdfTeX warning: pdflatex (file ./figures/_04__syn__cmpr__vary_Lsi.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_04__syn__cmpr__vary_Lsi.pdf, id=111, 489.38733pt x 270.30083pt>
+<figures/_04__syn__cmpr__vary_Lsi.pdf, id=78, 489.38733pt x 270.30083pt>
 File: figures/_04__syn__cmpr__vary_Lsi.pdf Graphic file (type pdf)
 <use figures/_04__syn__cmpr__vary_Lsi.pdf>
 Package pdftex.def Info: figures/_04__syn__cmpr__vary_Lsi.pdf  used on input li
-ne 154.
+ne 169.
 (pdftex.def)             Requested size: 489.38731pt x 270.30428pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 
 
 pdfTeX warning: pdflatex (file ./figures/_04__syn__cmpr__vary_tausi.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_04__syn__cmpr__vary_tausi.pdf, id=112, 489.38733pt x 270.30083pt>
+<figures/_04__syn__cmpr__vary_tausi.pdf, id=79, 489.38733pt x 270.30083pt>
 File: figures/_04__syn__cmpr__vary_tausi.pdf Graphic file (type pdf)
 <use figures/_04__syn__cmpr__vary_tausi.pdf>
 Package pdftex.def Info: figures/_04__syn__cmpr__vary_tausi.pdf  used on input 
-line 159.
+line 174.
 (pdftex.def)             Requested size: 489.38731pt x 270.30428pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 
 
 pdfTeX warning: pdflatex (file ./figures/_05__syn__error_vs_dt.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_05__syn__error_vs_dt.pdf, id=113, 244.69417pt x 482.34204pt>
+<figures/_05__syn__error_vs_dt.pdf, id=80, 976.31854pt x 603.20958pt>
 File: figures/_05__syn__error_vs_dt.pdf Graphic file (type pdf)
 <use figures/_05__syn__error_vs_dt.pdf>
 Package pdftex.def Info: figures/_05__syn__error_vs_dt.pdf  used on input line 
-164.
-(pdftex.def)             Requested size: 244.69386pt x 482.34822pt.
+179.
+(pdftex.def)             Requested size: 489.38731pt x 302.3588pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 pdfTeX warning: pdflatex (file ./figures/_06__point_neuron__nine_pixel_schemati
 c.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<figures/_06__point_neuron__nine_pixel_schematic.pdf, id=114, 2731.46474pt x 18
-23.82379pt>
+<figures/_06__point_neuron__nine_pixel_schematic.pdf, id=81, 2731.46474pt x 182
+3.82379pt>
 File: figures/_06__point_neuron__nine_pixel_schematic.pdf Graphic file (type pd
 f)
 <use figures/_06__point_neuron__nine_pixel_schematic.pdf>
 Package pdftex.def Info: figures/_06__point_neuron__nine_pixel_schematic.pdf  u
-sed on input line 171.
+sed on input line 197.
 (pdftex.def)             Requested size: 244.69386pt x 163.35783pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 
 
 pdfTeX warning: pdflatex (file ./figures/_13__arbor__classifier_schematic.pdf):
  PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_13__arbor__classifier_schematic.pdf, id=115, 244.69417pt x 170.7168pt
->
+<figures/_13__arbor__classifier_schematic.pdf, id=82, 244.69417pt x 170.7168pt>
+
 File: figures/_13__arbor__classifier_schematic.pdf Graphic file (type pdf)
 <use figures/_13__arbor__classifier_schematic.pdf>
 Package pdftex.def Info: figures/_13__arbor__classifier_schematic.pdf  used on 
-input line 214.
+input line 246.
 (pdftex.def)             Requested size: 244.69386pt x 170.71896pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 (phenomenological_modeling.bbl
 Underfull \hbox (badness 1694) in paragraph at lines 4--8
 []\OT1/cmr/m/n/10 J.M. Shain-line, S.M. Buck-ley, A.N. Mc-Caughan,
@@ -739,48 +743,58 @@ Underfull \hbox (badness 1694) in paragraph at lines 10--15
 []\OT1/cmr/m/n/10 J.M. Shain-line, S.M. Buck-ley, A.N. Mc-Caughan,
  []
 
-
+[5 <./figures/_03__syn__fq_peaks.pdf>]
 Underfull \hbox (badness 1838) in paragraph at lines 37--40
 []\OT1/cmr/m/n/10 M. Tin-kham.  \OT1/cmr/m/it/10 In-tro-duc-tion to Su-per-con-
 duc-tiv-ity\OT1/cmr/m/n/10 .
  []
 
-) [5] [6 <./figures/_04__syn__cmpr__vary_Isy.pdf> <./figures/_04__syn__cmpr__va
-ry_Lsi.pdf>] [7 <./figures/_04__syn__cmpr__vary_tausi.pdf>] [8 <./figures/_05__
-syn__error_vs_dt.pdf> <./figures/_06__point_neuron__nine_pixel_schematic.pdf> <
-./figures/_13__arbor__classifier_schematic.pdf>] (phenomenological_modeling.aux
-)
+) [6
+
+ <./figures/_03__syn__fq_delay_and_rate.pdf>] [7 <./figures/_03__syn__1jj__circ
+uit__rate_array.pdf> <./figures/_04__syn__cmpr__vary_Isy.pdf>] [8 <./figures/_0
+4__syn__cmpr__vary_Lsi.pdf> <./figures/_04__syn__cmpr__vary_tausi.pdf>]
+[9 <./figures/_05__syn__error_vs_dt.pdf>] [10
+
+
+ <./figures/_06__point_neuron__nine_pixel_schematic.pdf> <./figures/_13__arbor_
+_classifier_schematic.pdf>]
+(phenomenological_modeling.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 6402 strings out of 492452
- 93241 string characters out of 3129807
- 177831 words of memory out of 3000000
- 10626 multiletter control sequences out of 15000+200000
+ 6421 strings out of 492452
+ 93930 string characters out of 3129807
+ 178905 words of memory out of 3000000
+ 10643 multiletter control sequences out of 15000+200000
  14870 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,6n,77p,2164b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mti12.pfb>
-Output written on phenomenological_modeling.pdf (8 pages, 27976800 bytes).
+ <C:\Users\jeffr\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
+tcrm1000.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmti12.pfb>
+Output written on phenomenological_modeling.pdf (10 pages, 28749718 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
+ 300 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
