@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.4)  3 APR 2020 15:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.11)  11 MAY 2020 16:41
 entering extended mode
 **./phenomenological_modeling.tex
 (phenomenological_modeling.tex
-LaTeX2e <2019-10-01> patch level 3
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
-Document Class: article 2019/10/25 v1.4k Standard LaTeX document class
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.clo"
-File: size10.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
+LaTeX2e <2019-10-01>
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
+Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\size10.clo"
+File: size10.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -20,26 +20,22 @@ File: size10.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry-de\geometr
-y.sty"
-Package: geometry 2010/09/12 v5.6 Page Geometry
+("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
 
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.sty
-"
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
-) ("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifpdf.sty
-"
-Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
- ("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
-Package: iftex 2019/11/07 v1.0c TeX engine tests
-))
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifvtex.sty"
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifxetex.sty
-"
-Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.sty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifvtex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count88
 \Gm@cntv=\count89
@@ -54,172 +50,111 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
 
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.c
-fg"))
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\multicol.sty"
-Package: multicol 2019/03/01 v1.8w multicolumn formatting (FMi)
-\c@tracingmulticols=\count91
-\mult@box=\box27
-\multicol@leftmargin=\dimen111
-\c@unbalance=\count92
-\c@collectmore=\count93
-\doublecol@number=\count94
-\multicoltolerance=\count95
-\multicolpretolerance=\count96
-\full@width=\dimen112
-\page@free=\dimen113
-\premulticols=\dimen114
-\postmulticols=\dimen115
-\multicolsep=\skip43
-\multicolbaselineskip=\skip44
-\partial@page=\box28
-\last@line=\box29
-\maxbalancingoverflow=\dimen116
-\mult@rightbox=\box30
-\mult@grightbox=\box31
-\mult@gfirstbox=\box32
-\mult@firstbox=\box33
-\@tempa=\box34
-\@tempa=\box35
-\@tempa=\box36
-\@tempa=\box37
-\@tempa=\box38
-\@tempa=\box39
-\@tempa=\box40
-\@tempa=\box41
-\@tempa=\box42
-\@tempa=\box43
-\@tempa=\box44
-\@tempa=\box45
-\@tempa=\box46
-\@tempa=\box47
-\@tempa=\box48
-\@tempa=\box49
-\@tempa=\box50
-\c@minrows=\count97
-\c@columnbadness=\count98
-\c@finalcolumnbadness=\count99
-\last@try=\dimen117
-\multicolovershoot=\dimen118
-\multicolundershoot=\dimen119
-\mult@nat@firstbox=\box51
-\colbreak@box=\box52
-\mc@col@check@num=\count100
-) ("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cite\cite.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex/latex/cite\cite.sty"
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.sty
-"
-Package: caption 2019/10/18 v3.4a Customizing captions (AR)
+("C:\Program Files\MiKTeX 2.9\tex/latex/caption\caption.sty"
+Package: caption 2019/09/01 v3.3d Customizing captions (AR)
 
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.st
-y"
-Package: caption3 2019/09/09 v1.8e caption3 kernel (AR)
+("C:\Program Files\MiKTeX 2.9\tex/latex/caption\caption3.sty"
+Package: caption3 2019/09/01 v1.8d caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
-\captionmargin=\dimen120
-\captionmargin@=\dimen121
-\captionwidth=\dimen122
-\caption@tempdima=\dimen123
-\caption@indent=\dimen124
-\caption@parindent=\dimen125
-\caption@hangindent=\dimen126
-Package caption Info: Standard document class detected.
+\captionmargin=\dimen111
+\captionmargin@=\dimen112
+\captionwidth=\dimen113
+\caption@tempdima=\dimen114
+\caption@indent=\dimen115
+\caption@parindent=\dimen116
+\caption@hangindent=\dimen117
 )
-\c@caption@flags=\count101
-\c@continuedfloat=\count102
+\c@caption@flags=\count91
+\c@ContinuedFloat=\count92
 )
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.s
-ty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.s
-ty"
-Package: graphics 2019/11/01 v1.3d Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+Package: graphics 2019/07/20 v1.3b Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graphi
-cs.cfg"
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdftex
-.def"
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen127
-\Gin@req@width=\dimen128
+\Gin@req@height=\dimen118
+\Gin@req@width=\dimen119
 )
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty
-"
-Package: amsmath 2019/11/16 v2.17d AMS math features
-\@mathmargin=\skip45
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+Package: amsmath 2019/04/01 v2.17c AMS math features
+\@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.sty
-"
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
- ("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty
-"
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
-\ex@=\dimen129
+\ex@=\dimen120
 ))
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen130
-) ("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.st
-y"
+\pmbraise@=\dimen121
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count103
+\inf@bad=\count93
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count104
-\leftroot@=\count105
+\uproot@=\count94
+\leftroot@=\count95
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count106
-\DOTSCASE@=\count107
+\classnum@=\count96
+\DOTSCASE@=\count97
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box53
-\strutbox@=\box54
-\big@size=\dimen131
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen122
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count108
-\c@MaxMatrixCols=\count109
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
 \dotsspace@=\muskip10
-\c@parentequation=\count110
-\dspbrk@lvl=\count111
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
 \tag@help=\toks17
-\row@=\count112
-\column@=\count113
-\maxfields@=\count114
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
 \andhelp@=\toks18
-\eqnshift@=\dimen132
-\alignsep@=\dimen133
-\tagshift@=\dimen134
-\tagwidth@=\dimen135
-\totwidth@=\dimen136
-\lineht@=\dimen137
+\eqnshift@=\dimen123
+\alignsep@=\dimen124
+\tagshift@=\dimen125
+\tagwidth@=\dimen126
+\totwidth@=\dimen127
+\lineht@=\dimen128
 \@envbody=\toks19
-\multlinegap=\skip46
-\multlinetaggap=\skip47
+\multlinegap=\skip44
+\multlinetaggap=\skip45
 \mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2858.
-LaTeX Info: Redefining \] on input line 2859.
+LaTeX Info: Redefining \[ on input line 2855.
+LaTeX Info: Redefining \] on input line 2856.
 )
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.st
-y"
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.s
-ty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -227,7 +162,7 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\textcomp.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\textcomp.sty"
 Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -242,12 +177,12 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1enc.def"
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1enc.dfu"
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1enc.dfu"
 File: ts1enc.dfu 2019/07/11 v1.2j UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
@@ -385,81 +320,141 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
-) ("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\lmodern.sty"
-Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/preprint\authblk.st
-y"
+("C:\Program Files\MiKTeX 2.9\tex/latex/preprint\authblk.sty"
 Package: authblk 2001/02/27 1.3 (PWD)
-\affilsep=\skip48
-\@affilsep=\skip49
-\c@Maxaffil=\count115
-\c@authors=\count116
-\c@affil=\count117
-) (phenomenological_modeling.aux
+\affilsep=\skip46
+\@affilsep=\skip47
+\c@Maxaffil=\count105
+\c@authors=\count106
+\c@affil=\count107
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/datetime\datetime.sty"
+Package: datetime 2015/03/20 v2.60 Date Time Package
 
-LaTeX Warning: Label `eq:I0_vs_Isy' multiply defined.
+("C:\Program Files\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count108
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/fmtcount\fmtcount.sty"
+Package: fmtcount 2017/12/24 v3.05
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkvutils.tex"
+\XKV@toks=\toks21
+\XKV@tempa@toks=\toks22
+)
+\XKV@depth=\count109
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/fmtcount\fcprefix.sty"
+Package: fcprefix 2012/09/28
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/fmtcount\fcnumparser.sty"
+Package: fcnumparser 2017/06/15
+\fc@digit@counter=\count110
+))
+\c@padzeroesN=\count111
+\fc@tmpcatcode=\count112
+\@DT@modctr=\count113
+\@ordinalctr=\count114
+\@orgargctr=\count115
+\@strctr=\count116
+\@tmpstrctr=\count117
+\@DT@loopN=\count118
+\@DT@X=\count119
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/datetime\datetime-defaults.sty"
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count120
+\@month=\count121
+\@year=\count122
+\c@HOUR=\count123
+\c@HOURXII=\count124
+\c@MINUTE=\count125
+\c@TOHOUR=\count126
+\c@TOMINUTE=\count127
+\c@SECOND=\count128
+\currenthour=\count129
+\currentminute=\count130
+\currentsecond=\count131
+Package datetime Info: No datetime.cfg file found, using default settings on in
+put line 308.
+\@dtctr=\count132
+\dayofyear=\count133
+\dayofweek=\count134
+LaTeX Info: Redefining \today on input line 736.
+\dt@a=\toks23
+\dt@b=\toks24
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/was\gensymb.sty"
+Package: gensymb 2003/07/02 v1.0 (WaS)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/wrapfig\wrapfig.sty"
+\wrapoverhang=\dimen129
+\WF@size=\dimen130
+\c@WF@wrappedlines=\count135
+\WF@box=\box29
+\WF@everypar=\toks25
+Package: wrapfig 2003/01/31  v 3.6
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/booktabs\booktabs.sty"
+Package: booktabs 2019/10/08 v1.6180339 publication quality tables
+\heavyrulewidth=\dimen131
+\lightrulewidth=\dimen132
+\cmidrulewidth=\dimen133
+\belowrulesep=\dimen134
+\belowbottomsep=\dimen135
+\aboverulesep=\dimen136
+\abovetopsep=\dimen137
+\cmidrulesep=\dimen138
+\cmidrulekern=\dimen139
+\defaultaddspace=\dimen140
+\@cmidla=\count136
+\@cmidlb=\count137
+\@aboverulesep=\dimen141
+\@belowrulesep=\dimen142
+\@thisruleclass=\count138
+\@lastruleclass=\count139
+\@thisrulewidth=\dimen143
+)
+(phenomenological_modeling.aux
+
+LaTeX Warning: Label `eq:leaky_integrator__SI_loop' multiply defined.
+
+
+LaTeX Warning: Label `fig:syn__error_vs_dt' multiply defined.
 
 )
 \openout1 = `phenomenological_modeling.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-3.
- ("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
+7.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-3.
+LaTeX Font Info:    ... okay on input line 47.
 
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -481,326 +476,354 @@ File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumnfalse
+* \@twocolumntrue
 * \@twosidefalse
 * \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pd
-f.mkii"
+("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count118
-\scratchdimen=\dimen138
-\scratchbox=\box55
-\nofMPsegments=\count119
-\nofMParguments=\count120
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count121
-\MPscratchDim=\dimen139
-\MPnumerator=\count122
-\makeMPintoPDFobject=\count123
-\everyMPtoPDFconversion=\toks22
-)
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstop
-df-base.sty"
-Package: epstopdf-base 2019/11/24 v2.7 Base part for package epstopdf
+\scratchcounter=\count140
+\scratchdimen=\dimen144
+\scratchbox=\box30
+\nofMPsegments=\count141
+\nofMParguments=\count142
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count143
+\MPscratchDim=\dimen145
+\MPnumerator=\count144
+\makeMPintoPDFobject=\count145
+\everyMPtoPDFconversion=\toks27
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\infwarer
-r.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\infwarerr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.sty
-"
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\grfext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvdefine
-keys.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\kvdefinekeys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )))
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoptions.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvsetkey
-s.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\kvsetkeys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\etexcmds
-.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\etexcmds.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifluatex.st
-y"
-Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
 ))))
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdftexcmds\pdftexcm
-ds.sty"
-Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
 )
+Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-42.
+38.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 460.
+(grfext)             \AppendGraphicsExtensions on input line 456.
 )
-<_01__schematic.pdf, id=1, 489.38733pt x 181.67876pt>
-File: _01__schematic.pdf Graphic file (type pdf)
-<use _01__schematic.pdf>
-Package pdftex.def Info: _01__schematic.pdf  used on input line 56.
-(pdftex.def)             Requested size: 489.38731pt x 181.68106pt.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 5
-7.
-
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+("C:\Program Files\MiKTeX 2.9\tex/latex/fmtcount\fc-english.def"
+File: fc-english.def 2016/01/12
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-57.
-
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-57.
-
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 57.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 57.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 57.
+\symgns@font=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
+(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 47.
+Package gensymb Info: Math companion symbols declared on input line 47.
+LaTeX Info: Redefining \degree on input line 47.
+LaTeX Info: Redefining \celsius on input line 47.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
+erthousand on input line 47.
+LaTeX Info: Redefining \ohm on input line 47.
+Package gensymb Info: Using \textohm for \ohm on input line 47.
+Package gensymb Info: Using \textmu for \micro on input line 47.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
 
 
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
 
 
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-57.
-
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmss.fd"
-File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-[1
-
-{C:/Users/jms4/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./_01__schem
-atic.pdf>]
-
-pdfTeX warning: pdflatex (file ./_02__circuits.pdf): PDF inclusion: found PDF v
-ersion <1.7>, but at most version <1.5> allowed
-<_02__circuits.pdf, id=35, 489.38733pt x 177.32951pt>
-File: _02__circuits.pdf Graphic file (type pdf)
-<use _02__circuits.pdf>
-Package pdftex.def Info: _02__circuits.pdf  used on input line 65.
-(pdftex.def)             Requested size: 489.38731pt x 177.33177pt.
-[2 <./_02__circuits.pdf>] [3]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 112.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 112.
- [4]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-56.
-
-("C:\Users\jms4\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-
-pdfTeX warning: pdflatex (file ./_I0_vs_Isy.pdf): PDF inclusion: found PDF vers
-ion <1.7>, but at most version <1.5> allowed
-<_I0_vs_Isy.pdf, id=115, 1220.56pt x 724.7075pt>
-File: _I0_vs_Isy.pdf Graphic file (type pdf)
-<use _I0_vs_Isy.pdf>
-Package pdftex.def Info: _I0_vs_Isy.pdf  used on input line 175.
-(pdftex.def)             Requested size: 489.38731pt x 290.57452pt.
+(phenomenological_modeling.toc)
+\tf@toc=\write3
+\openout3 = `phenomenological_modeling.toc'.
 
 
-pdfTeX warning: pdflatex (file ./_tau_rise_vs_Isy.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<_tau_rise_vs_Isy.pdf, id=116, 1222.50722pt x 733.20226pt>
-File: _tau_rise_vs_Isy.pdf Graphic file (type pdf)
-<use _tau_rise_vs_Isy.pdf>
-Package pdftex.def Info: _tau_rise_vs_Isy.pdf  used on input line 186.
-(pdftex.def)             Requested size: 489.38731pt x 293.51065pt.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{C:/Users/jeffr/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+]
+
+LaTeX Warning: Reference `fig:leaky_integrator' on page 2 undefined on input li
+ne 78.
+
+
+LaTeX Warning: Reference `apx:background' on page 2 undefined on input line 90.
+
+
+
+LaTeX Warning: Reference `fig:schematic' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Reference `fig:schematic' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Reference `fig:schematic' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `sh2019_jstqe' on page 2 undefined on input line 92.
+
+[2]
+
+LaTeX Warning: Reference `fig:circuits' on page 3 undefined on input line 94.
+
+
+
+pdfTeX warning: pdflatex (file ./figures/_02__schematic__circuits.pdf): PDF inc
+lusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_02__schematic__circuits.pdf, id=21, 244.69417pt x 497.32198pt>
+File: figures/_02__schematic__circuits.pdf Graphic file (type pdf)
+<use figures/_02__schematic__circuits.pdf>
+Package pdftex.def Info: figures/_02__schematic__circuits.pdf  used on input li
+ne 103.
+(pdftex.def)             Requested size: 244.69386pt x 497.32834pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[3]
+Underfull \vbox (badness 2042) has occurred while \output is active []
 
 
-pdfTeX warning: pdflatex (file ./_time_traces__varying_Isy.pdf): PDF inclusion:
- found PDF version <1.7>, but at most version <1.5> allowed
-<_time_traces__varying_Isy.pdf, id=117, 2523.4275pt x 1441.385pt>
-File: _time_traces__varying_Isy.pdf Graphic file (type pdf)
-<use _time_traces__varying_Isy.pdf>
-Package pdftex.def Info: _time_traces__varying_Isy.pdf  used on input line 200.
 
-(pdftex.def)             Requested size: 489.38731pt x 279.51839pt.
+pdfTeX warning: pdflatex (file ./figures/_03__syn__1jj__circuit__rate_array.pdf
+): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_03__syn__1jj__circuit__rate_array.pdf, id=27, 503.18489pt x 303.79198
+pt>
+File: figures/_03__syn__1jj__circuit__rate_array.pdf Graphic file (type pdf)
+<use figures/_03__syn__1jj__circuit__rate_array.pdf>
+Package pdftex.def Info: figures/_03__syn__1jj__circuit__rate_array.pdf  used o
+n input line 129.
+(pdftex.def)             Requested size: 489.38731pt x 295.47514pt.
 
-
-pdfTeX warning: pdflatex (file ./_error_vs_Isy.pdf): PDF inclusion: found PDF v
-ersion <1.7>, but at most version <1.5> allowed
-<_error_vs_Isy.pdf, id=118, 1212.53pt x 749.20901pt>
-File: _error_vs_Isy.pdf Graphic file (type pdf)
-<use _error_vs_Isy.pdf>
-Package pdftex.def Info: _error_vs_Isy.pdf  used on input line 207.
-(pdftex.def)             Requested size: 489.38731pt x 302.38768pt.
+Underfull \hbox (badness 5475) in paragraph at lines 139--140
+[]\OT1/cmr/m/n/10 Based on these con-sid-er-a-tions, we ex-pect that
+ []
 
 
-pdfTeX warning: pdflatex (file ./_time_traces__varying_tau_si.pdf): PDF inclusi
-on: found PDF version <1.7>, but at most version <1.5> allowed
-<_time_traces__varying_tau_si.pdf, id=119, 2525.435pt x 1445.4pt>
-File: _time_traces__varying_tau_si.pdf Graphic file (type pdf)
-<use _time_traces__varying_tau_si.pdf>
-Package pdftex.def Info: _time_traces__varying_tau_si.pdf  used on input line 2
-13.
-(pdftex.def)             Requested size: 489.38731pt x 280.07643pt.
+LaTeX Warning: Reference `fig:to_be_added' on page 4 undefined on input line 14
+1.
+
+[4 <./figures/_02__schematic__circuits.pdf>]
+
+LaTeX Warning: Reference `fig:syn__circuit__rate_array__add_drive_signal' on pa
+ge 5 undefined on input line 143.
 
 
-pdfTeX warning: pdflatex (file ./_error_vs_tau_si.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<_error_vs_tau_si.pdf, id=120, 1249.60846pt x 724.16948pt>
-File: _error_vs_tau_si.pdf Graphic file (type pdf)
-<use _error_vs_tau_si.pdf>
-Package pdftex.def Info: _error_vs_tau_si.pdf  used on input line 220.
-(pdftex.def)             Requested size: 489.38731pt x 283.6073pt.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-pdfTeX warning: pdflatex (file ./_time_traces__varying_L_si.pdf): PDF inclusion
+
+pdfTeX warning: pdflatex (file ./figures/_04__syn__cmpr__vary_Isy.pdf): PDF inc
+lusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_04__syn__cmpr__vary_Isy.pdf, id=75, 489.38733pt x 270.30083pt>
+File: figures/_04__syn__cmpr__vary_Isy.pdf Graphic file (type pdf)
+<use figures/_04__syn__cmpr__vary_Isy.pdf>
+Package pdftex.def Info: figures/_04__syn__cmpr__vary_Isy.pdf  used on input li
+ne 152.
+(pdftex.def)             Requested size: 489.38731pt x 270.30428pt.
+
+
+pdfTeX warning: pdflatex (file ./figures/_04__syn__cmpr__vary_Lsi.pdf): PDF inc
+lusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_04__syn__cmpr__vary_Lsi.pdf, id=76, 489.38733pt x 270.30083pt>
+File: figures/_04__syn__cmpr__vary_Lsi.pdf Graphic file (type pdf)
+<use figures/_04__syn__cmpr__vary_Lsi.pdf>
+Package pdftex.def Info: figures/_04__syn__cmpr__vary_Lsi.pdf  used on input li
+ne 157.
+(pdftex.def)             Requested size: 489.38731pt x 270.30428pt.
+
+
+pdfTeX warning: pdflatex (file ./figures/_04__syn__cmpr__vary_tausi.pdf): PDF i
+nclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_04__syn__cmpr__vary_tausi.pdf, id=77, 489.38733pt x 270.30083pt>
+File: figures/_04__syn__cmpr__vary_tausi.pdf Graphic file (type pdf)
+<use figures/_04__syn__cmpr__vary_tausi.pdf>
+Package pdftex.def Info: figures/_04__syn__cmpr__vary_tausi.pdf  used on input 
+line 162.
+(pdftex.def)             Requested size: 489.38731pt x 270.30428pt.
+
+
+pdfTeX warning: pdflatex (file ./figures/_05__syn__error_vs_dt.pdf): PDF inclus
+ion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_05__syn__error_vs_dt.pdf, id=78, 976.31854pt x 603.20958pt>
+File: figures/_05__syn__error_vs_dt.pdf Graphic file (type pdf)
+<use figures/_05__syn__error_vs_dt.pdf>
+Package pdftex.def Info: figures/_05__syn__error_vs_dt.pdf  used on input line 
+167.
+(pdftex.def)             Requested size: 489.38731pt x 302.3588pt.
+
+LaTeX Warning: Reference `fig:syn__1jj__Isisat_vs_Isy' on page 5 undefined on i
+nput line 171.
+
+
+
+pdfTeX warning: pdflatex (file ./figures/_05__syn__1jj__Isisat_vs_Isy.pdf): PDF
+ inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_05__syn__1jj__Isisat_vs_Isy.pdf, id=79, 244.69417pt x 295.32532pt>
+File: figures/_05__syn__1jj__Isisat_vs_Isy.pdf Graphic file (type pdf)
+<use figures/_05__syn__1jj__Isisat_vs_Isy.pdf>
+Package pdftex.def Info: figures/_05__syn__1jj__Isisat_vs_Isy.pdf  used on inpu
+t line 173.
+(pdftex.def)             Requested size: 244.69386pt x 295.32909pt.
+
+
+pdfTeX warning: pdflatex (file ./figures/_03__syn__fq_peaks.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<_time_traces__varying_L_si.pdf, id=121, 3789.81863pt x 720.21875pt>
-File: _time_traces__varying_L_si.pdf Graphic file (type pdf)
-<use _time_traces__varying_L_si.pdf>
-Package pdftex.def Info: _time_traces__varying_L_si.pdf  used on input line 226
+<figures/_03__syn__fq_peaks.pdf, id=80, 489.38733pt x 258.92033pt>
+File: figures/_03__syn__fq_peaks.pdf Graphic file (type pdf)
+<use figures/_03__syn__fq_peaks.pdf>
+Package pdftex.def Info: figures/_03__syn__fq_peaks.pdf  used on input line 181
 .
-(pdftex.def)             Requested size: 489.38731pt x 92.99432pt.
-[5]
-Overfull \vbox (15.25507pt too high) has occurred while \output is active []
+(pdftex.def)             Requested size: 489.38731pt x 258.92363pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <./figures/_03__syn__1jj__circuit__rate_array.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/_03__syn__fq_delay_and_rate.pdf): PDF 
+inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_03__syn__fq_delay_and_rate.pdf, id=131, 244.69417pt x 304.96335pt>
+File: figures/_03__syn__fq_delay_and_rate.pdf Graphic file (type pdf)
+<use figures/_03__syn__fq_delay_and_rate.pdf>
+Package pdftex.def Info: figures/_03__syn__fq_delay_and_rate.pdf  used on input
+ line 186.
+(pdftex.def)             Requested size: 244.69386pt x 304.96722pt.
 
 
-[6 <./_I0_vs_Isy.pdf> <./_tau_rise_vs_Isy.pdf>] [7 <./_time_traces__varying_Isy
-.pdf>]
-
-LaTeX Warning: Text page 8 contains only floats.
-
-
-Overfull \vbox (3.59798pt too high) has occurred while \output is active []
-
-
-[8 <./_error_vs_Isy.pdf> <./_time_traces__varying_tau_si.pdf>] [9 <./_error_vs_
-tau_si.pdf> <./_time_traces__varying_L_si.pdf>] [10]
-<test_fig.png, id=388, 978.5358pt x 604.8999pt>
-File: test_fig.png Graphic file (type png)
-<use test_fig.png>
-Package pdftex.def Info: test_fig.png  used on input line 286.
-(pdftex.def)             Requested size: 489.38731pt x 302.52304pt.
- [11]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 306.
+pdfTeX warning: pdflatex (file ./figures/_06__point_neuron__nine_pixel_schemati
+c.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
+ed
+<figures/_06__point_neuron__nine_pixel_schematic.pdf, id=132, 2731.46474pt x 18
+23.82379pt>
+File: figures/_06__point_neuron__nine_pixel_schematic.pdf Graphic file (type pd
+f)
+<use figures/_06__point_neuron__nine_pixel_schematic.pdf>
+Package pdftex.def Info: figures/_06__point_neuron__nine_pixel_schematic.pdf  u
+sed on input line 204.
+(pdftex.def)             Requested size: 244.69386pt x 163.35783pt.
 
 
-pdfTeX warning: pdflatex (file ./_finding_gammas.pdf): PDF inclusion: found PDF
- version <1.7>, but at most version <1.5> allowed
-<_finding_gammas.pdf, id=393, 2537.48pt x 1557.82pt>
-File: _finding_gammas.pdf Graphic file (type pdf)
-<use _finding_gammas.pdf>
-Package pdftex.def Info: _finding_gammas.pdf  used on input line 309.
-(pdftex.def)             Requested size: 489.38731pt x 300.43394pt.
+pdfTeX warning: pdflatex (file ./figures/_13__arbor__classifier_schematic.pdf):
+ PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_13__arbor__classifier_schematic.pdf, id=133, 244.69417pt x 170.7168pt
+>
+File: figures/_13__arbor__classifier_schematic.pdf Graphic file (type pdf)
+<use figures/_13__arbor__classifier_schematic.pdf>
+Package pdftex.def Info: figures/_13__arbor__classifier_schematic.pdf  used on 
+input line 253.
+(pdftex.def)             Requested size: 244.69386pt x 170.71896pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \hbox (badness 2302) in paragraph at lines 257--257
+[][]\OT1/cmr/bx/n/14.4 Subthreshold Os-cil-la-tions and
+ []
 
-[12 <./test_fig.png>]
+(phenomenological_modeling.bbl
+Underfull \hbox (badness 1694) in paragraph at lines 4--8
+[]\OT1/cmr/m/n/10 J.M. Shain-line, S.M. Buck-ley, A.N. Mc-Caughan,
+ []
 
-pdfTeX warning: pdflatex (file ./_I0_vs_tau_si.pdf): PDF inclusion: found PDF v
-ersion <1.7>, but at most version <1.5> allowed
-<_I0_vs_tau_si.pdf, id=399, 1249.60846pt x 725.67511pt>
-File: _I0_vs_tau_si.pdf Graphic file (type pdf)
-<use _I0_vs_tau_si.pdf>
-Package pdftex.def Info: _I0_vs_tau_si.pdf  used on input line 324.
-(pdftex.def)             Requested size: 489.38731pt x 284.19695pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-(phenomenological_modeling.bbl [13 <./_finding_gammas.pdf>]) [14 <./_I0_vs_tau_
-si.pdf>] (phenomenological_modeling.aux)
+
+Underfull \hbox (badness 1694) in paragraph at lines 10--15
+[]\OT1/cmr/m/n/10 J.M. Shain-line, S.M. Buck-ley, A.N. Mc-Caughan,
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 37--40
+[]\OT1/cmr/m/n/10 M. Tin-kham.  \OT1/cmr/m/it/10 In-tro-duc-tion to Su-per-con-
+duc-tiv-ity\OT1/cmr/m/n/10 .
+ []
+
+) [6 <./figures/_04__syn__cmpr__vary_Isy.pdf>] [7 <./figures/_04__syn__cmpr__va
+ry_Lsi.pdf> <./figures/_04__syn__cmpr__vary_tausi.pdf>] [8 <./figures/_05__syn_
+_error_vs_dt.pdf>] [9
+
+
+ <./figures/_05__syn__1jj__Isisat_vs_Isy.pdf>] [10 <./figures/_03__syn__fq_peak
+s.pdf> <./figures/_03__syn__fq_delay_and_rate.pdf> <./figures/_06__point_neuron
+__nine_pixel_schematic.pdf>] [11
+
+ <./figures/_13__arbor__classifier_schematic.pdf>] (phenomenological_modeling.a
+ux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5308 strings out of 492484
- 81310 string characters out of 3122054
- 149561 words of memory out of 3000000
- 9531 multiletter control sequences out of 15000+200000
- 72030 words of font info for 60 fonts, out of 3000000 for 9000
+ 6430 strings out of 492452
+ 94344 string characters out of 3129807
+ 177908 words of memory out of 3000000
+ 10651 multiletter control sequences out of 15000+200000
+ 15177 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,11n,42p,2161b,366s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit
-.enc}{C:/Users/jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1
-.enc}{C:/Users/jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mat
-hsy.enc}{C:/Users/jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
-rm.enc}{C:/Users/jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
-athex.enc}<C:/Users/jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr12.pfb><C:/Users/jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmss10.pfb><C:/Users/jms4/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/jms4/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/jms4/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/lm/lmbx9.pfb><C:/Users/jms4/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Users/jms4/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/jms4/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Users/jms4/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi5.pfb><C:/Users/jms4/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/jms4/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Users/jms4
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/jm
-s4/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/
-jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/User
-s/jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Us
-ers/jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr5.pfb><C:/U
-sers/jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/
-Users/jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:
-/Users/jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C
-:/Users/jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><
-C:/Users/jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pf
-b><C:/Users/jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri9.
-pfb><C:/Users/jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss
-10.pfb><C:/Users/jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
-mss8.pfb><C:/Users/jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm
-/lmsy10.pfb><C:/Users/jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/lm/lmsy7.pfb><C:/Users/jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmsy8.pfb><C:/Users/jms4/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/symbols/msbm10.pfb>
-Output written on phenomenological_modeling.pdf (14 pages, 5931799 bytes).
+ 46i,6n,77p,2164b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\jeffr\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
+tcrm1000.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmti12.pfb>
+Output written on phenomenological_modeling.pdf (11 pages, 29116861 bytes).
 PDF statistics:
- 890 PDF objects out of 1000 (max. 8388607)
+ 329 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
