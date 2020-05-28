@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.11)  11 MAY 2020 16:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.11)  28 MAY 2020 11:29
 entering extended mode
 **./phenomenological_modeling.tex
 (phenomenological_modeling.tex
@@ -430,6 +430,9 @@ Package: booktabs 2019/10/08 v1.6180339 publication quality tables
 LaTeX Warning: Label `eq:leaky_integrator__SI_loop' multiply defined.
 
 
+LaTeX Warning: Label `eq:leaky_integrator__SI_loop' multiply defined.
+
+
 LaTeX Warning: Label `fig:syn__error_vs_dt' multiply defined.
 
 )
@@ -707,20 +710,17 @@ File: figures/_05__syn__1jj__Isisat_vs_Isy.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/_05__syn__1jj__Isisat_vs_Isy.pdf  used on inpu
 t line 173.
 (pdftex.def)             Requested size: 244.69386pt x 295.32909pt.
-
+[5 <./figures/_03__syn__1jj__circuit__rate_array.pdf>]
 
 pdfTeX warning: pdflatex (file ./figures/_03__syn__fq_peaks.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_03__syn__fq_peaks.pdf, id=80, 489.38733pt x 258.92033pt>
+<figures/_03__syn__fq_peaks.pdf, id=130, 489.38733pt x 258.92033pt>
 File: figures/_03__syn__fq_peaks.pdf Graphic file (type pdf)
 <use figures/_03__syn__fq_peaks.pdf>
-Package pdftex.def Info: figures/_03__syn__fq_peaks.pdf  used on input line 181
+Package pdftex.def Info: figures/_03__syn__fq_peaks.pdf  used on input line 185
 .
 (pdftex.def)             Requested size: 489.38731pt x 258.92363pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5 <./figures/_03__syn__1jj__circuit__rate_array.pdf>]
 
 pdfTeX warning: pdflatex (file ./figures/_03__syn__fq_delay_and_rate.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
@@ -728,7 +728,7 @@ inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 File: figures/_03__syn__fq_delay_and_rate.pdf Graphic file (type pdf)
 <use figures/_03__syn__fq_delay_and_rate.pdf>
 Package pdftex.def Info: figures/_03__syn__fq_delay_and_rate.pdf  used on input
- line 186.
+ line 190.
 (pdftex.def)             Requested size: 244.69386pt x 304.96722pt.
 
 
@@ -741,7 +741,7 @@ File: figures/_06__point_neuron__nine_pixel_schematic.pdf Graphic file (type pd
 f)
 <use figures/_06__point_neuron__nine_pixel_schematic.pdf>
 Package pdftex.def Info: figures/_06__point_neuron__nine_pixel_schematic.pdf  u
-sed on input line 204.
+sed on input line 208.
 (pdftex.def)             Requested size: 244.69386pt x 163.35783pt.
 
 
@@ -752,10 +752,10 @@ pdfTeX warning: pdflatex (file ./figures/_13__arbor__classifier_schematic.pdf):
 File: figures/_13__arbor__classifier_schematic.pdf Graphic file (type pdf)
 <use figures/_13__arbor__classifier_schematic.pdf>
 Package pdftex.def Info: figures/_13__arbor__classifier_schematic.pdf  used on 
-input line 253.
+input line 257.
 (pdftex.def)             Requested size: 244.69386pt x 170.71896pt.
 
-Underfull \hbox (badness 2302) in paragraph at lines 257--257
+Underfull \hbox (badness 2302) in paragraph at lines 261--261
 [][]\OT1/cmr/bx/n/14.4 Subthreshold Os-cil-la-tions and
  []
 
@@ -763,9 +763,6 @@ Underfull \hbox (badness 2302) in paragraph at lines 257--257
 Underfull \hbox (badness 1694) in paragraph at lines 4--8
 []\OT1/cmr/m/n/10 J.M. Shain-line, S.M. Buck-ley, A.N. Mc-Caughan,
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 1694) in paragraph at lines 10--15
@@ -799,11 +796,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  6430 strings out of 492452
  94344 string characters out of 3129807
- 177908 words of memory out of 3000000
+ 176908 words of memory out of 3000000
  10651 multiletter control sequences out of 15000+200000
  15177 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,6n,77p,2164b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,6n,77p,2164b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\jeffr\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
 tcrm1000.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
@@ -821,7 +818,7 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2
 /type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmti12.pfb>
-Output written on phenomenological_modeling.pdf (11 pages, 29116861 bytes).
+Output written on phenomenological_modeling.pdf (11 pages, 29118187 bytes).
 PDF statistics:
  329 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
