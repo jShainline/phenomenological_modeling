@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.11)  28 MAY 2020 11:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.11)  2 JUN 2020 16:29
 entering extended mode
 **./phenomenological_modeling.tex
 (phenomenological_modeling.tex
@@ -435,6 +435,10 @@ LaTeX Warning: Label `eq:leaky_integrator__SI_loop' multiply defined.
 
 LaTeX Warning: Label `fig:syn__error_vs_dt' multiply defined.
 
+
+LaTeX Warning: Label `fig:point_neuron__nine_pixel_schematic' multiply defined.
+
+
 )
 \openout1 = `phenomenological_modeling.aux'.
 
@@ -732,30 +736,95 @@ Package pdftex.def Info: figures/_03__syn__fq_delay_and_rate.pdf  used on input
 (pdftex.def)             Requested size: 244.69386pt x 304.96722pt.
 
 
+pdfTeX warning: pdflatex (file ./figures/_06__point_neuron__schematic__circuit.
+pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<figures/_06__point_neuron__schematic__circuit.pdf, id=132, 244.69417pt x 298.1
+7198pt>
+File: figures/_06__point_neuron__schematic__circuit.pdf Graphic file (type pdf)
+
+<use figures/_06__point_neuron__schematic__circuit.pdf>
+Package pdftex.def Info: figures/_06__point_neuron__schematic__circuit.pdf  use
+d on input line 205.
+(pdftex.def)             Requested size: 244.69386pt x 298.17578pt.
+
+
+pdfTeX warning: pdflatex (file ./figures/_06__point_neuron__one_pixel__rate_tra
+nsfer_function.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
+n <1.5> allowed
+<figures/_06__point_neuron__one_pixel__rate_transfer_function.pdf, id=133, 244.
+69417pt x 312.84778pt>
+File: figures/_06__point_neuron__one_pixel__rate_transfer_function.pdf Graphic 
+file (type pdf)
+<use figures/_06__point_neuron__one_pixel__rate_transfer_function.pdf>
+Package pdftex.def Info: figures/_06__point_neuron__one_pixel__rate_transfer_fu
+nction.pdf  used on input line 215.
+(pdftex.def)             Requested size: 244.69386pt x 312.85178pt.
+<figures/point_neuron__one_pixel__bursting.png, id=134, 978.5358pt x 604.8999pt
+>
+File: figures/point_neuron__one_pixel__bursting.png Graphic file (type png)
+<use figures/point_neuron__one_pixel__bursting.png>
+Package pdftex.def Info: figures/point_neuron__one_pixel__bursting.png  used on
+ input line 220.
+(pdftex.def)             Requested size: 244.69386pt x 151.26152pt.
+
+
 pdfTeX warning: pdflatex (file ./figures/_06__point_neuron__nine_pixel_schemati
 c.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<figures/_06__point_neuron__nine_pixel_schematic.pdf, id=132, 2731.46474pt x 18
+<figures/_06__point_neuron__nine_pixel_schematic.pdf, id=136, 2731.46474pt x 18
 23.82379pt>
 File: figures/_06__point_neuron__nine_pixel_schematic.pdf Graphic file (type pd
 f)
 <use figures/_06__point_neuron__nine_pixel_schematic.pdf>
 Package pdftex.def Info: figures/_06__point_neuron__nine_pixel_schematic.pdf  u
-sed on input line 208.
+sed on input line 227.
 (pdftex.def)             Requested size: 244.69386pt x 163.35783pt.
+<figures/point_neuron__nine_pixel__rate_receiving_loop_current.png, id=137, 978
+.5358pt x 604.8999pt>
+File: figures/point_neuron__nine_pixel__rate_receiving_loop_current.png Graphic
+ file (type png)
+<use figures/point_neuron__nine_pixel__rate_receiving_loop_current.png>
+Package pdftex.def Info: figures/point_neuron__nine_pixel__rate_receiving_loop_
+current.png  used on input line 232.
+(pdftex.def)             Requested size: 244.69386pt x 151.26152pt.
+<figures/point_neuron__nine_pixel__rate_vs_num_active.png, id=138, 978.5358pt x
+ 604.8999pt>
+File: figures/point_neuron__nine_pixel__rate_vs_num_active.png Graphic file (ty
+pe png)
+<use figures/point_neuron__nine_pixel__rate_vs_num_active.png>
+Package pdftex.def Info: figures/point_neuron__nine_pixel__rate_vs_num_active.p
+ng  used on input line 237.
+(pdftex.def)             Requested size: 244.69386pt x 151.26152pt.
+<figures/point_neuron__nine_pixel__burst_receiving_loop_current.png, id=139, 97
+8.5358pt x 604.8999pt>
+File: figures/point_neuron__nine_pixel__burst_receiving_loop_current.png Graphi
+c file (type png)
+<use figures/point_neuron__nine_pixel__burst_receiving_loop_current.png>
+Package pdftex.def Info: figures/point_neuron__nine_pixel__burst_receiving_loop
+_current.png  used on input line 242.
+(pdftex.def)             Requested size: 244.69386pt x 151.26152pt.
+<figures/point_neuron__nine_pixel__burst_vs_num_active.png, id=140, 978.5358pt 
+x 604.8999pt>
+File: figures/point_neuron__nine_pixel__burst_vs_num_active.png Graphic file (t
+ype png)
+<use figures/point_neuron__nine_pixel__burst_vs_num_active.png>
+Package pdftex.def Info: figures/point_neuron__nine_pixel__burst_vs_num_active.
+png  used on input line 247.
+(pdftex.def)             Requested size: 244.69386pt x 151.26152pt.
 
 
 pdfTeX warning: pdflatex (file ./figures/_13__arbor__classifier_schematic.pdf):
  PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_13__arbor__classifier_schematic.pdf, id=133, 244.69417pt x 170.7168pt
+<figures/_13__arbor__classifier_schematic.pdf, id=141, 244.69417pt x 170.7168pt
 >
 File: figures/_13__arbor__classifier_schematic.pdf Graphic file (type pdf)
 <use figures/_13__arbor__classifier_schematic.pdf>
 Package pdftex.def Info: figures/_13__arbor__classifier_schematic.pdf  used on 
-input line 257.
+input line 293.
 (pdftex.def)             Requested size: 244.69386pt x 170.71896pt.
 
-Underfull \hbox (badness 2302) in paragraph at lines 261--261
+Underfull \hbox (badness 2302) in paragraph at lines 297--297
 [][]\OT1/cmr/bx/n/14.4 Subthreshold Os-cil-la-tions and
  []
 
@@ -782,10 +851,16 @@ _error_vs_dt.pdf>] [9
 
  <./figures/_05__syn__1jj__Isisat_vs_Isy.pdf>] [10 <./figures/_03__syn__fq_peak
 s.pdf> <./figures/_03__syn__fq_delay_and_rate.pdf> <./figures/_06__point_neuron
-__nine_pixel_schematic.pdf>] [11
+__schematic__circuit.pdf>] [11 <./figures/_06__point_neuron__one_pixel__rate_tr
+ansfer_function.pdf> <./figures/point_neuron__one_pixel__bursting.png> <./figur
+es/_06__point_neuron__nine_pixel_schematic.pdf> <./figures/point_neuron__nine_p
+ixel__rate_receiving_loop_current.png> <./figures/point_neuron__nine_pixel__rat
+e_vs_num_active.png>] [12
 
- <./figures/_13__arbor__classifier_schematic.pdf>] (phenomenological_modeling.a
-ux)
+ <./figures/point_neuron__nine_pixel__burst_receiving_loop_current.png> <./figu
+res/point_neuron__nine_pixel__burst_vs_num_active.png> <./figures/_13__arbor__c
+lassifier_schematic.pdf>]
+(phenomenological_modeling.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -794,10 +869,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6430 strings out of 492452
- 94344 string characters out of 3129807
- 176908 words of memory out of 3000000
- 10651 multiletter control sequences out of 15000+200000
+ 6488 strings out of 492452
+ 97657 string characters out of 3129807
+ 176988 words of memory out of 3000000
+ 10701 multiletter control sequences out of 15000+200000
  15177 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,6n,77p,2164b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -818,9 +893,9 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2
 /type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmti12.pfb>
-Output written on phenomenological_modeling.pdf (11 pages, 29118187 bytes).
+Output written on phenomenological_modeling.pdf (12 pages, 32576503 bytes).
 PDF statistics:
- 329 PDF objects out of 1000 (max. 8388607)
+ 400 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

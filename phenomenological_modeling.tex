@@ -199,20 +199,56 @@ Many models of neurons assume the the neuron cell body sums the inputs from all 
 %I^{nr}(t) = \sum_j m_j I_j^{si}(t).
 %\end{equation}
 
+\subsection{\label{sec:single_synapse}One Input Synapse}
+
+\begin{figure}[htb]
+\includegraphics[width=8.6cm]{figures/_06__point_neuron__schematic__circuit.pdf}
+\captionof{figure}{\label{fig:point_neuron__nine_pixel_schematic}One-input synapse point neuron (a) Schematic. (b) Circuit diagram.}
+\end{figure}
+
 \begin{equation}
 \label{eq:I_nr__with_refraction}
 I_i^{nr}(t) = m_i^{rs}I^{rs}(t)+\sum_j m_{ij} I_j^{si}(t).
 \end{equation}
 
 \begin{figure}[htb]
+\includegraphics[width=8.6cm]{figures/_06__point_neuron__one_pixel__rate_transfer_function.pdf}
+\captionof{figure}{\label{fig:point_neuron__one_pixel__rate_transfer}One pixel rate transfer function. (a) No timing jitter on input. (b) 25ns timing jitter on input.}
+\end{figure}
+
+\begin{figure}[htb]
+\includegraphics[width=8.6cm]{figures/point_neuron__one_pixel__bursting.png}
+\captionof{figure}{\label{fig:point_neuron__one_pixel__bursting}One pixel bursting.}
+\end{figure}
+
+\subsection{\label{sec:nine_synapses}Nine Input Synapses}
+
+\begin{figure}[htb]
 \includegraphics[width=8.6cm]{figures/_06__point_neuron__nine_pixel_schematic.pdf}
 \captionof{figure}{\label{fig:point_neuron__nine_pixel_schematic}Nine pixel schematic.}
 \end{figure}
- 
-%\begin{figure}[h!]
-%\includegraphics[width=8.6cm]{figures/_07__point_neuron__transfer_functions.pdf}
-%\captionof{figure}{\label{fig:point_neuron__transfer_functions}Point neuron transfer functions. (a) Rate. (b) Burst.}
-%\end{figure}
+
+\begin{figure}[htb]
+\includegraphics[width=8.6cm]{figures/point_neuron__nine_pixel__rate_receiving_loop_current.png}
+\captionof{figure}{\label{fig:point_neuron__nine_pixel__rate_receiving_loop_current}Nine pixel receiving loop current, rate mode.}
+\end{figure}
+
+\begin{figure}[htb]
+\includegraphics[width=8.6cm]{figures/point_neuron__nine_pixel__rate_vs_num_active.png}
+\captionof{figure}{\label{fig:point_neuron__nine_pixel__rate_vs_num_active}Nine pixel output rate vs number of active synapses.}
+\end{figure}
+
+\begin{figure}[htb]
+\includegraphics[width=8.6cm]{figures/point_neuron__nine_pixel__burst_receiving_loop_current.png}
+\captionof{figure}{\label{fig:point_neuron__nine_pixel__burst_receiving_loop_current}Nine pixel receiving loop current, burst mode.}
+\end{figure}
+
+\begin{figure}[htb]
+\includegraphics[width=8.6cm]{figures/point_neuron__nine_pixel__burst_vs_num_active.png}
+\captionof{figure}{\label{fig:point_neuron__nine_pixel__burst_vs_num_active}Nine pixel output burst vs number of active synapses.}
+\end{figure}
+
+
 
 \section{\label{sec:dendrites}Dendrites as Leaky Integrators}
 
