@@ -800,4 +800,102 @@ ng  used on input line 237.
 8.5358pt x 604.8999pt>
 File: figures/point_neuron__nine_pixel__burst_receiving_loop_current.png Graphi
 c file (type png)
-<use figures/point
+<use figures/point_neuron__nine_pixel__burst_receiving_loop_current.png>
+Package pdftex.def Info: figures/point_neuron__nine_pixel__burst_receiving_loop
+_current.png  used on input line 242.
+(pdftex.def)             Requested size: 244.69386pt x 151.26152pt.
+<figures/point_neuron__nine_pixel__burst_vs_num_active.png, id=140, 978.5358pt 
+x 604.8999pt>
+File: figures/point_neuron__nine_pixel__burst_vs_num_active.png Graphic file (t
+ype png)
+<use figures/point_neuron__nine_pixel__burst_vs_num_active.png>
+Package pdftex.def Info: figures/point_neuron__nine_pixel__burst_vs_num_active.
+png  used on input line 247.
+(pdftex.def)             Requested size: 244.69386pt x 151.26152pt.
+
+
+pdfTeX warning: pdflatex (file ./figures/_13__arbor__classifier_schematic.pdf):
+ PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_13__arbor__classifier_schematic.pdf, id=141, 244.69417pt x 170.7168pt
+>
+File: figures/_13__arbor__classifier_schematic.pdf Graphic file (type pdf)
+<use figures/_13__arbor__classifier_schematic.pdf>
+Package pdftex.def Info: figures/_13__arbor__classifier_schematic.pdf  used on 
+input line 293.
+(pdftex.def)             Requested size: 244.69386pt x 170.71896pt.
+
+Underfull \hbox (badness 2302) in paragraph at lines 297--297
+[][]\OT1/cmr/bx/n/14.4 Subthreshold Os-cil-la-tions and
+ []
+
+(phenomenological_modeling.bbl
+Underfull \hbox (badness 1694) in paragraph at lines 4--8
+[]\OT1/cmr/m/n/10 J.M. Shain-line, S.M. Buck-ley, A.N. Mc-Caughan,
+ []
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 10--15
+[]\OT1/cmr/m/n/10 J.M. Shain-line, S.M. Buck-ley, A.N. Mc-Caughan,
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 37--40
+[]\OT1/cmr/m/n/10 M. Tin-kham.  \OT1/cmr/m/it/10 In-tro-duc-tion to Su-per-con-
+duc-tiv-ity\OT1/cmr/m/n/10 .
+ []
+
+) [6 <./figures/_04__syn__cmpr__vary_Isy.pdf>] [7 <./figures/_04__syn__cmpr__va
+ry_Lsi.pdf> <./figures/_04__syn__cmpr__vary_tausi.pdf>] [8 <./figures/_05__syn_
+_error_vs_dt.pdf>] [9
+
+
+ <./figures/_05__syn__1jj__Isisat_vs_Isy.pdf>] [10 <./figures/_03__syn__fq_peak
+s.pdf> <./figures/_03__syn__fq_delay_and_rate.pdf> <./figures/_06__point_neuron
+__schematic__circuit.pdf>] [11 <./figures/_06__point_neuron__one_pixel__rate_tr
+ansfer_function.pdf> <./figures/point_neuron__one_pixel__bursting.png> <./figur
+es/_06__point_neuron__nine_pixel_schematic.pdf> <./figures/point_neuron__nine_p
+ixel__rate_receiving_loop_current.png> <./figures/point_neuron__nine_pixel__rat
+e_vs_num_active.png>] [12
+
+ <./figures/point_neuron__nine_pixel__burst_receiving_loop_current.png> <./figu
+res/point_neuron__nine_pixel__burst_vs_num_active.png> <./figures/_13__arbor__c
+lassifier_schematic.pdf>]
+(phenomenological_modeling.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6488 strings out of 492452
+ 97657 string characters out of 3129807
+ 176988 words of memory out of 3000000
+ 10701 multiletter control sequences out of 15000+200000
+ 15177 words of font info for 56 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 46i,6n,77p,2164b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\jeffr\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
+tcrm1000.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmti12.pfb>
+Output written on phenomenological_modeling.pdf (12 pages, 32576723 bytes).
+PDF statistics:
+ 400 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+
