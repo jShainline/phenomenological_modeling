@@ -1,12 +1,12 @@
-\contentsline {section}{\numberline {1}Introduction}{1}% 
-\contentsline {section}{\numberline {2}Leaky Integrators}{2}% 
-\contentsline {section}{\numberline {3}Overview of Loop Neurons}{2}% 
-\contentsline {section}{\numberline {4}Synapses as Leaky Integrators}{3}% 
-\contentsline {subsection}{\numberline {4.1}Synapses with one Josephson Junction}{4}% 
-\contentsline {subsection}{\numberline {4.2}Synapses with Two or Three Josephson Junctions}{6}% 
-\contentsline {section}{\numberline {5}Point Neurons}{6}% 
-\contentsline {subsection}{\numberline {5.1}One Input Synapse}{6}% 
-\contentsline {subsection}{\numberline {5.2}Nine Input Synapses}{6}% 
-\contentsline {section}{\numberline {6}Dendrites as Leaky Integrators}{6}% 
-\contentsline {section}{\numberline {7}Neurons with a Dendritic Arbor}{6}% 
-\contentsline {section}{\numberline {8}Subthreshold Oscillations and Synchronization}{6}% 
+\contentsline {section}{\numberline {1}Introduction}{1}%
+\contentsline {section}{\numberline {2}Leaky Integrators}{2}%
+\contentsline {section}{\numberline {3}Overview of Loop Neurons}{2}%
+\contentsline {section}{\numberline {4}Synapses as Leaky Integrators}{3}%
+\contentsline {subsection}{\numberline {4.1}Synapses with one Josephson Junction}{4}%
+\contentsline {subsection}{\numberline {4.2}Synapses with Two or Three Josephson Junctions}{6}%
+\contentsline {section}{\numberline {5}Point Neurons}{6}%
+\contentsline {subsection}{\numberline {5.1}One Input Synapse}{6}%
+\contentsline {subsection}{\numberline {5.2}Nine Input Synapses}{6}%
+\contentsline {section}{\numberline {6}Dendrites as Leaky Integrators}{6}%
+\contentsline {section}{\numberline {7}Neurons with a Dendritic Arbor}{6}%
+\contentsline {section}{\numberline {8}Subthreshold Oscillations and Synchronization}{6}%

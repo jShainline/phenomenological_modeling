@@ -253,9 +253,19 @@ I_i^{nr}(t) = m_i^{rs}I^{rs}(t)+\sum_j m_{ij} I_j^{si}(t).
 \section{\label{sec:dendrites}Dendrites as Leaky Integrators}
 
 \begin{equation}
-\label{eq:leaky_integrator__SI_loop}
-\frac{dI^{\mathrm{di}}(t)}{dt} = r^{\mathrm{fq}}\left[\sum_j I^{\mathrm{si}}_{j}(t),I^{\mathrm{di}}(t)\right] I^{\mathrm{fq}}-\frac{I^{\mathrm{di}}(t)}{\tau^{di}}.
+\label{eq:leaky_integrator__DI_loop}
+\frac{dI^{\mathrm{di}}(t)}{dt} = I^{\mathrm{fq}}\, r^{\mathrm{fq}}\left[ \Phi^{\mathrm{dr}}(t),I^{\mathrm{di}}(t)\right] -\frac{I^{\mathrm{di}}(t)}{\tau^{di}}.
 \end{equation}
+
+\begin{equation}
+\label{eq:dendrite__flux_applied}
+\Phi^{\mathrm{dr}}(t) = \sum_i M^{\mathrm{si}\rightarrow\mathrm{dr}}_i\,I^{\mathrm{si}}_i
+\end{equation}
+
+%\begin{equation}
+%\label{eq:leaky_integrator__SI_loop}
+%\frac{dI^{\mathrm{di}}(t)}{dt} = r^{\mathrm{fq}}\left[\sum_j I^{\mathrm{si}}_{j}(t),I^{\mathrm{di}}(t)\right] I^{\mathrm{fq}}-\frac{I^{\mathrm{di}}(t)}{\tau^{di}}.
+%\end{equation}
 
 %\begin{equation}
 %\label{eq:I_dr}
