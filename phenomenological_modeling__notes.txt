@@ -1,64 +1,6 @@
-\documentclass[twocolumn]{article}
 
-\usepackage{geometry}
-\geometry{textwidth = 18cm,textheight = 24cm}
-
-\usepackage{cite}
-\usepackage{caption}
-\usepackage{graphicx}
-\usepackage{amsmath}
-\usepackage{amssymb}
-%\usepackage{braket}
-\usepackage{textcomp}
-%\usepackage{lmodern}
-\usepackage{authblk}
-\usepackage{datetime}
-\usepackage{gensymb}
-\usepackage{wrapfig}
-%\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
-\usepackage{booktabs}
-%\usepackage{appendix}
-
-%\usepackage[switch,columnwise]{lineno}
-%\linenumbers
-
-\newcommand{\onlinecite}[1]{\hspace{-1 ex} \nocite{#1}\citenum{#1}} 
-
-\let\OLDthebibliography\thebibliography
-\renewcommand\thebibliography[1]{
-  \OLDthebibliography{#1}
-  \setlength{\parskip}{0pt}
-  \setlength{\itemsep}{0pt plus 0.3ex}
-}
-  
-\title{Modeling Loop Neurons as Systems of Leaky Integrators}
-\author[1]{\Large{NIST Physics and Hardware for Intelligence Project}
-\\
-\textit{\large{National Institute of Standards and Technology}}
-\\
-\vspace{-0.2em}
-\textit{\large{325 Broadway, Boulder, CO, USA, 80305}}
-\\
-\vspace{-0.2em}
-\textit{\large{jeffrey.shainline@nist.gov}}
-}
-\date{\today}%\today
-
-\begin{document}
-
-\twocolumn[
-  \begin{@twocolumnfalse}
-    \maketitle
-    \begin{abstract}
 At present, this document is a rough outline of the paper we shall write. After an introduction, we explore how superconducting optoelectronic synapses can be modeled as leaky integrators. We compare and contrast synapses with one, two, and three JJs. Then we show how these can be coupled to neurons in what is considered a point neuron: all synapses connect directly to the cell body without dendrites. We show how a point neuron can be used to represent the overall brightness of a nine-pixel image. The leaky integrator model of synapses and point neurons is compared to spice models to quantify accuracy. It is found that capturing the SPD response is currently limiting accuracy. Next we discuss dendrites and show that they can also be modeled as leaky integrators with a treatment that is nearly identical to synapses. We again compare to spice to quantify accuracy. We demonstrate how neurons with a dendritic arbor can be used to represent additional information in nine-pixel images such as vertical or horizontal bars, motion, and character classification. Finally we consider the ability of superconducting optoelectronic loop neurons to achieve subthreshold oscillations. By extending the synaptic or dendritic leak to complex values, the same model can be used to represent neuronal components that oscillate as they decay. Physically oscillation is accomplished with the inclusion of a capacitor along with the inductor and resistor in a synaptic or dendritic integration loop. 
-    \vspace{3em}
-    \end{abstract}
-  \end{@twocolumnfalse}
-]
 
-\setcounter{tocdepth}{1}
-\setcounter{secnumdepth}{4}
-\tableofcontents
 
 \section{\label{sec:introduction}Introduction}
 The computations performed by superconducting optoelectronic loop neurons are accomplished by circuits comprising single-photon detectors, Josephson junctions, and mutual inductors. These devices are most commonly modeled with SPICE circuit simulations carried out on a picosecond time scale to accurately capture the dynamics of the Josephson junctions. Simulation of networks of large numbers of these neurons become computationally intensive. From the perspective of the neural system, the picosecond dynamics of the JJs are not important, and one would prefer to treat each synapse, dendrite, and neuron as an input-output device with a model that accurately captures the circuit dynamics on the nanosecond to microsecond time scales while not explicitly treating the picosecond behavior of the underlying circuit elements.
@@ -114,18 +56,9 @@ The objective of this section is to express the output of a synapse as a functio
 
 \subsection{Synapses with one Josephson Junction}
 
-This description of the operation of the circuit is based on well-known properties of Josephson junctions within the formalism of the resistively and capacitively shunted junction (RCSJ) model \cite{vatu1998,ka1999,ti1996}. The relevant behavior derives from the fact that a JJ will produce a voltage fluxon after a time $t_{\mathrm{fq}}$ determined by the relation
-\begin{equation}
-\label{eq:jj__fluxon_production}
-\int_0^{t_{\mathrm{fq}}}V(t)dt = \Phi_0 \rightarrow r^{\mathrm{fq}} = 1/t^{\mathrm{fq}}.
-\end{equation}
+
 The voltage $V(t)$ across the junction is related to the current bias by a relation of the form
 
-\begin{equation}
-\label{eq:jj__current_voltage}
-V^{\mathrm{sf}}(I^{\mathrm{sf}}) = V_0\left[ \left( \frac{I^{\mathrm{sf}}}{I_c-I_r} \right)^{\mu_1} - 1 \right]^{\mu_2}.
-\end{equation} 
-where the values $\mu_1$, $\mu_2$, and $V_0$ depend on the specific parameters of the shunt resistance and capacitance in the RCSJ model. For the junctions considered here, $I_r = 1.1768$\,\textmu A is the reset current associated with hysteresis on $J_{\mathrm{sf}}$ due to the fact that $\beta_c = 0.95 > 0$. $\mu_1 = 3.464271$, $\mu_2 = 0.306768$, and $V_0 = 233.966$\,\textmu V. From Eqs.\,\ref{eq:jj__fluxon_production} and \ref{eq:jj__current_voltage} we can obtain $r^{\mathrm{fq}}$. In the case where $I^{\mathrm{sf}}$ is slowly varying compared to $t^fq$, $ r^{\mathrm{fq}} = V^{\mathrm{sf}}/\Phi_0$. 
 
 %The voltage across each JJ in the circuit is evolving in time as the current biases change, and when any junction produces a fluxon, the adjacent junctions experience a new bias condition due to the current of that fluxon. The temporal envelopes of these current pulses are on the picosecond scale. Based on Eqs.\,\ref{eq:jj__fluxon_production} and \ref{eq:jj__current_voltage} one may attempt to construct an analytical model of the rate of fluxon generation. However, accurate determination of the fluxon generation rates depends on accurate determination of the currents $I(t)$ which requires consideration of picosecond timescales. 
 
@@ -134,11 +67,7 @@ where the values $\mu_1$, $\mu_2$, and $V_0$ depend on the specific parameters o
 \captionof{figure}{\label{fig:syn__circuit__rate_array}(a) Circuit diagram of synapse. (b) Also include fluxon generation detail. (c) Rate array.}
 \end{figure*}
 We do not wish to consider such timescales nor fluxon-generation dynamics when simulating large networks with many synapses. But these circuit considerations provide sufficient insight to postulate a form for a leaky integrator ODE that will accurately model the input-output relationship of a synapse on longer timescales. Consider a synaptic model of the form 
-\begin{equation}
-\label{eq:leaky_integrator__SI_loop}
-\frac{dI^{\mathrm{si}}(t)}{dt} = r^{\mathrm{fq}}\left[I^{\mathrm{sf}}(t),I^{\mathrm{si}}(t)\right] I^{\mathrm{fq}}-\frac{I^{\mathrm{si}}(t)}{\tau^{si}}.
-\end{equation}
-where $r^{\mathrm{fq}}\left[I^{\mathrm{sf}},I^{\mathrm{si}}\right]$ represents the rate at which fluxons are added to the SI loop as a function of the total current across the synaptic firing junction, $I^{\mathrm{sf}}$, as well the current circulating in the SI loop, $I^{\mathrm{si}}$. $I^{\mathrm{fq}} = \Phi_0/L^{\mathrm{si}}$ is the current added to the SI loop with each fluxon. The flux-induced current $I^{\mathrm{si}}$ circulates in the SI loop in a manner that counters the bias to $J^{\mathrm{si}}$. It is this counter-biasing that causes the SI loop to saturate as a function of $I^{\mathrm{si}}$. When $I^{\mathrm{si}}$ becomes sufficiently large, the fluxon generated by $J^{\mathrm{jtl}}$ does not provide enough current to drive $J^{\mathrm{si}}$ above $I_c$, and the stored flux in the SI loop must decay before subsequent synapse events can add to the integrated signal.
+
 
 Based on these considerations, we expect that $r^{\mathrm{fq}}(I^{\mathrm{sf}},I^{\mathrm{si}})$ will grow monotonically with $I^{\mathrm{sf}}$, and decrease monotonically with $I^{\mathrm{sy}}$. We are treating $r^{\mathrm{fq}}$ as a continuous variable, although flux quanta are produced discretely. This approximation is valid for two reasons. First, typical SI loops can store the signals from hundreds to tens of thousands of fluxons, so the current added to the SI loop as a stream of fluxons enters grows in very small increments. Second, the highest firing frequencies of loop neurons are around 100\,MHz, so the dynamics of $I^{\mathrm{si}}$ are only relevant on time scales of 1\,ns and longer. Because fluxons are generated at rates in excess of 10\,GHz when $J^{\mathrm{sf}}$ is driven above $I_c$, treating $r^{fq}$ as a continuous function on nanosecond timescales is acceptable.
 

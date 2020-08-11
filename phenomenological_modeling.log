@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.4)  10 AUG 2020 17:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.4)  11 AUG 2020 17:02
 entering extended mode
 **./phenomenological_modeling.tex
 (phenomenological_modeling.tex
@@ -363,12 +363,12 @@ erthousand on input line 47.
 LaTeX Info: Redefining \ohm on input line 47.
 Package gensymb Info: Using \textohm for \ohm on input line 47.
 Package gensymb Info: Using \textmu for \micro on input line 47.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
 
  (C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
 
 
 (C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -385,7 +385,7 @@ found PDF version <1.7>, but at most version <1.5> allowed
 <figures/_fig__schematics.pdf, id=1, 244.69417pt x 341.4326pt>
 File: figures/_fig__schematics.pdf Graphic file (type pdf)
 <use figures/_fig__schematics.pdf>
-Package pdftex.def Info: figures/_fig__schematics.pdf  used on input line 66.
+Package pdftex.def Info: figures/_fig__schematics.pdf  used on input line 68.
 (pdftex.def)             Requested size: 244.69386pt x 341.43697pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -393,53 +393,56 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [1{C:/Users/jeffr/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 
- <./figures/_fig__schematics.pdf>]
+]
 
 pdfTeX warning: pdflatex (file ./figures/_fig__synapses__circuits_responses.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_fig__synapses__circuits_responses.pdf, id=43, 489.38733pt x 493.64023
+<figures/_fig__synapses__circuits_responses.pdf, id=21, 489.38733pt x 408.46501
 pt>
 File: figures/_fig__synapses__circuits_responses.pdf Graphic file (type pdf)
 <use figures/_fig__synapses__circuits_responses.pdf>
 Package pdftex.def Info: figures/_fig__synapses__circuits_responses.pdf  used o
-n input line 106.
-(pdftex.def)             Requested size: 244.69386pt x 246.8195pt.
-
-
-pdfTeX warning: pdflatex (file ./figures/_fig__synapses__comparison.pdf): PDF i
-nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_fig__synapses__comparison.pdf, id=44, 489.38733pt x 262.66833pt>
-File: figures/_fig__synapses__comparison.pdf Graphic file (type pdf)
-<use figures/_fig__synapses__comparison.pdf>
-Package pdftex.def Info: figures/_fig__synapses__comparison.pdf  used on input 
-line 111.
-(pdftex.def)             Requested size: 244.69386pt x 131.33385pt.
+n input line 108.
+(pdftex.def)             Requested size: 489.38731pt x 408.47025pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+pdfTeX warning: pdflatex (file ./figures/_fig__synapses__comparison.pdf): PDF i
+nclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_fig__synapses__comparison.pdf, id=22, 489.38733pt x 262.66833pt>
+File: figures/_fig__synapses__comparison.pdf Graphic file (type pdf)
+<use figures/_fig__synapses__comparison.pdf>
+Package pdftex.def Info: figures/_fig__synapses__comparison.pdf  used on input 
+line 113.
+(pdftex.def)             Requested size: 489.38731pt x 262.67169pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
 pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__circuits_responses.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_fig__dendrites__circuits_responses.pdf, id=45, 380.59592pt x 280.9626
+<figures/_fig__dendrites__circuits_responses.pdf, id=23, 380.59592pt x 280.9626
 6pt>
 File: figures/_fig__dendrites__circuits_responses.pdf Graphic file (type pdf)
 <use figures/_fig__dendrites__circuits_responses.pdf>
 Package pdftex.def Info: figures/_fig__dendrites__circuits_responses.pdf  used 
-on input line 130.
-(pdftex.def)             Requested size: 244.69386pt x 180.63432pt.
+on input line 132.
+(pdftex.def)             Requested size: 489.38731pt x 361.27295pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 
 pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__comparison.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_fig__dendrites__comparison.pdf, id=46, 380.59592pt x 280.96266pt>
+<figures/_fig__dendrites__comparison.pdf, id=24, 380.59592pt x 280.96266pt>
 File: figures/_fig__dendrites__comparison.pdf Graphic file (type pdf)
 <use figures/_fig__dendrites__comparison.pdf>
 Package pdftex.def Info: figures/_fig__dendrites__comparison.pdf  used on input
- line 135.
+ line 137.
 (pdftex.def)             Requested size: 244.69386pt x 180.63432pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -449,65 +452,79 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 pdfTeX warning: pdflatex (file ./figures/_fig__point_neuron__schematic__circuit
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<figures/_fig__point_neuron__schematic__circuit.pdf, id=47, 244.69417pt x 298.1
+<figures/_fig__point_neuron__schematic__circuit.pdf, id=25, 244.69417pt x 298.1
 7198pt>
 File: figures/_fig__point_neuron__schematic__circuit.pdf Graphic file (type pdf
 )
 <use figures/_fig__point_neuron__schematic__circuit.pdf>
 Package pdftex.def Info: figures/_fig__point_neuron__schematic__circuit.pdf  us
-ed on input line 143.
+ed on input line 145.
 (pdftex.def)             Requested size: 244.69386pt x 298.17578pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(phenomenological_modeling.bbl [2 <./figures/_fig__synapses__circuits_responses
-.pdf> <./figures/_fig__synapses__comparison.pdf> <./figures/_fig__dendrites__ci
-rcuits_responses.pdf
 
-pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__circuits_responses.pd
-f): PDF inclusion: multiple pdfs with page group included in a single page
->]
+
+pdfTeX warning: pdflatex (file ./figures/_fig__point_neuron__one_synapse.pdf): 
+PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_fig__point_neuron__one_synapse.pdf, id=26, 244.69417pt x 239.57605pt>
+
+File: figures/_fig__point_neuron__one_synapse.pdf Graphic file (type pdf)
+<use figures/_fig__point_neuron__one_synapse.pdf>
+Package pdftex.def Info: figures/_fig__point_neuron__one_synapse.pdf  used on i
+nput line 150.
+(pdftex.def)             Requested size: 244.69386pt x 239.5791pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(phenomenological_modeling.bbl
 Underfull \hbox (badness 1838) in paragraph at lines 14--17
 []\OT1/cmr/m/n/10 M. Tin-kham.  \OT1/cmr/m/it/10 In-tro-duc-tion to Su-per-con-
 duc-tiv-ity\OT1/cmr/m/n/10 .
  []
 
-) [3
+) [2 <./figures/_fig__schematics.pdf>] [3 <./figures/_fig__synapses__circuits_r
+esponses.pdf>] [4 <./figures/_fig__synapses__comparison.pdf> <./figures/_fig__d
+endrites__circuits_responses.pdf>] [5 <./figures/_fig__dendrites__comparison.pd
+f> <./figures/_fig__point_neuron__schematic__circuit.pdf> <./figures/_fig__poin
+t_neuron__one_synapse.pdf
 
- <./figures/_fig__dendrites__comparison.pdf> <./figures/_fig__point_neuron__sch
-ematic__circuit.pdf>] (phenomenological_modeling.aux) ) 
+pdfTeX warning: pdflatex (file ./figures/_fig__point_neuron__one_synapse.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>] (phenomenological_modeling.aux) ) 
 Here is how much of TeX's memory you used:
- 5616 strings out of 481225
- 84501 string characters out of 2906175
- 341344 words of memory out of 3000000
- 21095 multiletter control sequences out of 15000+200000
+ 5623 strings out of 481225
+ 84825 string characters out of 2906175
+ 341352 words of memory out of 3000000
+ 21101 multiletter control sequences out of 15000+200000
  546318 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,11n,77p,1030b,329s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\jeffr\AppData
-\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/jeffr/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users
-/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-bx9.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmex10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmmi10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmmi5.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/jeffr/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jeffr/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jeffr/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jef
-fr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Us
-ers/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb
-><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mr8.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmsy7.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmti10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on phenomenological_modeling.pdf (3 pages, 5183902 bytes).
+ 44i,11n,77p,1800b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\jeffr\AppData\Local\MiKTeX\fonts
+/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/jeffr/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/jeffr/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/jeffr/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/j
+effr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
+:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
+10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmmi5.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jeffr/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jeffr/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/jeffr/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/jeffr/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/j
+effr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/
+Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmsy7.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmti10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmti12.pfb>
+Output written on phenomenological_modeling.pdf (5 pages, 8175374 bytes).
 PDF statistics:
- 620 PDF objects out of 1000 (max. 8388607)
+ 1251 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
