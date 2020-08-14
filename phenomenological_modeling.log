@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.4)  11 AUG 2020 19:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.4)  14 AUG 2020 16:47
 entering extended mode
 **./phenomenological_modeling.tex
 (phenomenological_modeling.tex
@@ -390,90 +390,388 @@ Package pdftex.def Info: figures/_fig__schematics.pdf  used on input line 68.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[1{C:/Users/jeffr/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+
+Underfull \vbox (badness 3019) has occurred while \output is active []
+
+ [1{C:/Users/jeffr/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 
 ]
 
-pdfTeX warning: pdflatex (file ./figures/_fig__synapses__circuits_responses.pdf
-): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_fig__synapses__circuits_responses.pdf, id=21, 489.38733pt x 408.46501
-pt>
-File: figures/_fig__synapses__circuits_responses.pdf Graphic file (type pdf)
-<use figures/_fig__synapses__circuits_responses.pdf>
-Package pdftex.def Info: figures/_fig__synapses__circuits_responses.pdf  used o
-n input line 108.
+pdfTeX warning: pdflatex (file ./figures/_fig__synapses__circuits__responses.pd
+f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_fig__synapses__circuits__responses.pdf, id=21, 489.38733pt x 408.4650
+1pt>
+File: figures/_fig__synapses__circuits__responses.pdf Graphic file (type pdf)
+<use figures/_fig__synapses__circuits__responses.pdf>
+Package pdftex.def Info: figures/_fig__synapses__circuits__responses.pdf  used 
+on input line 113.
 (pdftex.def)             Requested size: 489.38731pt x 408.47025pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-pdfTeX warning: pdflatex (file ./figures/_fig__synapses__comparison.pdf): PDF i
-nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_fig__synapses__comparison.pdf, id=22, 489.38733pt x 262.66833pt>
-File: figures/_fig__synapses__comparison.pdf Graphic file (type pdf)
-<use figures/_fig__synapses__comparison.pdf>
-Package pdftex.def Info: figures/_fig__synapses__comparison.pdf  used on input 
-line 113.
-(pdftex.def)             Requested size: 489.38731pt x 262.67169pt.
+pdfTeX warning: pdflatex (file ./figures/_fig__synapses__comparison__1jj__tau_s
+i.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
+ed
+<figures/_fig__synapses__comparison__1jj__tau_si.pdf, id=22, 489.38733pt x 306.
+4248pt>
+File: figures/_fig__synapses__comparison__1jj__tau_si.pdf Graphic file (type pd
+f)
+<use figures/_fig__synapses__comparison__1jj__tau_si.pdf>
+Package pdftex.def Info: figures/_fig__synapses__comparison__1jj__tau_si.pdf  u
+sed on input line 118.
+(pdftex.def)             Requested size: 489.38731pt x 306.42871pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__circuits_responses.pd
-f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_fig__dendrites__circuits_responses.pdf, id=23, 380.59592pt x 280.9626
-6pt>
-File: figures/_fig__dendrites__circuits_responses.pdf Graphic file (type pdf)
-<use figures/_fig__dendrites__circuits_responses.pdf>
-Package pdftex.def Info: figures/_fig__dendrites__circuits_responses.pdf  used 
-on input line 132.
+pdfTeX warning: pdflatex (file ./figures/_fig__synapses__comparison__1jj__L_si.
+pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<figures/_fig__synapses__comparison__1jj__L_si.pdf, id=23, 489.38733pt x 306.42
+48pt>
+File: figures/_fig__synapses__comparison__1jj__L_si.pdf Graphic file (type pdf)
+
+<use figures/_fig__synapses__comparison__1jj__L_si.pdf>
+Package pdftex.def Info: figures/_fig__synapses__comparison__1jj__L_si.pdf  use
+d on input line 123.
+(pdftex.def)             Requested size: 489.38731pt x 306.42871pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex (file ./figures/_fig__synapses__comparison__1jj__I_sy.
+pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<figures/_fig__synapses__comparison__1jj__I_sy.pdf, id=24, 489.38733pt x 299.88
+939pt>
+File: figures/_fig__synapses__comparison__1jj__I_sy.pdf Graphic file (type pdf)
+
+<use figures/_fig__synapses__comparison__1jj__I_sy.pdf>
+Package pdftex.def Info: figures/_fig__synapses__comparison__1jj__I_sy.pdf  use
+d on input line 128.
+(pdftex.def)             Requested size: 489.38731pt x 299.89322pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex (file ./figures/_fig__synapses__error_vs_dt__1jj.pdf):
+ PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_fig__synapses__error_vs_dt__1jj.pdf, id=25, 489.38733pt x 306.4248pt>
+
+File: figures/_fig__synapses__error_vs_dt__1jj.pdf Graphic file (type pdf)
+<use figures/_fig__synapses__error_vs_dt__1jj.pdf>
+Package pdftex.def Info: figures/_fig__synapses__error_vs_dt__1jj.pdf  used on 
+input line 133.
+(pdftex.def)             Requested size: 489.38731pt x 306.42871pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex (file ./figures/_fig__synapses__comparison__3jj__tau_s
+i.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
+ed
+<figures/_fig__synapses__comparison__3jj__tau_si.pdf, id=26, 489.38733pt x 298.
+23318pt>
+File: figures/_fig__synapses__comparison__3jj__tau_si.pdf Graphic file (type pd
+f)
+<use figures/_fig__synapses__comparison__3jj__tau_si.pdf>
+Package pdftex.def Info: figures/_fig__synapses__comparison__3jj__tau_si.pdf  u
+sed on input line 138.
+(pdftex.def)             Requested size: 489.38731pt x 298.23698pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex (file ./figures/_fig__synapses__comparison__3jj__L_si.
+pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<figures/_fig__synapses__comparison__3jj__L_si.pdf, id=27, 489.38733pt x 295.34
+24pt>
+File: figures/_fig__synapses__comparison__3jj__L_si.pdf Graphic file (type pdf)
+
+<use figures/_fig__synapses__comparison__3jj__L_si.pdf>
+Package pdftex.def Info: figures/_fig__synapses__comparison__3jj__L_si.pdf  use
+d on input line 143.
+(pdftex.def)             Requested size: 489.38731pt x 295.34619pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex (file ./figures/_fig__synapses__comparison__3jj__I_sy.
+pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<figures/_fig__synapses__comparison__3jj__I_sy.pdf, id=28, 489.38733pt x 295.18
+883pt>
+File: figures/_fig__synapses__comparison__3jj__I_sy.pdf Graphic file (type pdf)
+
+<use figures/_fig__synapses__comparison__3jj__I_sy.pdf>
+Package pdftex.def Info: figures/_fig__synapses__comparison__3jj__I_sy.pdf  use
+d on input line 148.
+(pdftex.def)             Requested size: 489.38731pt x 295.1926pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex (file ./figures/_fig__synapses__error_vs_dt__3jj.pdf):
+ PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_fig__synapses__error_vs_dt__3jj.pdf, id=29, 489.38733pt x 306.4248pt>
+
+File: figures/_fig__synapses__error_vs_dt__3jj.pdf Graphic file (type pdf)
+<use figures/_fig__synapses__error_vs_dt__3jj.pdf>
+Package pdftex.def Info: figures/_fig__synapses__error_vs_dt__3jj.pdf  used on 
+input line 153.
+(pdftex.def)             Requested size: 489.38731pt x 306.42871pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__circuits__responses.p
+df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_fig__dendrites__circuits__responses.pdf, id=30, 380.59592pt x 280.962
+66pt>
+File: figures/_fig__dendrites__circuits__responses.pdf Graphic file (type pdf)
+<use figures/_fig__dendrites__circuits__responses.pdf>
+Package pdftex.def Info: figures/_fig__dendrites__circuits__responses.pdf  used
+ on input line 171.
 (pdftex.def)             Requested size: 489.38731pt x 361.27295pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__comparison.pdf): PDF 
-inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_fig__dendrites__comparison.pdf, id=24, 380.59592pt x 280.96266pt>
-File: figures/_fig__dendrites__comparison.pdf Graphic file (type pdf)
-<use figures/_fig__dendrites__comparison.pdf>
-Package pdftex.def Info: figures/_fig__dendrites__comparison.pdf  used on input
- line 137.
-(pdftex.def)             Requested size: 244.69386pt x 180.63432pt.
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__comparison__2jj__lin_
+ramp.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> al
+lowed
+<figures/_fig__dendrites__comparison__2jj__lin_ramp.pdf, id=31, 380.59592pt x 2
+45.2362pt>
+File: figures/_fig__dendrites__comparison__2jj__lin_ramp.pdf Graphic file (type
+ pdf)
+<use figures/_fig__dendrites__comparison__2jj__lin_ramp.pdf>
+Package pdftex.def Info: figures/_fig__dendrites__comparison__2jj__lin_ramp.pdf
+  used on input line 176.
+(pdftex.def)             Requested size: 244.69386pt x 157.66534pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-pdfTeX warning: pdflatex (file ./figures/_fig__point_neuron__schematic__circuit
-.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
-d
-<figures/_fig__point_neuron__schematic__circuit.pdf, id=25, 244.69417pt x 298.1
-7198pt>
-File: figures/_fig__point_neuron__schematic__circuit.pdf Graphic file (type pdf
-)
-<use figures/_fig__point_neuron__schematic__circuit.pdf>
-Package pdftex.def Info: figures/_fig__point_neuron__schematic__circuit.pdf  us
-ed on input line 145.
-(pdftex.def)             Requested size: 244.69386pt x 298.17578pt.
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__comparison__2jj__exp_
+pls_seq.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5>
+ allowed
+<figures/_fig__dendrites__comparison__2jj__exp_pls_seq.pdf, id=32, 380.59592pt 
+x 242.8272pt>
+File: figures/_fig__dendrites__comparison__2jj__exp_pls_seq.pdf Graphic file (t
+ype pdf)
+<use figures/_fig__dendrites__comparison__2jj__exp_pls_seq.pdf>
+Package pdftex.def Info: figures/_fig__dendrites__comparison__2jj__exp_pls_seq.
+pdf  used on input line 181.
+(pdftex.def)             Requested size: 244.69386pt x 156.11656pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-pdfTeX warning: pdflatex (file ./figures/_fig__point_neuron__one_synapse.pdf): 
-PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_fig__point_neuron__one_synapse.pdf, id=26, 244.69417pt x 239.57605pt>
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__comparison__2jj__sq_p
+ls_seq.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
+allowed
+<figures/_fig__dendrites__comparison__2jj__sq_pls_seq.pdf, id=33, 380.59592pt x
+ 239.4546pt>
+File: figures/_fig__dendrites__comparison__2jj__sq_pls_seq.pdf Graphic file (ty
+pe pdf)
+<use figures/_fig__dendrites__comparison__2jj__sq_pls_seq.pdf>
+Package pdftex.def Info: figures/_fig__dendrites__comparison__2jj__sq_pls_seq.p
+df  used on input line 186.
+(pdftex.def)             Requested size: 244.69386pt x 153.94829pt.
 
-File: figures/_fig__point_neuron__one_synapse.pdf Graphic file (type pdf)
-<use figures/_fig__point_neuron__one_synapse.pdf>
-Package pdftex.def Info: figures/_fig__point_neuron__one_synapse.pdf  used on i
-nput line 150.
-(pdftex.def)             Requested size: 489.38731pt x 479.16187pt.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__comparison__4jj__lin_
+ramp.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> al
+lowed
+<figures/_fig__dendrites__comparison__4jj__lin_ramp.pdf, id=34, 380.59592pt x 2
+45.2362pt>
+File: figures/_fig__dendrites__comparison__4jj__lin_ramp.pdf Graphic file (type
+ pdf)
+<use figures/_fig__dendrites__comparison__4jj__lin_ramp.pdf>
+Package pdftex.def Info: figures/_fig__dendrites__comparison__4jj__lin_ramp.pdf
+  used on input line 191.
+(pdftex.def)             Requested size: 244.69386pt x 157.66534pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__comparison__4jj__sq_p
+ls_seq.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
+allowed
+<figures/_fig__dendrites__comparison__4jj__sq_pls_seq.pdf, id=35, 380.59592pt x
+ 239.4546pt>
+File: figures/_fig__dendrites__comparison__4jj__sq_pls_seq.pdf Graphic file (ty
+pe pdf)
+<use figures/_fig__dendrites__comparison__4jj__sq_pls_seq.pdf>
+Package pdftex.def Info: figures/_fig__dendrites__comparison__4jj__sq_pls_seq.p
+df  used on input line 196.
+(pdftex.def)             Requested size: 244.69386pt x 153.94829pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__comparison__4jj__exp_
+pls_seq.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5>
+ allowed
+<figures/_fig__dendrites__comparison__4jj__exp_pls_seq.pdf, id=36, 380.59592pt 
+x 242.8272pt>
+File: figures/_fig__dendrites__comparison__4jj__exp_pls_seq.pdf Graphic file (t
+ype pdf)
+<use figures/_fig__dendrites__comparison__4jj__exp_pls_seq.pdf>
+Package pdftex.def Info: figures/_fig__dendrites__comparison__4jj__exp_pls_seq.
+pdf  used on input line 201.
+(pdftex.def)             Requested size: 244.69386pt x 156.11656pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__error_vs_dt__2jj.pdf)
+: PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_fig__dendrites__error_vs_dt__2jj.pdf, id=37, 244.69417pt x 403.96321p
+t>
+File: figures/_fig__dendrites__error_vs_dt__2jj.pdf Graphic file (type pdf)
+<use figures/_fig__dendrites__error_vs_dt__2jj.pdf>
+Package pdftex.def Info: figures/_fig__dendrites__error_vs_dt__2jj.pdf  used on
+ input line 206.
+(pdftex.def)             Requested size: 244.69386pt x 403.96837pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__error_vs_dt__4jj.pdf)
+: PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_fig__dendrites__error_vs_dt__4jj.pdf, id=38, 244.69417pt x 403.96321p
+t>
+File: figures/_fig__dendrites__error_vs_dt__4jj.pdf Graphic file (type pdf)
+<use figures/_fig__dendrites__error_vs_dt__4jj.pdf>
+Package pdftex.def Info: figures/_fig__dendrites__error_vs_dt__4jj.pdf  used on
+ input line 211.
+(pdftex.def)             Requested size: 244.69386pt x 403.96837pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex (file ./figures/_fig__point_neuron__one_synapse__schem
+atic__circuit.pdf): PDF inclusion: found PDF version <1.7>, but at most version
+ <1.5> allowed
+<figures/_fig__point_neuron__one_synapse__schematic__circuit.pdf, id=39, 244.69
+417pt x 268.00125pt>
+File: figures/_fig__point_neuron__one_synapse__schematic__circuit.pdf Graphic f
+ile (type pdf)
+<use figures/_fig__point_neuron__one_synapse__schematic__circuit.pdf>
+Package pdftex.def Info: figures/_fig__point_neuron__one_synapse__schematic__ci
+rcuit.pdf  used on input line 218.
+(pdftex.def)             Requested size: 244.69386pt x 268.00467pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex (file ./figures/_fig__point_neuron__one_synapse__data.
+pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<figures/_fig__point_neuron__one_synapse__data.pdf, id=40, 489.38733pt x 478.00
+583pt>
+File: figures/_fig__point_neuron__one_synapse__data.pdf Graphic file (type pdf)
+
+<use figures/_fig__point_neuron__one_synapse__data.pdf>
+Package pdftex.def Info: figures/_fig__point_neuron__one_synapse__data.pdf  use
+d on input line 223.
+(pdftex.def)             Requested size: 489.38731pt x 478.01195pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex (file ./figures/_fig__point_neuron__nine_synapses__sch
+ematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
+allowed
+<figures/_fig__point_neuron__nine_synapses__schematic.pdf, id=41, 244.69417pt x
+ 165.74924pt>
+File: figures/_fig__point_neuron__nine_synapses__schematic.pdf Graphic file (ty
+pe pdf)
+<use figures/_fig__point_neuron__nine_synapses__schematic.pdf>
+Package pdftex.def Info: figures/_fig__point_neuron__nine_synapses__schematic.p
+df  used on input line 228.
+(pdftex.def)             Requested size: 244.69386pt x 165.75134pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex (file ./figures/_fig__point_neuron__nine_synapses__dat
+a.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
+ed
+<figures/_fig__point_neuron__nine_synapses__data.pdf, id=42, 489.38733pt x 478.
+00583pt>
+File: figures/_fig__point_neuron__nine_synapses__data.pdf Graphic file (type pd
+f)
+<use figures/_fig__point_neuron__nine_synapses__data.pdf>
+Package pdftex.def Info: figures/_fig__point_neuron__nine_synapses__data.pdf  u
+sed on input line 233.
+(pdftex.def)             Requested size: 489.38731pt x 478.01195pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__min_max__2jj.pdf): PD
+F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_fig__dendrites__min_max__2jj.pdf, id=43, 244.69417pt x 171.6011pt>
+File: figures/_fig__dendrites__min_max__2jj.pdf Graphic file (type pdf)
+<use figures/_fig__dendrites__min_max__2jj.pdf>
+Package pdftex.def Info: figures/_fig__dendrites__min_max__2jj.pdf  used on inp
+ut line 250.
+(pdftex.def)             Requested size: 244.69386pt x 171.60329pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__min_max__4jj.pdf): PD
+F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_fig__dendrites__min_max__4jj.pdf, id=44, 244.69417pt x 326.46268pt>
+File: figures/_fig__dendrites__min_max__4jj.pdf Graphic file (type pdf)
+<use figures/_fig__dendrites__min_max__4jj.pdf>
+Package pdftex.def Info: figures/_fig__dendrites__min_max__4jj.pdf  used on inp
+ut line 255.
+(pdftex.def)             Requested size: 244.69386pt x 326.46684pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2 <./figures/_fig__schematics.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/_fig__fan-in__circuits.pdf): PDF inclu
+sion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/_fig__fan-in__circuits.pdf, id=73, 244.69417pt x 298.75415pt>
+File: figures/_fig__fan-in__circuits.pdf Graphic file (type pdf)
+<use figures/_fig__fan-in__circuits.pdf>
+Package pdftex.def Info: figures/_fig__fan-in__circuits.pdf  used on input line
+ 293.
+(pdftex.def)             Requested size: 244.69386pt x 298.75797pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -483,47 +781,162 @@ Underfull \hbox (badness 1838) in paragraph at lines 14--17
 duc-tiv-ity\OT1/cmr/m/n/10 .
  []
 
-) [2 <./figures/_fig__schematics.pdf>] [3 <./figures/_fig__synapses__circuits_r
-esponses.pdf>] [4 <./figures/_fig__synapses__comparison.pdf> <./figures/_fig__d
-endrites__circuits_responses.pdf>] [5
+) [3 <./figures/_fig__synapses__circuits__responses.pdf>]
+
+LaTeX Warning: Text page 4 contains only floats.
 
 
- <./figures/_fig__dendrites__comparison.pdf> <./figures/_fig__point_neuron__sch
-ematic__circuit.pdf>] [6 <./figures/_fig__point_neuron__one_synapse.pdf>] (phen
-omenological_modeling.aux) ) 
+Overfull \vbox (15.99129pt too high) has occurred while \output is active []
+
+
+
+LaTeX Warning: Text page 4 contains only floats.
+
+
+Overfull \vbox (15.99129pt too high) has occurred while \output is active []
+
+
+[4 <./figures/_fig__synapses__comparison__1jj__tau_si.pdf> <./figures/_fig__syn
+apses__comparison__1jj__L_si.pdf
+
+pdfTeX warning: pdflatex (file ./figures/_fig__synapses__comparison__1jj__L_si.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: Text page 5 contains only floats.
+
+
+Overfull \vbox (9.4558pt too high) has occurred while \output is active []
+
+
+
+LaTeX Warning: Text page 5 contains only floats.
+
+
+Overfull \vbox (9.4558pt too high) has occurred while \output is active []
+
+
+[5 <./figures/_fig__synapses__comparison__1jj__I_sy.pdf> <./figures/_fig__synap
+ses__error_vs_dt__1jj.pdf
+
+pdfTeX warning: pdflatex (file ./figures/_fig__synapses__error_vs_dt__1jj.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: Text page 6 contains only floats.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: Text page 6 contains only floats.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6 <./figures/_fig__synapses__comparison__3jj__tau_si.pdf> <./figures/_fig__sy
+napses__comparison__3jj__L_si.pdf
+
+pdfTeX warning: pdflatex (file ./figures/_fig__synapses__comparison__3jj__L_si.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: Text page 7 contains only floats.
+
+
+Overfull \vbox (4.75517pt too high) has occurred while \output is active []
+
+
+
+LaTeX Warning: Text page 7 contains only floats.
+
+
+Overfull \vbox (4.75517pt too high) has occurred while \output is active []
+
+
+[7 <./figures/_fig__synapses__comparison__3jj__I_sy.pdf> <./figures/_fig__synap
+ses__error_vs_dt__3jj.pdf
+
+pdfTeX warning: pdflatex (file ./figures/_fig__synapses__error_vs_dt__3jj.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+>] [8 <./figures/_fig__dendrites__circuits__responses.pdf> <./figures/_fig__den
+drites__comparison__2jj__lin_ramp.pdf
+
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__comparison__2jj__lin_
+ramp.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
+> <./figures/_fig__dendrites__comparison__2jj__exp_pls_seq.pdf
+
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__comparison__2jj__exp_
+pls_seq.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>] [9 <./figures/_fig__dendrites__comparison__2jj__sq_pls_seq.pdf> <./figures/_
+fig__dendrites__comparison__4jj__lin_ramp.pdf
+
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__comparison__4jj__lin_
+ramp.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
+> <./figures/_fig__dendrites__comparison__4jj__sq_pls_seq.pdf
+
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__comparison__4jj__sq_p
+ls_seq.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+> <./figures/_fig__dendrites__comparison__4jj__exp_pls_seq.pdf
+
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__comparison__4jj__exp_
+pls_seq.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+> <./figures/_fig__dendrites__error_vs_dt__2jj.pdf>] [10 <./figures/_fig__dendr
+ites__error_vs_dt__4jj.pdf> <./figures/_fig__point_neuron__one_synapse__schemat
+ic__circuit.pdf>] [11 <./figures/_fig__point_neuron__one_synapse__data.pdf>]
+[12
+
+
+ <./figures/_fig__point_neuron__nine_synapses__schematic.pdf>] [13 <./figures/_
+fig__point_neuron__nine_synapses__data.pdf>] [14 <./figures/_fig__dendrites__mi
+n_max__2jj.pdf> <./figures/_fig__dendrites__min_max__4jj.pdf
+
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__min_max__4jj.pdf): PD
+F inclusion: multiple pdfs with page group included in a single page
+> <./figures/_fig__fan-in__circuits.pdf
+
+pdfTeX warning: pdflatex (file ./figures/_fig__fan-in__circuits.pdf): PDF inclu
+sion: multiple pdfs with page group included in a single page
+>] (phenomenological_modeling.aux) ) 
 Here is how much of TeX's memory you used:
- 5623 strings out of 481225
- 84825 string characters out of 2906175
- 341352 words of memory out of 3000000
- 21101 multiletter control sequences out of 15000+200000
+ 5767 strings out of 481225
+ 92449 string characters out of 2906175
+ 349630 words of memory out of 3000000
+ 21226 multiletter control sequences out of 15000+200000
  546318 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,11n,77p,1800b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\jeffr\AppData\Local\MiKTeX\fonts/pk/ljfo
-ur/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/jeffr/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/jeffr/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/jeffr/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/jeffr/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/
-jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
-i5.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmmi7.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmr10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmr12.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jeffr/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/jeffr/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/jeffr/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jeffr/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/je
-ffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
-/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7
+ <C:\Users\jeffr\AppData\Local\MiKTeX\fonts
+/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/jeffr/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/jeffr/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/jeffr/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/j
+effr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
+:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
+10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmmi5.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jeffr/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jeffr/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/jeffr/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/jeffr/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/j
+effr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/
+Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmti10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmti12.pfb>
-Output written on phenomenological_modeling.pdf (6 pages, 8176024 bytes).
+cm/cmsy7.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmti10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmti12.pfb>
+Output written on phenomenological_modeling.pdf (14 pages, 14644554 bytes).
 PDF statistics:
- 1254 PDF objects out of 1440 (max. 8388607)
+ 1910 PDF objects out of 2073 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

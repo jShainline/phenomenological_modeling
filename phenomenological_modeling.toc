@@ -3,3 +3,7 @@
 \contentsline {section}{\numberline {3}Dendrites}{2}%
 \contentsline {section}{\numberline {4}Neurons}{2}%
 \contentsline {section}{\numberline {5}Discussion}{2}%
+\contentsline {section}{\numberline {6}Acknowledgements}{2}%
+\contentsline {section}{\numberline {A}Further data regarding synapse modeling}{2}%
+\contentsline {section}{\numberline {B}Further data regarding dendrite modeling}{2}%
+\contentsline {section}{\numberline {C}Analysis of dendritic and neuronal fan-in}{2}%
