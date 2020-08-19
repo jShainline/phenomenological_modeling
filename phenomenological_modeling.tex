@@ -60,22 +60,53 @@ Superconducting optoelectronic loop neurons are a class of circuits potentially 
 
 \setcounter{tocdepth}{1}
 \setcounter{secnumdepth}{4}
-\tableofcontents
+%\tableofcontents
 
 \section{\label{sec:introduction}Introduction}
 
+% this introduction is too long-winded
+Comprehensive knowledge of large-scale neural systems is a grand scientific challenge with relevance to neuroscience, artificial intelligence, and the physics of critical systems \cite{elst2012,ized2008,br2017,fama2019,eide2019}. The lack of an efficient, artificial, brain-scale experimental test bed is a barrier to progress. Experiments with living systems bring challenges, including the difficulty of obtaining data from large numbers of individual neurons, let alone synapses. Data acquired at the scale of the entire network has low resolution, while it is difficult to obtain data with high spatial and temporal resolution at the device and network levels simultaneously. The invasive nature of experiments on functioning systems is also problematic. The ability to adjust device, circuit, and network parameters of biological neural systems is limited, limiting the potential of controlled experiments. An artificial platform capable of realizing networks at the scale and complexity of the brains of intelligent organisms would be a tool of supreme scientific utility.
+
+Neuromorphic hardware based on silicon microelectronics has a great deal to offer in this regard \cite{me1989,lide2015,chba2003,inch2006,voma2007,inli2011,cryu2012,cage2013,pfgr2013,bega2014,fu2016,moqi2018}. Yet challenges remain. Silicon neural circuits cannot directly communicate via axons in the manner of biological neurons, so communication is carried out over shared circuits comprising an interconnection network. Bottlenecks result that make information integration across space and time less efficient than biological neural systems. Additionally, adaptation and learning are hindered by difficulties with mechanisms for storing and writing a memory state in devices monolithically integrated with the MOSFETs performing neural computations. While the decades of progress developing silicon neural circuits have achieved impressive gains, as a test bed for cognition, alternative hardware may bring new benefits.
+
+Many proposals have arisen to explore alternative hardware for cognition, including using optical \cite{psfa1985,faps1985,abps1987,waps1993,safi1995,mosc1997,hoiz2000,moho2000,rokr2009,krfo2011,dusc2012,nash2013,prsh2017,shha2017,pena2018,tafe2019} and magnetic \cite{} phenomena as well as phase-change materials \cite{chsa2019,feyo2019}. It has been argued that using optical pulses to represent action potentials may alleviate the need for a shared communication infrastructure and the associated demands on address storage and memory access \cite{shbu2017,sh2019}. The use of superconducting circuits bring the thresholding nonlinearity of Josephson junctions \cite{vatu1998,ka1999} as well as memory retention and plasticity through the storage of flux in superconducting loops \cite{sh2019}. By using superconducting detectors \cite{nata2012} in conjunction with optical pulses, neurons can signal to synapses at the single-photon level. In conjunction with minimal static power dissipation, the energy efficiency of such systems may be conducive to very large artificial cognitive systems. Although the constituent devices dwarf their biological counterparts, communication at the speed of light enables a very large neuronal pool \cite{sh2019,sh2018_ICRC}. The apparent circuit complexity and adaptability are intriguing for scientific study.
+
+% consider starting close to here
+While the components of these superconducting optoelectronic networks (SOENs) have been demonstrated, full circuits have not. Prior to undertaking the full effort and expense of realizing these complex systems, it is prudent to gain confidence they are indeed ripe for further investigation. This confidence can be gained through simulations of device, circuit, and system behavior using conventional numerical methods. The computations performed by superconducting optoelectronic loop neurons are accomplished by circuits comprising superconducting single-photon detectors, Josephson junctions, and mutual inductors. These devices are most commonly modeled with SPICE circuit simulations carried out on a picosecond time scale to accurately capture the dynamics of the Josephson junctions. Simulation of networks of large numbers of these neurons become computationally intensive. From the perspective of the neural system, the picosecond dynamics of the JJs are not the primary interest, and one would prefer to treat each synapse, dendrite, and neuron as an input-output device with a model that accurately captures the circuit dynamics on the nanosecond to microsecond time scales while not explicitly treating the picosecond behavior of the underlying circuit elements.
+
+Here we introduce a phenomenological model of loop neurons and their constitutive elements that accurately captures the transfer characteristics of the circuits without solving the underlying circuit equations. Each synapse and dendrite is treated with a single, first-order ordinary differential equation that describes the output of the element as a function of its inputs and instantaneous internal state. These equations take the standard form of a leaky integrator with a nonlinear driving term. Each neuron performs passive summation of its synaptic and dendritic inputs. When the sum of the inputs reaches threshold, the neuron produces a spike. Refraction is treated with the same formalism as a strong inhibitory synapse receiving the neuron's spikes and directly contacting the neuron's cell body. When full circuit simulations are conducted, each synapse or dendrite require solving a system of seven equations at each time step, and time steps of 1\,ps are typical. The model presented here reduces the number of equations for each synapse or dendrite to one and allows simulation with time steps of 1\,ns. 
+
+We begin by motivating the form of the model based on circuit considerations. We then describe the means by which the form of the driving term in the leaky integrator is obtained. Error is quantified by comparison with full circuit simulations, and convergence is investigated as a function of time step size. Point neurons are considered to test the synaptic equations. Dendrites are treated next, and the similarity between synaptic and dendritic circuits permits a treatment with a similar form of leaky integrator equation. Dendritic accuracy is quantified, and an example of a neuron with a dendritic arbor is presented to illustrate the utility of the model. Throughout the work we compare and contrast loop neurons with their biological counterparts. 
+
+\section{\label{sec:loop_neurons}Overview of Loop Neurons}
 \begin{figure}[h!]
 \includegraphics[width=8.6cm]{figures/_fig__schematics.pdf}
-\captionof{figure}{\label{fig:schematic__circuits}Two schematics of loop neurons. (a) Schematic of point neuron. (b) Schematic of neuron with dendritic tree.}
+\captionof{figure}{\label{fig:schematic__circuits}Two schematics of loop neurons. (a) Schematic of a point loop neuron (no dendritic tree) \cite{sh2018,sh2019} showing excitatory ($\mathsf{S_e}$) and inhibitory ($\mathsf{S_i}$) synapses, as well as synaptic weight update circuits ($\mathsf{W}$). The wavy, colored arrows are photons, and the black arrows are electrical signals. The synapses receive signals as faint as a single photon and add supercurrent to an integration loop. Upon reaching threshold, a signal is sent to the transmitter circuit ($\mathsf{T}$), which produces a pulse of photons that are sent to downstream synaptic connections. Electrical signals generated by synapses and the neuron cell body are used for synaptic weight updates. A refractory dendrite ($\mathsf{D_r}$) receives spike outputs from the neuron and provides feedback to the neuron to accomplish adaptive refraction. (b) A loop neuron with an elaborate dendritic tree \cite{sh2020}. The complex structure consists of excitatory and inhibitory synapses that feed into dendrites ($\mathsf{D}$). Each dendrite performs computations on the inputs and communicates the result to other dendrites for further processing or on to the cell body of the neuron ($\mathsf{N}$). The neuron itself acts as the final thresholding stage, and when its threshold is reached, light is produced by the transmitter ($\mathsf{T}$), which is routed to downstream synaptic connections.}
 \end{figure}
 
+Research in superconducting optoelectronic networks of loop neurons aspires to realize artificial neural systems with scale and complexity comparable to the human brain. We have introduced the concepts of loop neurons in a number of papers \cite{sh2018,sh2019,sh2020}, and we have demonstrated many of the principles experimentally \cite{buch2017,chbu2017,chbu2018,mcve2019}. Schematic diagrams of two types of loop neuron are shown in Fig.\,\ref{fig:schematic}. Figure \ref{fig:schematic}(a) shows the point-neuron concept \cite{sh2018,sh2019_jap}, while Fig.\,\ref{fig:schematic}(b) shows the concept when a dendritic tree is included \cite{sh2019_jstqe}. In these neurons, integration, synaptic plasticity, and dendritic processing are implemented with inductively coupled loops of supercurrent. It is due to the prominent role of superconducting storage loops that we refer to devices of this type as loop neurons. 
+
+Operation of loop neurons is as follows. Photons from upstream neurons are received by a superconducting single-photon detector (SPD) at each synapse. Using a Josephson junction (JJ) in parallel with an SPD, synaptic detection events are converted into an integrated supercurrent which is stored in a superconducting loop. The circuit diagram of a synapse is shown in Fig.\,\ref{fig:circuits}(a). The amount of current that gets added to the integration loop during a photon detection event is determined by the synaptic weight. The synaptic weight is dynamically adjusted by another circuit combining SPDs and JJs, and all involved circuits are analog. When the integrated current of a given neuron reaches a (dynamically variable) threshold, an amplification cascade begins, resulting in the production of light from a waveguide-integrated semiconductor light emitter. The photons thus produced fan out through a network of dielectric waveguides and arrive at the synaptic terminals of other neurons where the process repeats.
+
+In loop neurons, a synapse consists of an SPD in parallel with a JJ (which together transduce photons to supercurrent), and a superconducting loop, which stores a current proportional to the number of detected photon arrival events. This loop is referred to as the synaptic integration (SI) loop. Within each neuron, the loops of many synapses are inductively coupled to a larger superconducting loop, referred to as the neuronal receiving (NR) loop, thereby inducing an integrated current proportional to a weighted sum of the currents in all the neuron's synapses. When the current in this NR loop reaches a threshold, the neuron produces a current pulse in the form of one or more flux quanta. This current is amplified and converted to voltage to produce photons from a semiconductor $p-i-n$ junction.
+
+The currents in the synaptic and neuronal loops are analogous to the membrane potential of biological neurons \cite{daab2001,geki2002}, and the states of flux in these loops are the principal dynamical variables of the synapses and neurons in the system. Inhibitory synapses can be achieved through mutual inductors with the opposite sign of coupling. Dendritic processing can be implemented straightforwardly by adding intermediate mutually inductively coupled loops between the synaptic and neuronal loops. Synapses can be grouped on dendritic loops capable of local, nonlinear processing and inhibition. Neurons with multiple levels of dendritic hierarchy can be implemented as multiple stages of integrating loops. The temporal scales of the SI and DI loops can be set with $L/r$ time constants. I expect all synaptic and dendritic signals to leak, enabling fading memory of recent activity. Also, I hypothesize that the ability to achieve a diversity of time constants through synapses and dendrites with many $L/r$ time constants will be advantageous, and I would like to investigate this in numerical studies.
+
+Synaptic memory is also implemented based on the stored flux in a loop, referred to as the synaptic storage (SS) loop. The state of flux in the SS loop determines the current bias to the synaptic receiver circuit discussed above. This current bias is the synaptic weight. In contrast to the SI and DI loops, the SS loop is intended to store long-term memory, and therefore I do not expect to add a resistance to this loop. If the SS loop is created with a superconducting wire of high inductance, the loop can hold many discrete states of flux, and therefore can implement many synaptic weights, if desired. Synapses with a pseudo-continuum of hundreds of stable synaptic levels between minimal and maximal saturation values are possible. Transitions between these levels can be induced based on the relative arrival times of photons from the pre-synaptic and post-synaptic neurons, thereby establishing a means for spike-timing-dependent plasticity with one photon required for each step of the memory-update process. Binary synapses are also possible, and just as we expect a diversity of $L/r$ time constants to be advantageous for tracking activity over time, we expect a diversity of synapses raging from binary to multistable to be advantageous for striking a balance between adaptability and long-term memory retention.
+
+A primary goal of developing the phenomenological model presented here is to elucidate similarities and differences between loop neurons and well-studied leaky integrate-and-fire (LIF) neurons. 
+
+
+
+\section{\label{sec:leaky_integrators}Context of the Model: Leaky Integrators}
 \begin{equation}
 \label{eq:leaky_integrator}
 \frac{dQ(t)}{dt} = f(t)-\frac{Q(t)}{\tau},
 \end{equation}
+The general form of a leaky integrator differential equation is given in Eq.\,\ref{eq:leaky_integrator}. This equation can model many physical systems wherein a quantity of interest accumulates in time due to a driving function $f(t)$ while also leaking exponentially with a time constant $\tau$. 
 
 
-\section{\label{sec:synapses}Synapses}
+\section{\label{sec:synapses}Loop Neuron Synapses as Leaky Integrators}
 
 
 This description of the operation of the circuit is based on well-known properties of Josephson junctions within the formalism of the resistively and capacitively shunted junction (RCSJ) model \cite{vatu1998,ka1999,ti1996}. The relevant behavior derives from the fact that a JJ will produce a voltage fluxon after a time $t_{\mathrm{fq}}$ determined by the relation
@@ -115,46 +146,18 @@ To quantify the accuracy, we use a $\chi^2$ of the form
 \end{figure*}
 
 \begin{figure*}[h!]
-\includegraphics[width=17.2cm]{figures/_fig__synapses__comparison__1jj__tau_si.pdf}
-\captionof{figure}{\label{fig:synapses__comparison__1jj__tau_si}Caption of fig:synapses comparison 1jj tau si.}
+\includegraphics[width=17.2cm]{figures/_fig__synapses__comparison__1jj__main.pdf}
+\captionof{figure}{\label{fig:synapses__comparison__1jj__main}Caption of fig:synapses comparison 1jj main.}
 \end{figure*}
 
 \begin{figure*}[h!]
-\includegraphics[width=17.2cm]{figures/_fig__synapses__comparison__1jj__L_si.pdf}
-\captionof{figure}{\label{fig:synapses__comparison__1jj__L_si}Caption of fig:synapses comparison 1jj L si.}
+\includegraphics[width=17.2cm]{figures/_fig__synapses__comparison__3jj__main.pdf}
+\captionof{figure}{\label{fig:synapses__comparison__3jj__main}Caption of fig:synapses comparison 3jj main.}
 \end{figure*}
 
-\begin{figure*}[h!]
-\includegraphics[width=17.2cm]{figures/_fig__synapses__comparison__1jj__I_sy.pdf}
-\captionof{figure}{\label{fig:synapses__comparison__1jj__I_sy}Caption of fig:synapses comparison 1jj I sy.}
-\end{figure*}
+\cite{amfu1994,fudr2005,fuab2007}
 
-\begin{figure*}[h!]
-\includegraphics[width=17.2cm]{figures/_fig__synapses__error_vs_dt__1jj.pdf}
-\captionof{figure}{\label{fig:synapses__error_vs_dt__1jj}Caption of fig:synapses error vs dt 1jj.}
-\end{figure*}
-
-\begin{figure*}[h!]
-\includegraphics[width=17.2cm]{figures/_fig__synapses__comparison__3jj__tau_si.pdf}
-\captionof{figure}{\label{fig:synapses__comparison__3jj__tau_si}Caption of fig:synapses comparison 3jj tau si.}
-\end{figure*}
-
-\begin{figure*}[h!]
-\includegraphics[width=17.2cm]{figures/_fig__synapses__comparison__3jj__L_si.pdf}
-\captionof{figure}{\label{fig:synapses__comparison__3jj__L_si}Caption of fig:synapses comparison 3jj L si.}
-\end{figure*}
-
-\begin{figure*}[h!]
-\includegraphics[width=17.2cm]{figures/_fig__synapses__comparison__3jj__I_sy.pdf}
-\captionof{figure}{\label{fig:synapses__comparison__3jj__I_sy}Caption of fig:synapses comparison 3jj I sy.}
-\end{figure*}
-
-\begin{figure*}[h!]
-\includegraphics[width=17.2cm]{figures/_fig__synapses__error_vs_dt__3jj.pdf}
-\captionof{figure}{\label{fig:synapses__error_vs_dt__3jj}Caption of fig:synapses error vs dt 3jj.}
-\end{figure*}
-
-\section{\label{sec:dendrites}Dendrites}
+\section{\label{sec:dendrites}Loop Neuron Dendrites as Leaky Integrators}
 
 \begin{equation}
 \label{eq:dendrites__leaky_integrator}
@@ -212,7 +215,7 @@ The sum runs over all inputs to the dendritic receiving loop, and the superscrip
 \captionof{figure}{\label{fig:dendrites__error_vs_dt__4jj}Caption of fig:dendrites 4jj error vs dt.}
 \end{figure}
 
-\section{\label{sec:neurons}Neurons}
+\section{\label{sec:neurons}Loop Neurons as Coupled Leaky Integrators}
 
 \begin{figure}[h!]
 \includegraphics[width=8.6cm]{figures/_fig__point_neuron__one_synapse__schematic__circuit.pdf}
@@ -243,6 +246,46 @@ The sum runs over all inputs to the dendritic receiving loop, and the superscrip
 \appendix
 
 \section{\label{apx:synapses}Further data regarding synapse modeling}
+
+\begin{figure*}[h!]
+\includegraphics[width=17.2cm]{figures/_fig_apx__synapses__comparison__1jj__tau_si.pdf}
+\captionof{figure}{\label{fig:synapses__comparison__1jj__tau_si}Caption of fig:synapses comparison 1jj tau si.}
+\end{figure*}
+
+\begin{figure*}[h!]
+\includegraphics[width=17.2cm]{figures/_fig_apx__synapses__comparison__1jj__L_si.pdf}
+\captionof{figure}{\label{fig:synapses__comparison__1jj__L_si}Caption of fig:synapses comparison 1jj L si.}
+\end{figure*}
+
+\begin{figure*}[h!]
+\includegraphics[width=17.2cm]{figures/_fig_apx__synapses__comparison__1jj__I_sy.pdf}
+\captionof{figure}{\label{fig:synapses__comparison__1jj__I_sy}Caption of fig:synapses comparison 1jj I sy.}
+\end{figure*}
+
+\begin{figure*}[h!]
+\includegraphics[width=17.2cm]{figures/_fig_apx__synapses__error_vs_dt__1jj.pdf}
+\captionof{figure}{\label{fig:synapses__error_vs_dt__1jj}Caption of fig:synapses error vs dt 1jj.}
+\end{figure*}
+
+\begin{figure*}[h!]
+\includegraphics[width=17.2cm]{figures/_fig_apx__synapses__comparison__3jj__tau_si.pdf}
+\captionof{figure}{\label{fig:synapses__comparison__3jj__tau_si}Caption of fig:synapses comparison 3jj tau si.}
+\end{figure*}
+
+\begin{figure*}[h!]
+\includegraphics[width=17.2cm]{figures/_fig_apx__synapses__comparison__3jj__L_si.pdf}
+\captionof{figure}{\label{fig:synapses__comparison__3jj__L_si}Caption of fig:synapses comparison 3jj L si.}
+\end{figure*}
+
+\begin{figure*}[h!]
+\includegraphics[width=17.2cm]{figures/_fig_apx__synapses__comparison__3jj__I_sy.pdf}
+\captionof{figure}{\label{fig:synapses__comparison__3jj__I_sy}Caption of fig:synapses comparison 3jj I sy.}
+\end{figure*}
+
+\begin{figure*}[h!]
+\includegraphics[width=17.2cm]{figures/_fig_apx__synapses__error_vs_dt__3jj.pdf}
+\captionof{figure}{\label{fig:synapses__error_vs_dt__3jj}Caption of fig:synapses error vs dt 3jj.}
+\end{figure*}
 
 \section{\label{apx:dendrites}Further data regarding dendrite modeling}
 
@@ -287,7 +330,7 @@ In the case where all mutual inductors between synapses and the NR loop are equa
 \end{equation}
 where $L_N^{\mathrm{si2}}$ and $L_N^{\mathrm{nr1}}$ are the value ofs $L^{\mathrm{si2}}$ and $L^{\mathrm{nr1}}$ that we should choose for the SI loop output inductor when there are $N$ synapses coupled directly to the NR loop. We have seen above that we need $L_N^{\mathrm{nr1}} = L_0^{\mathrm{nr1}}/N$ to maintain the inductance of the NR loop. Therefore, in order for Eq.\,\ref{eq:fan-in__direct_input__flux_independent_of_N_2} to satisfy Eq.\,\ref{eq:fan-in__direct_input__flux_independent_of_N}, we must also have $L_N^{\mathrm{si2}} = L_0^{\mathrm{si2}}/N$.
 
-This consideration does not explicitly identify a fan-in limit. This limit arises due to practical considerations related to making $L^{\mathtrm{si2}}$ and $L^{\mathtrm{nr1}}$ exceedingly small as $N$ grows large. With $L_0 \approx 1$\,pH a rough lower limit on what we would like to fabricate, and $L_{\mathrm{tot}}^{\mathrm{nr}} \approx 20$\,pH, we see direct fan-in with this circuit design is limited to about 20. This limit can be straightforwardly overcome with an intermediate transformer collection coil, as shown in Fig.\,\ref{fig:fan-in__circuits}(b).
+This consideration does not explicitly identify a fan-in limit. This limit arises due to practical considerations related to making $L^{\mathrm{si2}}$ and $L^{\mathrm{nr1}}$ exceedingly small as $N$ grows large. With $L_0 \approx 1$\,pH a rough lower limit on what we would like to fabricate, and $L_{\mathrm{tot}}^{\mathrm{nr}} \approx 20$\,pH, we see direct fan-in with this circuit design is limited to about 20. This limit can be straightforwardly overcome with an intermediate transformer collection coil, as shown in Fig.\,\ref{fig:fan-in__circuits}(b).
 
 \begin{equation}
 \label{eq:fan-in__transformer_collection}

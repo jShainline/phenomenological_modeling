@@ -5,44 +5,48 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 26 items.
 Database file #1: phenomenological_modeling.bib
-You've used 3 entries,
+Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "sh2019_jap"
+Warning--I didn't find a database entry for "sh2019_jstqe"
+You've used 53 entries,
             1791 wiz_defined-function locations,
-            463 strings with 3811 characters,
-and the built_in function-call counts, 508 in all, are:
-= -- 45
-> -- 16
-< -- 0
-+ -- 7
-- -- 4
-* -- 21
-:= -- 86
-add.period$ -- 9
-call.type$ -- 3
-change.case$ -- 3
+            751 strings with 11920 characters,
+and the built_in function-call counts, 11912 in all, are:
+= -- 907
+> -- 781
+< -- 2
++ -- 280
+- -- 227
+* -- 864
+:= -- 2082
+add.period$ -- 160
+call.type$ -- 53
+change.case$ -- 51
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 30
-empty$ -- 58
-format.name$ -- 4
-if$ -- 118
+cite$ -- 53
+duplicate$ -- 515
+empty$ -- 1064
+format.name$ -- 227
+if$ -- 2564
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 6
-newline$ -- 18
-num.names$ -- 3
-pop$ -- 16
+int.to.str$ -- 53
+missing$ -- 60
+newline$ -- 268
+num.names$ -- 54
+pop$ -- 100
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 7
+skip$ -- 196
 stack$ -- 0
-substring$ -- 0
-swap$ -- 3
-text.length$ -- 0
+substring$ -- 528
+swap$ -- 80
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 3
-width$ -- 4
-write$ -- 37
+while$ -- 97
+width$ -- 55
+write$ -- 588
+(There were 3 warnings)
