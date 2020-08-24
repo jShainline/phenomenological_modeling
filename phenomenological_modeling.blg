@@ -8,45 +8,47 @@ Database file #1: phenomenological_modeling.bib
 Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "sh2019_jap"
 Warning--I didn't find a database entry for "sh2019_jstqe"
-You've used 53 entries,
+Warning--I didn't find a database entry for "sh2018_full"
+Warning--I didn't find a database entry for "sh2019_ne"
+You've used 57 entries,
             1791 wiz_defined-function locations,
-            751 strings with 11920 characters,
-and the built_in function-call counts, 11912 in all, are:
-= -- 907
-> -- 781
+            772 strings with 12307 characters,
+and the built_in function-call counts, 12647 in all, are:
+= -- 971
+> -- 809
 < -- 2
-+ -- 280
-- -- 227
-* -- 864
-:= -- 2082
-add.period$ -- 160
-call.type$ -- 53
-change.case$ -- 51
++ -- 291
+- -- 234
+* -- 907
+:= -- 2208
+add.period$ -- 172
+call.type$ -- 57
+change.case$ -- 55
 chr.to.int$ -- 0
-cite$ -- 53
-duplicate$ -- 515
-empty$ -- 1064
-format.name$ -- 227
-if$ -- 2564
+cite$ -- 57
+duplicate$ -- 551
+empty$ -- 1141
+format.name$ -- 234
+if$ -- 2726
 int.to.chr$ -- 0
-int.to.str$ -- 53
-missing$ -- 60
-newline$ -- 268
-num.names$ -- 54
-pop$ -- 100
+int.to.str$ -- 57
+missing$ -- 64
+newline$ -- 288
+num.names$ -- 58
+pop$ -- 104
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 196
+skip$ -- 211
 stack$ -- 0
-substring$ -- 528
-swap$ -- 80
+substring$ -- 567
+swap$ -- 84
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 97
-width$ -- 55
-write$ -- 588
-(There were 3 warnings)
+while$ -- 105
+width$ -- 59
+write$ -- 632
+(There were 5 warnings)

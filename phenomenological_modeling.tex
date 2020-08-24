@@ -31,8 +31,8 @@
   \setlength{\itemsep}{0pt plus 0.3ex}
 }
   
-\title{Modeling Loop Neurons as Systems of Coupled Leaky Integrators}
-\author[1]{\Large{NIST Physics and Hardware for Intelligence Project}
+\title{Modeling Loop Neurons as Systems of Leaky Integrators}
+\author[1]{\Large{Saeed Khan, Alexander N. Tait, and Jeffrey M. Shainline}
 \\
 \textit{\large{National Institute of Standards and Technology}}
 \\
@@ -94,45 +94,66 @@ The currents in the synaptic and neuronal loops are analogous to the membrane po
 
 Synaptic memory is also implemented based on the stored flux in a loop, referred to as the synaptic storage (SS) loop. The state of flux in the SS loop determines the current bias to the synaptic receiver circuit discussed above. This current bias is the synaptic weight. In contrast to the SI and DI loops, the SS loop is intended to store long-term memory, and therefore I do not expect to add a resistance to this loop. If the SS loop is created with a superconducting wire of high inductance, the loop can hold many discrete states of flux, and therefore can implement many synaptic weights, if desired. Synapses with a pseudo-continuum of hundreds of stable synaptic levels between minimal and maximal saturation values are possible. Transitions between these levels can be induced based on the relative arrival times of photons from the pre-synaptic and post-synaptic neurons, thereby establishing a means for spike-timing-dependent plasticity with one photon required for each step of the memory-update process. Binary synapses are also possible, and just as we expect a diversity of $L/r$ time constants to be advantageous for tracking activity over time, we expect a diversity of synapses raging from binary to multistable to be advantageous for striking a balance between adaptability and long-term memory retention.
 
+In the present article, we work with the component definitions introduced in Ref.\,\cite{sh2020} and reproduced here for clarity. A \textit{synapse} is a circuit that receives photons with a superconducting nanowire single-photon detector and transduces the signal to an electrical current circulating in a storage loop. Specifically, Fig.\,\ref{fig:circuits}(a) is the circuit diagram of a synapse. A \textit{dendrite} is a circuit that receives as input a signal proportional to the electrical output of one or more synapses and/or dendrites, performs a transfer function on the sum of the inputs, and produces an electrical current circulating in a storage loop as the output. Specifically, Fig.\,\ref{fig:circuits}(b) is the circuit diagram of a dendrite. A \textit{neuron cell body} receives as input a signal proportional to the electrical output of one or more synapses and/or dendrites, performs a threshold operation on the sum of the inputs, and produces as output a pulse of photons if the threshold is exceeded. Following the production of a pulse, the neuron cell body experiences a refractory period wherein threshold is temporarily significantly elevated, making subsequent pulses temporarily unlikely or impossible. The circuits that accomplish the thresholding and electrical-to-optical transduction are discussed in Refs.\onlinecite{sh2018} and \onlinecite{sh2018_full}. Based on this defintion, the components $\mathsf{N}$ and $\mathsf{T}$ in the schematic of Fig.\,\ref{fig:schematic} comprise the cell body, although it is more biologically accurate to associate the transmitter $\mathsf{T}$ in this hardware with the axon hillock of a biological neuron. 
+
+A neuron cell body can behave similarly to a dendrite in that both can perform a nonlinear threshold function on their inputs, but in the context of the hardware under consideration we make the distinction that a dendrite produces an electrical output that is to be communicated locally, while a neuron cell body produces an optical output that is to be communicated to synapses that may be spatially distant. Additionally, dendrites are envisioned to be diverse, with different dendrites performing different transfer functions, while all neuron cell bodies are envisioned to perform only the thresholding function leading to spike production. Further, the outputs from dendrites are functions with analog amplitude and a continuous temporal envelope, while the outputs from neuron cell bodies are stereotypical spike events wherein the amplitude is intended to be constant across spikes, and the temporal envelope is intended to approximate a delta function. The amplitude of the output from a neuron cell body carries no information, and all information output from the neuron cell body is encoded in the timing of the spikes. 
+
+The term \textit{dendritic tree} refers collectively to all the synapses and dendrites that feed into a neuron cell body. Figure \ref{fig:schematic} is intended to illustrate the potential complexity and diversity of the dendritic tree. The output optical signals from a neuron cell body reach downstream synapses through a network of dielectric waveguides, optical fibers, and free-space interconnects, as described in Refs.\,\onlinecite{sh2018_full} and \onlinecite{chbu2017,chbu2018,sh2019_ne}. These optical paths are collectively referred to as the \textit{axonal tree} and are not shown in the schematic diagram. We define a \textit{neuron} to be a system comprising a dendritic tree, a neuron cell body, and an axonal tree.
+
 A primary goal of developing the phenomenological model presented here is to elucidate similarities and differences between loop neurons and well-studied leaky integrate-and-fire (LIF) neurons. 
 
-
-
-\section{\label{sec:leaky_integrators}Context of the Model: Leaky Integrators}
+\section{\label{sec:leaky_integrators}Contrasting Loop Neurons with Leaky Integrate-and-Fire Point Neurons}
 \begin{equation}
 \label{eq:leaky_integrator}
 \frac{dQ(t)}{dt} = f(t)-\frac{Q(t)}{\tau},
 \end{equation}
-The general form of a leaky integrator differential equation is given in Eq.\,\ref{eq:leaky_integrator}. This equation can model many physical systems wherein a quantity of interest accumulates in time due to a driving function $f(t)$ while also leaking exponentially with a time constant $\tau$. 
-
-
-\section{\label{sec:synapses}Loop Neuron Synapses as Leaky Integrators}
-
-
-This description of the operation of the circuit is based on well-known properties of Josephson junctions within the formalism of the resistively and capacitively shunted junction (RCSJ) model \cite{vatu1998,ka1999,ti1996}. The relevant behavior derives from the fact that a JJ will produce a voltage fluxon after a time $t_{\mathrm{fq}}$ determined by the relation
+The general form of a leaky integrator differential equation is given in Eq.\,\ref{eq:leaky_integrator}. Equation \ref{eq:leaky_integrator} models many physical systems wherein a quantity of interest, $Q$, accumulates in time due to a driving function, $f(t)$, while leaking with an exponential temporal dependence and time constant $\tau$. In neurons, the quantity of interest is the membrane potential, $V(t)$, which is due to charge on the membrane capacitance. This charge leaks exponentially due to shunt conductance between the surfaces of the membrane. The charge is provided by synapse events, which play the role of the driving function. In a point neuron model, processing in the dendritic tree is ignored, and it is assumed that the signal from all synapses is summed on the membrane, one can calculate the membrane potential on neuron $i$ with $Q(t)\rightarrow V_i(t)$ and
 \begin{equation}
-\label{eq:jj__fluxon_production}
-\int_0^{t_{\mathrm{fq}}}V(t)dt = \Phi_0.
+\label{eq:leaky_integrator__synapse_signal}
+f(t) = q_0 \sum_j w_{ij} \sum_p \delta(t-t_p^{(j)}),
 \end{equation}
-If $V(t)$ is slowly varying on the scale of $t^{\mathrm{fq}}$, we can make the approximation $V(t)\,t^{\mathrm{fq}} \approx \Phi_0$, giving the rate of fluxon generation as
-\begin{equation}
-\label{eq:jj__fluxon_rate}
-R_{\mathrm{fq}}(t) =  \frac{1}{t_{\mathrm{fq}}} = \frac{V(t)}{\Phi_0}.
-\end{equation}
+where $w_{ij}$ is the synaptic weight, or efficacy, between neuron $j$ and neuron $i$, and $t_p^{(j)}$ is the time of the $p$th spike generated by neuron $j$.
 
+In addition to leaky integration, a point-neuron model must produce spiking behavior and refraction. We arrive at a LIF model by supplementing Eqs.\,\ref{eq:leaky_integrator} and \ref{eq:leaky_integrator__synapse_signal} with the rule that when $V_i(t)$ reaches a threshold $V_i^{\mathrm{th}}$ from below, the neuron produces a spike, and the membrane potential is set to zero (or an appropriate reset value). While this LIF point neuron fails to capture much of the computational repertoire of biological neurons \cite{kose2000}, we recapitulate the assumptions of the model as a point of comparison for the loop neurons that are the focus of this work.
+
+There are three distinctions to be made between the LIF model and a full loop neuron. First, loop neurons with thousands of connections are likely to employ a hierarchical dendritic tree, much like biological neurons \cite{me1994,loha2005,haah2016}, and tailored to the computational roles. Synapses store a record of their recent activity as flux in an inductive storage loop, and this signal is communicated to dendrites through transformers. Dendrites perform nonlinear operations on these signals and produce outputs as flux coupled to the next layer of the intra-neuron information-processing hierarchy. So whereas the quantity of interest in the LIF model is the membrane potential of the neuron cell body, in loop neurons the quantities of interest are the flux stored in all the synaptic and dendrite flux storage loops (the SI and DI loops discussed above).
+
+Because the information in a loop neuron is contained in the flux storage loops the system need not be characterized by a single time constant of temporal decay. This is the second distinction between the LIF model and loop neurons. The LIF model is characterized by a single time constant determined by the rate at which charge leaks from the membrane capacitance, so a LIF neuron integrates information over a single temporal scale. By contrast, each synapse and dendrite of a loop neuron can have a distinct time constant (set by the $L/r$ time constant of the loop), so the synapto-dendritic tree of a loop neuron can integrate information across many orders of magnitude in temporal scale.
+
+The third distinction between the LIF model and loop neurons relates to reset after production of a spike. When a LIF neuron produces a spike, its membrane potential is forced to a reset value, and all information accumulated by the neuron is discarded. By contrast, no such reset occurs in loop neurons. The cell body of the neuron receives signals from the final layer of dendrites as well as direct synapses. When the net flux from these signals drives a Josephson junction in the cell body above threshold, it produces an action potential that sends light to downstream synaptic connections. Refraction is accomplished when the signal that starts this action potential also triggers a specific dendrite that couples an inhibitory signal back to the cell body, achieving brief, negative self-feedback, which enables pulsatile behavior. Because the state of flux in the SI and DI loops is not affected by the neuron reaching threshold (with the exception of the refractory dendrite), the information contained in those loops is maintained through the firing process. 
+
+As the subsequent sections will describe, within the framework of loop neurons, synapses behave as leaky integrators that receive delta-function temporal inputs and cumulative outputs with exponential temporal decay of nearly arbitrary time constant. Dendrites are leaky integrators as well, obeying a nearly identical differential equation to synapses. Neurons are modeled simply as a dendrite with self-feedback accomplishing refraction through another dendrite. An entire loop neuron is a network of coupled leaky integrators, the output of each given as the input to another. Communication between neurons is by optical pulse events. Thus, while a LIF point-neuron model describes a single integrator with a single leak rate, a loop neuron is itself an elaborate network of coupled integrators accumulating and leaking information across temporal scales. It is premature to conclude that a network of such complex neurons is superior to simpler LIF point neurons for information processing. The objective of this paper is to develop the mathematical model that will enable efficient simulation of large networks of loop neurons so their utility can be assessed.
+
+\section{\label{sec:synapses}Synapses as Leaky Integrators}
+\begin{figure*}[h!]
+\includegraphics[width=17.2cm]{figures/_fig__synapses__circuits__responses.pdf}
+\captionof{figure}{\label{fig:synapses__circuits__responses}Caption of fig:synapses circuits responses.}
+\end{figure*}
+The objective of this section is to express the output of a synapse as a function of the input without solving the explicit circuit equations. We would like to capture the behavior of each synapse with a single ODE, rather than a system of coupled ODEs which is required to exactly model the circuit. We would also like to enable the ODE to be stepped through in time with as large a time step as possible, rather than requiring simulation on the picosecond time scale as required to accurately capture the dynamics of the Josephson junction.
+
+The synapse under consideration in shown in Fig.\,\ref{fig:synapses__circuits__responses}(a). In this simple form, the circuit comprises a superconducting-nanowire single-photon detector (SPD) in parallel with a Josephson junction (JJ). The JJ is embedded in a flux storage loop, referred to as the synaptic integration (SI) loop. We will also discuss a slightly more complex synapse circuit with three JJs, as shown in Fig.\,\ref{fig:synapses__circuits__responses}(b). The inputs to the circuit are photonic pulses generated by other neurons during firing events, and the output of the circuit is due to the integrated current circulating in the SI loop. This current couples flux through the mutual inductor ($M^{\mathrm{sy}}$) to a dendritic receiving (DR) loop or to the neuronal receiving (NR) loop of the cell body itself. The current bias $I^{\mathrm{sy}}$ is also an input to the circuit. This bias determines how much current is added to the SI loop with each synapse event. It is assumed that $I^{\mathrm{sy}}$ is slowly varying on the time scale of inter-spike intervals due to synaptic plasticity effects. The current bias to the SPD is assumed to be fixed for all time (at $20\,$\textmu A in this work). The critical current of all JJs considered here is $40\,$\textmu A.
+
+The model depends on two factors. First, current will be added to the SI loop at a rate that depends only on the instantaneous current passing through the synaptic firing junction ($I_{\mathrm{sf}}$ through $J_{\mathrm{sf}}$). Second, the current that has been added to the SI loop will decay exponentially with time constant $\tau^{\mathrm{si}} = L^{\mathrm{si}}/r^{\mathrm{si}}$. These two factors allow us to model the temporal rate of change of current in the SI loop with a leaky integrator equation:
 \begin{equation}
 \label{eq:synapses__leaky_integrator}
-\frac{dI^{\mathrm{si}}(t)}{dt} = R_{\mathrm{fq}}\left(I^{\mathrm{sf}}(t),I^{\mathrm{si}}(t)\right)\,I_{\mathrm{fq}} -\frac{I^{\mathrm{si}}(t)}{\tau^{\mathrm{si}}},
+\frac{dI^{\mathrm{si}}(t)}{dt} = I_{\mathrm{fq}} \, R_{\mathrm{fq}}\left(I^{\mathrm{drive}}(t),I^{\mathrm{si}}(t)\right) -\frac{I^{\mathrm{si}}(t)}{\tau^{\mathrm{si}}}.
 \end{equation}
-where the function $R^{\mathrm{fq}}\left(I^{\mathrm{sf}},I^{\mathrm{si}}\right)$ represents the rate at which fluxons are added to the SI loop as a function of the total current across the synaptic firing junction, $I^{\mathrm{sf}}$, as well the current circulating in the SI loop, $I^{\mathrm{si}}$. $I_{\mathrm{fq}} = \Phi_0/L^{\mathrm{si}}$ is the current added to the SI loop with each fluxon. The flux-induced current $I^{\mathrm{si}}$ circulates in the SI loop in a manner that counters the bias to $J^{\mathrm{si}}$. It is this counter-biasing that causes the SI loop to saturate as a function of $I^{\mathrm{si}}$. When $I^{\mathrm{si}}$ becomes sufficiently large, the fluxon generated by $J^{\mathrm{jtl}}$ does not provide enough current to drive $J^{\mathrm{si}}$ above $I_c$, and the stored flux in the SI loop must decay before subsequent synapse events can add to the integrated signal.
+The function $R^{\mathrm{fq}}\left(I^{\mathrm{drive}},I^{\mathrm{si}}\right)$ represents the rate at which fluxons are added to the SI loop as a function of the total current across the synaptic firing junction, $I^{\mathrm{sf}}$, as well the current circulating in the SI loop, $I^{\mathrm{si}}$. $I_{\mathrm{fq}} = \Phi_0/L^{\mathrm{si}}$ is the current added to the SI loop with each fluxon (described in more detail below). The flux-induced current $I^{\mathrm{si}}$ circulates in the SI loop in a manner that counters the bias to $J^{\mathrm{si}}$. This counter-biasing that occurs as current accumulates in the SI loop is a form of self-feedback, which has the effect of limiting the total current that can be added to the SI loop. This saturation effect is a nonlinearity that leads to saturation in the synaptic response in a manner that is functionally similar to short-term synaptic plasticity \cite{sh2020}.
 
-\begin{equation}
-\label{eq:jj__current_voltage}
-V^{\mathrm{sf}}(I^{\mathrm{sf}}) = \begin{cases} V_0\left[ \left( \frac{I^{\mathrm{sf}}}{I_c-I_r} \right)^{\mu_1} - 1 \right]^{\mu_2}, & \text{for } I > (I_c-I_r)_+ \\
-0, & \text{for } I < (I_c)_-
-\end{cases}
-\end{equation} 
-where the values $\mu_1$, $\mu_2$, and $V_0$ depend on the specific parameters of the shunt resistance and capacitance in the RCSJ model. For the junctions considered here, $I_r = 1.1768$\,\textmu A is the reset current associated with hysteresis on $J_{\mathrm{sf}}$ due to the fact that $\beta_c = 0.95 > 0$. $\mu_1 = 3.464271$, $\mu_2 = 0.306768$, and $V_0 = 233.966$\,\textmu V. From Eqs.\,\ref{eq:jj__fluxon_production} and \ref{eq:jj__current_voltage} we can obtain $r^{\mathrm{fq}}$. In the case where $I^{(\mathrm{sf})}$ is slowly varying compared to $t^fq$, $ r^{\mathrm{fq}} = V^{(\mathrm{sf})}/\Phi_0$. The notation $I > (I_c-I_r)_+$ refers to currents $I$ that have exceeded $I_c$, driving the junction into the resistive state, and have yet to drop below $I_c-I_r$, and are therefore demonstrating hysteresis. Likewise, $I<(I_c)_-$ refers to currents that are below $I_c$ while the junction is not in the hysteretic state.
+The synapse model requires specification of the form of the function $R_{\mathrm{fq}}\left(I^{\mathrm{drive}}(t),I^{\mathrm{si}}(t)\right)$. There are several methods to obtain this function, and for the reasons explained in Appendix\,\ref{apx:synapses_model}, we employ a purely numerical technique based on circuit simulations. In brief, a series of time-domain circuit simulations are conducted to obtain a lookup table for $R_{\mathrm{fq}}$ at discrete values of $I^{\mathrm{drive}}$ and $I^{\mathrm{si}}$. These rate arrays are shown in Fig.\,\ref{fig:synapses__circuits__responses}(c) and (d). Similarly, the response of the SPD following a synapse event is simulated to determine the temporal response of $I^{\mathrm{spd}}$, which enters $I^{\mathrm{drive}}$ and therefore the synaptic rate array. SPD responses for the one- and three-junction synapses are shown in Appendix\,\ref{apx:synapses_model}. A small number of circuit simulations is required to construct these lookup tables, and they are applicable to arbitrary values of $L^{\mathrm{si}}$ and $r^{\mathrm{si}}$ as well as the entire dynamic range of $I^{\mathrm{sy}}$. These arrays are accessed when stepping through Eq.\,\ref{eq:synapses__leaky_integrator} in time, thereby replacing the differential equations that would otherwise be required, and enabling utilization of temporal resolution on the order of 100\,ps - 1\,ns when simulating the synaptic response rather than the 1\,ps - 10\,ps time step commonly used when simulating JJs.
+
+The rate arrays presented in Fig.\,\ref{fig:synapses__circuits__responses}(c) and (d) elucidate the response of the circuits. One can see that for a given value of $I^{\mathrm{drive}}$ the rate begins high and gradually decays to zero as a function of $I^{\mathrm{si}}$, with an abrupt cessation at a cutoff value $I^{\mathrm{si}}_{\mathrm{c}}$. The important distinction between the one-junction synapse and the three-junction synapse is that $I^{\mathrm{si}}_{\mathrm{c}}$ is a strong function of 
+ 
+
+
+%It is this counter-biasing that causes the SI loop to saturate as a function of $I^{\mathrm{si}}$. When $I^{\mathrm{si}}$ becomes sufficiently large, the fluxon generated by $J^{\mathrm{jtl}}$ does not provide enough current to drive $J^{\mathrm{si}}$ above $I_c$, and the stored flux in the SI loop must decay before subsequent synapse events can add to the integrated signal.
+
+
+
+
+%We begin with the hypothesis that the circuit can be modeled as a leaky integrator, with the primary dynamical quantity being the integrated current circulating in the SI loop, and a drive term resulting from photon detection events. When the SPD receives a photon, its bias current, $I_{\mathrm{spd}}$, is diverted to the synaptic firing junction, $J_{\mathrm{sf}}$. If the combination $I_{\mathrm{spd}}+I_{\mathrm{sy}}$ exceeds the critical current of $J_{\mathrm{sf}}$, a series of fluxons will be generated. At the circuit level, $J_{\mathrm{sf}}$ will first produce a fluxon. The current from this fluxon will drive $J_{\mathrm{jtl}}$ above $I_c$, causing it to produce a fluxon. Likewise, this fluxon will drive $J_{\mathrm{si}}$ above $I_c$, and the fluxon thus produced will be added to the SI loop, increasing the value of the dynamical variable of interest. After this fluxon has increased $I_{\mathrm{si}}$, if $J_{\mathrm{sf}}$ is still being held above $I_c$ by the combination of $I_{\mathrm{spd}}$ and $I_{\mathrm{sy}}$, another fluxon will be produced and propagate through the circuit in the same manner. Depending on the strength of the synaptic weight and the flux storage capacity of the SI loop, a single synapse event may add anywhere from a few fluxons up to over one thousand fluxons to the SI loop. Each fluxon adds $\Delta I_{\mathrm{si}} = \Phi_0/L_{\mathrm{si}}$ to the circulating current in the SI loop. $\Phi_0 = h/2e \approx 2\times10^{-15}\mathrm{V}\cdot\mathrm{s}$ is the magnetic flux quantum. The current in the SI loop decays with time constant $\tau_{\mathrm{si}} = L_{\mathrm{si}}/r_{\mathrm{si}}$. Given this picture of circuit operation, we can see a path toward modeling the synapse as a leaky integrator. The driving term is determined by the rate of fluxon production, and the leak term is governed by $\tau_{\mathrm{si}}$.
+
+
 
 To quantify the accuracy, we use a $\chi^2$ of the form
 \begin{equation}
@@ -140,10 +161,6 @@ To quantify the accuracy, we use a $\chi^2$ of the form
 \chi^2 = \frac{\int dt \left|I^{\mathrm{si}}_{\mathrm{spice}}(t) - I^{\mathrm{si}}_{\mathrm{ode}}(t)\right|^2}{\int dt \left|I^{\mathrm{si}}_{\mathrm{spice}}(t)\right|^2}.
 \end{equation}
 
-\begin{figure*}[h!]
-\includegraphics[width=17.2cm]{figures/_fig__synapses__circuits__responses.pdf}
-\captionof{figure}{\label{fig:synapses__responses}Caption of fig:synapses circuitsresponses.}
-\end{figure*}
 
 \begin{figure*}[h!]
 \includegraphics[width=17.2cm]{figures/_fig__synapses__comparison__1jj__main.pdf}
@@ -157,7 +174,7 @@ To quantify the accuracy, we use a $\chi^2$ of the form
 
 \cite{amfu1994,fudr2005,fuab2007}
 
-\section{\label{sec:dendrites}Loop Neuron Dendrites as Leaky Integrators}
+\section{\label{sec:dendrites}Dendrites as Leaky Integrators}
 
 \begin{equation}
 \label{eq:dendrites__leaky_integrator}
@@ -245,7 +262,67 @@ The sum runs over all inputs to the dendritic receiving loop, and the superscrip
 
 \appendix
 
-\section{\label{apx:synapses}Further data regarding synapse modeling}
+\section{\label{apx:synapses_model}Further details regarding synapse model}
+
+\subsection{Rate of production of fluxons by a Josephson junction}
+Throughout this work, the rate function, $R_{\mathrm{fq}}$, has been obtained numerically from circuit simulations. However, it is worth considering the origin of this term with closed-form expression to the extent possible. In this subsection we present an analytical model of the one-junction synapse and explain why the model is not extensible to synapses with additional junctions or to dendrites.
+
+This rate term in the leaky-integrator description of a superconducting optoelectronic synapse ($R_{\mathrm{fq}}$ in Eq.\,\ref{eq:synapses__leaky_integrator}) originates from well-known properties of Josephson junctions within the formalism of the resistively and capacitively shunted junction (RCSJ) model \cite{vatu1998,ka1999,ti1996}. A JJ will produce a discrete voltage pulse, referred to as a fluxon, after a time $t_{\mathrm{fq}}$ determined by the relation
+\begin{equation}
+\label{eq:jj__fluxon_production}
+\int_0^{t_{\mathrm{fq}}} V(t) \, dt = \Phi_0.
+\end{equation}
+If $V(t)$ is slowly varying on the scale of $t^{\mathrm{fq}}$, we can make the approximation $V(t)\,t^{\mathrm{fq}} \approx \Phi_0$, giving the rate of fluxon generation as
+\begin{equation}
+\label{eq:jj__fluxon_rate}
+R_{\mathrm{fq}}(t) =  \frac{1}{t_{\mathrm{fq}}} = \frac{V(t)}{\Phi_0}.
+\end{equation}
+
+An expression for $R_{\mathrm{fq}}$ can be obtained if the voltage across the synaptic firing junction is known. In the case of the one-JJ synapse, this voltage is approximately given by
+\begin{equation}
+\label{eq:jj__current_voltage}
+V^{\mathrm{sf}}(I^{\mathrm{sf}}) = \begin{cases} V_0\left[ \left( \frac{I^{\mathrm{sf}}}{I_c-I_r} \right)^{\mu_1} - 1 \right]^{\mu_2}, & \text{for } I > (I_c-I_r)_+ \\
+0, & \text{for } I < (I_c)_-
+\end{cases}
+\end{equation} 
+The notation $I > (I_c-I_r)_+$ refers to currents $I$ that have exceeded $I_c$, driving the junction into the resistive state, and have yet to drop below $I_c-I_r$, and are therefore demonstrating hysteresis. Likewise, $I < (I_c)_-$ refers to currents that are below $I_c$ while the junction is not in the hysteretic state. $I_r = 1.1768$\,\textmu A is the reset current associated with hysteresis on $J_{\mathrm{sf}}$ due to the fact that $\beta_c = 0.95 > 0$. The values $\mu_1$, $\mu_2$, and $V_0$ depend on the specific parameters of the shunt resistance and capacitance in the RCSJ model. For the junctions considered here, fits to WRSpice data give $\mu_1 = 3.464271$, $\mu_2 = 0.306768$, and $V_0 = 233.966$\,\textmu V. From Eqs.\,\ref{eq:jj__fluxon_production} and \ref{eq:jj__current_voltage} we can obtain $R^{\mathrm{fq}}$. In the case where $I^{(\mathrm{sf})}$ is slowly varying compared to $t^{\mathrm{fq}}$, $R^{\mathrm{fq}} = V^{(\mathrm{sf})}/\Phi_0$. The voltage given by Eq.\,\ref{eq:jj__current_voltage} is only meaningful as a time-averaged approximation, and it ignores the phase of the present across the junction. 
+
+\begin{figure}[h!]
+\includegraphics[width=8.6cm]{figures/_fig_apx__synapses__1jj_circuit.pdf}
+\captionof{figure}{\label{fig:apx__synapses__1jj_circuit}Caption of fig:apx synapses 1jj circuit. Need to put all correct labels in this figure (see pg 11 of green lab notebook)}
+\end{figure}
+By using the explicit form for the voltage on the synaptic firing junction, we can obtain a pair of coupled ODEs that determine the time evolution of the circuit. A labeled diagram of the circuit under consideration is shown in Fig.\,\ref{fig:apx__synapses__1jj_circuit}. The coupled ODEs are:
+\begin{equation}
+\label{eq:syn_1jj_analytical_1}
+\frac{d I^{\mathrm{si}}}{dt} = \frac{V^{\mathrm{sf}}( I^{\mathrm{sf}} - I^{\mathrm{si}} )}{L^{\mathrm{si}}} - \frac{r^{\mathrm{si}}}{L^{\mathrm{si}}} I^{\mathrm{si}},
+\end{equation}
+and
+\begin{equation}
+\label{eq:syn_1jj_analytical_2}
+\begin{split}
+\frac{d I^{\mathrm{sf}}}{dt} & = \frac{r^{\mathrm{spd1}}}{L^{\mathrm{spd}}} \left( I^{\mathrm{spd}}+^{\mathrm{sy}}-I^{\mathrm{sf}} \right) \\
+& -\frac{r^{\mathrm{spd2}}}{L^{\mathrm{spd}}} \left( I^{\mathrm{sf}}-I^{\mathrm{sy}} \right) \\
+& -\frac{1}{L^{\mathrm{spd}}} V^{\mathrm{sf}}(I^{\mathrm{sf}}-I^{\mathrm{si}}).
+\end{split}
+\end{equation}
+Note that Eq.\,\ref{eq:syn_1jj_analytical_1} is a leaky integrator ODE for the current in the SI loop, just as Eq.\,\ref{eq:synapses__leaky_integrator} in the main text. Here it is coupled to Eq.\,\ref{eq:syn_1jj_analytical_2}, which captures the current through the synaptic firing junction due to the response of the SPD as well as the current circulating in the SI loop. By stepping through Eqs.\,\ref{eq:syn_1jj_analytical_1} and \ref{eq:syn_1jj_analytical_2}, satisfactory agreement is found with SPICE circuit simulations that do not ignore the phase across the Josephson junction. However, to obtain agreement, a short time step on the order of a picosecond is required. The goals of the synaptic model are to reduce the system to a single ODE that can be stepped on a longer time scale. Simulating the model of Eqs.\,\ref{eq:syn_1jj_analytical_1} and \ref{eq:syn_1jj_analytical_2} on a 1\,ps time grid accomplishes neither of these goals. 
+
+In addition to these shortcomings of the analytical approach to a synapse model, the time-averaged approximation for the voltage across a junction (Eq.\,\ref{eq:jj__current_voltage}) provides a poor model for any circuit wherein two JJs interact with each other. Aside from the one-junction synapse, all other circuits considered in this work rely on multiple coupled JJs. In such circuits, the phases across the junctions cannot be ignored. For these reasons, we resort to numerical means of obtaining the rate functions ($R_{fq}$) for synapses and dendrites, as discussed in the following subsection.
+
+\subsection{Determining the form of the rate function and detector with circuit simulations}
+the rate at which current is added to the SI loop depends on the total current biasing the junction ($I_{\mathrm{sf}}$), which depends on the drive ($I_{\mathrm{drive}} = I_{\mathrm{spd}}+I_{\mathrm{sy}}$) and the integrated current in the SI loop ($I_{\mathrm{si}}$). We therefore wish to form an array with values of $R_{\mathrm{fq}}$ corresponding to points in the $I_{\mathrm{sf}}$ - $I_{\mathrm{drive}}$ plane, as shown in Fig.\,\ref{fig:synapses__circuits__responses}(c). To obtain such an array, we replace the SPD and the resistor $r^{\mathrm{spd}}$ with a current source. We choose a large value for $L^{\mathrm{si}}$ so that many fluxons are required to saturate the SI loop, and we let $r^{\mathrm{si}} \rightarrow 0$ so the loop has no leak. We then simulate the circuit in time. For a given value of $I^{\mathrm{drive}}$, one obtains a list of values of $R_{\mathrm{fq}}$ as a nearly continuous function of $I^{\mathrm{si}}$ as the loop fills to saturation. With this approach, there are multiple methods of calculating the rate. One may find all voltage peaks corresponding to fluxons, and determine the time between them. Alternatively, one may track the phase across $J_{\mathrm{sf}}$ or the quantity $I^{\mathrm{si}}/I_{\mathrm{fq}}$, and differentiate with respect in time. If one wishes to calculate the rate based on fluxon times, high temporal resolution is necessary, and the output data files can become large. The rate arrays used in this work have been obtained by smoothing the quantity $I^{\mathrm{si}}/I_{\mathrm{fq}}$ with a Savitzky–Golay filter and then differentiating in time provides. By repeating this procedure for multiple values of $I^{\mathrm{drive}}$, one can build up a representation of $R_{\mathrm{fq}}(I^{\mathrm{drive}},I^{\mathrm{si}})$, as shown in Fig.\,\ref{fig:dendrites__circuits__responses}(c). In this work, we have used WRSpice \cite{wh1991} to perform the circuit simulations. The netlist was edited with Python scripts to facilitate looping over $I^{\mathrm{drive}}$.
+
+A beneficial aspect of this method of determining the rate array is that it applies directly to the three-junction synapse as well. To obtain the rate array shown in Fig.\,\ref{fig:synapses__circuits__responses}(d), the same method of replacing the SPD with a static current source was used to construct each trace of $R_{\mathrm{fq}}$ versus $I^{\mathrmn{si}}$. We have used a resolution of 250\,nA in $I^{\mathrmn{drive}}$. Therefore, with this technique, roughly 40 circuit simulations are sufficient to obtain a rate array with sufficient resolution to provide the accuracy of synaptic responses presented here. Each circuit simulation captures 1\,\textmu s of simulated time, requiring $xy$\,s of CPU time. Once these simulations are run and the rate array has been constructed, it is used as a lookup table on each time step of the simulation of the synaptic ODE, Eq.\,\ref{eq:synapses__leaky_integrator}. A different lookup table must be constructed for the one-junction and three-junction circuits, but each table is applicable to a broad range of values of the circuit parameters $L^{\mathrm{si}}$, $r^{\mathrm{si}}$, and $I^{\mathrm{sy}}$. The table used in this work for the one-junction synapse is 536\,kB, while that for the three-junction synapse is 739\,kB.
+
+One of the inputs to the rate array, $R_{\mathrm{fq}}$, is $I^{\mathrm{drive}}$, which is the sum of the synaptic bias current, $I^{\mathrm{sy}}$, and the current diverted from the SPD upon detection of a synapse event, $I^{\mathrm{spd}}$. When an SPD detects a photon, it develops a large resistive section ($\approx 5$\,k$\Omega$) for a brief duration ($\approx 200\,$\,ps) \cite{}. This resistance returns to zero once superconductivity is restored. Accurately modeling the temporal response of the current $I^{\mathrm{spd}}$ following a synapse event unfortunately requires knowledge of the voltage across $J^{\mathrm{sf}}$ on the picosecond time scale. To avoid adding this burden to our numerical scheme, we also resort to a lookup-table approach for $I^{\mathrm{spd}}$. Here we simulate the circuits of Fig.\,\ref{fig:synapses__circuits__responses}(a) and (b) with the SPD modeled as a 200\,ps, 5\,k$\Omega$ resistive segment following a detection event. We use a large SI inductance to ensure self-feedback is negligible, and we simulate the circuit for roughly 40 values of $I^{\mathrm{sy}}$ to obtain $I^{\mathrm{spd}}$ as a function of time following a synapse event. This lookup table is then used to determine the drive to $R_{\mathrm{fq}}$ following a synapse event. While this approach to determining the SPD response leads to acceptable accuracy and speed when used to simulate synapses, it is by far the least elegant aspect of the model.
+
+\begin{figure}[h!]
+\includegraphics[width=8.6cm]{figures/_fig_apx__synapses__spd__responses.pdf}
+\captionof{figure}{\label{fig:synapses__spd_responses}Caption of fig:synapses spd responses.}
+\end{figure}
+
+\section{\label{apx:synapses_data}Further data regarding synapse modeling}
+
 
 \begin{figure*}[h!]
 \includegraphics[width=17.2cm]{figures/_fig_apx__synapses__comparison__1jj__tau_si.pdf}

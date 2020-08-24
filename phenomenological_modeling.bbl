@@ -281,10 +281,26 @@ W.~Gerstner and W.~Kistler.
 \newblock {\em Spiking neuron models}.
 \newblock Cambridge University Press, Cambridge, first edition, 2002.
 
-\bibitem{ti1996}
-M.~Tinkham.
-\newblock {\em Introduction to Superconductivity}.
-\newblock Dover, second edition, 1996.
+\bibitem{kose2000}
+C.~Koch and I~Segev.
+\newblock {The Role of Single Neurons in Information Processing}.
+\newblock {\em Nature Neuroscience}, 3:1171, 2000.
+
+\bibitem{me1994}
+B.W. Mel.
+\newblock {Information Processing in Dendritic Trees}.
+\newblock {\em Neural Computation}, 6:1031, 1994.
+
+\bibitem{loha2005}
+M.~London and M.~H\"{a}usser.
+\newblock {Dendritic Computation}.
+\newblock {\em Annu. Rev. Neurosci.}, 28:503, 2005.
+
+\bibitem{haah2016}
+J.~Hawkins and S.~Ahmad.
+\newblock {Why Neurons have Thousands of Synapses, a Theory of Sequence Memory
+  in Neocortex}.
+\newblock {\em Front. Neural Circuits}, 10:23, 2016.
 
 \bibitem{amfu1994}
 D.J. Amit and S.~Fusi.
@@ -300,5 +316,10 @@ S.~Fusi, P.J. Drew, and L.F. Abbott.
 S.~Fusi and L.F. Abbott.
 \newblock Limits on the memory storage capacity of bounded synapses.
 \newblock {\em Nature Neuroscience}, 10:485, 2007.
+
+\bibitem{ti1996}
+M.~Tinkham.
+\newblock {\em Introduction to Superconductivity}.
+\newblock Dover, second edition, 1996.
 
 \end{thebibliography}
