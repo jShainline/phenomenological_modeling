@@ -10,45 +10,49 @@ Warning--I didn't find a database entry for "sh2019_jap"
 Warning--I didn't find a database entry for "sh2019_jstqe"
 Warning--I didn't find a database entry for "sh2018_full"
 Warning--I didn't find a database entry for "sh2019_ne"
+Warning--I didn't find a database entry for "Wolfram_01"
+Warning--I didn't find a database entry for "Wolfram_02"
+Warning--I didn't find a database entry for "PhaseTransitionsBooks"
+Warning--empty year in clbr2006
 You've used 57 entries,
             1791 wiz_defined-function locations,
-            772 strings with 12307 characters,
-and the built_in function-call counts, 12647 in all, are:
-= -- 971
-> -- 809
+            782 strings with 12486 characters,
+and the built_in function-call counts, 12659 in all, are:
+= -- 967
+> -- 815
 < -- 2
-+ -- 291
-- -- 234
-* -- 907
-:= -- 2208
++ -- 293
+- -- 236
+* -- 909
+:= -- 2209
 add.period$ -- 172
 call.type$ -- 57
-change.case$ -- 55
+change.case$ -- 54
 chr.to.int$ -- 0
-cite$ -- 57
-duplicate$ -- 551
-empty$ -- 1141
-format.name$ -- 234
-if$ -- 2726
+cite$ -- 58
+duplicate$ -- 553
+empty$ -- 1142
+format.name$ -- 236
+if$ -- 2727
 int.to.chr$ -- 0
 int.to.str$ -- 57
 missing$ -- 64
 newline$ -- 288
-num.names$ -- 58
-pop$ -- 104
+num.names$ -- 59
+pop$ -- 110
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 211
+skip$ -- 209
 stack$ -- 0
-substring$ -- 567
+substring$ -- 561
 swap$ -- 84
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 105
+warning$ -- 1
+while$ -- 104
 width$ -- 59
-write$ -- 632
-(There were 5 warnings)
+write$ -- 630
+(There were 9 warnings)

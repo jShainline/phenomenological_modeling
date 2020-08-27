@@ -281,6 +281,11 @@ W.~Gerstner and W.~Kistler.
 \newblock {\em Spiking neuron models}.
 \newblock Cambridge University Press, Cambridge, first edition, 2002.
 
+\bibitem{clbr2006}
+J.~Clarke and A.I. Braginski, editors.
+\newblock {\em The SQUID handbook}.
+\newblock Wiley-VCH.
+
 \bibitem{kose2000}
 C.~Koch and I~Segev.
 \newblock {The Role of Single Neurons in Information Processing}.
@@ -302,20 +307,17 @@ J.~Hawkins and S.~Ahmad.
   in Neocortex}.
 \newblock {\em Front. Neural Circuits}, 10:23, 2016.
 
-\bibitem{amfu1994}
-D.J. Amit and S.~Fusi.
-\newblock Learning in neural networks with material synapses.
-\newblock {\em Neural Computation}, 6:957, 1994.
+\bibitem{wh1991}
+S.R. Whiteley.
+\newblock {Josephson junctions in SPICE3}.
+\newblock {\em IEEE Tras. Mag.}, 27:2902, 1991.
 
-\bibitem{fudr2005}
-S.~Fusi, P.J. Drew, and L.F. Abbott.
-\newblock Casdcade models of synaptically stored memories.
-\newblock {\em Neuron}, 45:599, 2005.
-
-\bibitem{fuab2007}
-S.~Fusi and L.F. Abbott.
-\newblock Limits on the memory storage capacity of bounded synapses.
-\newblock {\em Nature Neuroscience}, 10:485, 2007.
+\bibitem{yake2007}
+J.K.W. Yang, A.J. Kerman, E.A. Dauler, V.~Anant, K.M. Rosfjord, and K.K.
+  Berggren.
+\newblock Modeling the electrical and thermal response of superconducting
+  nanowire single-photon detectors.
+\newblock {\em IEEE Trans. Appl. Supercond.}, 17:581, 2007.
 
 \bibitem{ti1996}
 M.~Tinkham.
