@@ -307,6 +307,11 @@ J.~Hawkins and S.~Ahmad.
   in Neocortex}.
 \newblock {\em Front. Neural Circuits}, 10:23, 2016.
 
+\bibitem{ti1996}
+M.~Tinkham.
+\newblock {\em Introduction to Superconductivity}.
+\newblock Dover, second edition, 1996.
+
 \bibitem{wh1991}
 S.R. Whiteley.
 \newblock {Josephson junctions in SPICE3}.
@@ -318,10 +323,5 @@ J.K.W. Yang, A.J. Kerman, E.A. Dauler, V.~Anant, K.M. Rosfjord, and K.K.
 \newblock Modeling the electrical and thermal response of superconducting
   nanowire single-photon detectors.
 \newblock {\em IEEE Trans. Appl. Supercond.}, 17:581, 2007.
-
-\bibitem{ti1996}
-M.~Tinkham.
-\newblock {\em Introduction to Superconductivity}.
-\newblock Dover, second edition, 1996.
 
 \end{thebibliography}
