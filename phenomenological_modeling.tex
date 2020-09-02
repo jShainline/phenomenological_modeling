@@ -142,7 +142,11 @@ The most ubiquitous and useful compound JJ circuit is a superconducting quantum 
 
 In the framework of loop neurons, a dendrite is a SQUID with its output fed into a flux-storage loop. The content of this loop is coupled through a transformer to drive further dendrites or the neuron cell body. Through selection of fixed circuit parameters as well as dynamic bias currents, the behavior of a dendrite can be shaped across a broad range. To predict such circuit behavior, it is common to solve circuit equations derived with the Josephson relations, which relate current and voltage to the phase of the superconducting wave function across the junction. As can be seen from the time scales in Fig.\,\ref{fig:dendrites__squid}(b), these equations must be stepped through with a 1\,ps-10\,ps time step. In the context of superconducting neurons, this time scale is the fastest in the system. Yet activity of interest will persist far longer. We would like to simulate the temporal evolution of systems with as many neurons as possible, each hosting a complex dendritic tree, over as long of time spans as possible. Reduction of the time step to 100\,ps-1\,ns would be helpful in this regard. To construct such a model, exact circuit equations tracking the superconducting phase cannot be employed. The circuit must be represented as a more abstract element.
 
-The objective of this section is to express the output of a dendrite as a function of the input without solving the explicit circuit equations. We would like to capture the behavior of each dendrite with a single ODE, rather than a system of coupled ODEs which is required to exactly model the circuit. We would also like to enable the ODE to be stepped through in time with as large a time step as possible, rather than requiring simulation on the picosecond time scale as required to accurately capture the dynamics of the Josephson junction. The dendrite circuit under consideration is shown in Fig.\,\ref{fig:dendrites__circuits__responses}(a), with a slightly modified version in Fig.\,\ref{fig:dendrites__circuits__responses}(b). We refer to the SQUID loop as the dendritic receiving (DR) loop and the output storage loop as the dendritic integration (DI) loop. These circuits can be modeled with a leaky-integrator equation. The DR loop produces fluxons at a rate determined by the applied flux and the current bias, these fluxons are accumulated in the DI loop, and this integrated signal leaks with time constant $\tau_{\mathrm{dr}} = L_{\mathrm{dr}}/r_{\mathrm{dr}}$. This exponential decay is straightforward to model. The content of the storage loop feeds back to the SQUID in a negative manner, providing a saturating nonlinearity. This nonlinearity is more difficult to model. To formulate the behavior as a leaky integrator, the primary challenge is to construct the input drive term, analogous to $f(t)$ in Eq.\,\ref{eq:leaky_integrator}, which captures the positive response to flux coupled into the DR loop as well as the negative feedback when the DI loop approaches saturation.
+\begin{figure*}[h!]
+\includegraphics[width=17.2cm]{figures/_fig__dendrites__circuits__responses.pdf}
+\captionof{figure}{\label{fig:dendrites__circuits__responses}Caption of fig:dendrites responses.}
+\end{figure*}
+The objective of this section is to express the output of a dendrite as a function of the input without solving the explicit circuit equations. We would like to capture the behavior of each dendrite with a single ODE, rather than a system of coupled ODEs which is required to exactly model the circuit. We would also like to enable the ODE to be stepped through in time with as large a time step as possible, rather than requiring simulation on the picosecond time scale as required to accurately capture the dynamics of the Josephson junction. The dendrite circuit under consideration is shown in Fig.\,\ref{fig:dendrites__circuits__responses}(a), with a slightly modified version in Fig.\,\ref{fig:dendrites__circuits__responses}(b). We refer to the SQUID loop as the dendritic receiving (DR) loop and the output storage loop as the dendritic integration (DI) loop. These circuits can be modeled with a leaky-integrator equation, where the quantity being integrated and leaking is the current circulating in the DI loop, $I^{\mathrm{di}}$. The DR loop produces fluxons at a rate determined by the applied flux and the current bias, these fluxons are accumulated in the DI loop, and this integrated signal leaks with time constant $\tau_{\mathrm{dr}} = L_{\mathrm{dr}}/r_{\mathrm{dr}}$. This exponential decay is straightforward to model. The content of the storage loop feeds back to the SQUID in a negative manner, providing a saturating nonlinearity. This nonlinearity is more difficult to model. To formulate the behavior as a leaky integrator, the primary challenge is to construct the input drive term, analogous to $f(t)$ in Eq.\,\ref{eq:leaky_integrator}, which captures the positive response to flux coupled into the DR loop as well as the negative feedback when the DI loop approaches saturation.
 
 In the present work, we construct the drive term as the rate at which fluxons are added to the storage loop as a function of the input flux and the current integrated in the storage loop: $f(t)\rightarrow R_{\mathrm{fq}}(\Phi_a^{\mathrm{dr}},I^{\mathrm{di}})$. The temporal rate of change of current in the DI loop is given by
 \begin{equation}
@@ -160,7 +164,29 @@ The function $R_{\mathrm{fq}} \left( \Phi^{\mathrm{dr}}_a(t),I^{\mathrm{di}}(t) 
 
 The dendrite model requires specification of the form of the function $R_{\mathrm{fq}}$. There are several methods to obtain this function, and for the reasons explained in Appendix\,\ref{apx:dendrites_model}, we employ a purely numerical technique based on circuit simulations. In brief, a series of time-domain circuit simulations are conducted to obtain a lookup table for $R_{\mathrm{fq}}$ at discrete values of $\Phi^{\mathrm{dr}}_a$ and $I^{\mathrm{di}}$. These rate arrays are shown in Fig.\,\ref{fig:dendrites__circuits__responses}(c) and (d). A small number of circuit simulations is required to construct these lookup tables, and they are applicable to arbitrary values of $L^{\mathrm{di}}$ and $r^{\mathrm{di}}$ as well as the entire dynamic range of $I^{\mathrm{de}}$. These arrays are accessed when stepping through Eq.\,\ref{eq:dendrites__leaky_integrator} in time, thereby replacing the differential equations that would otherwise be required, and enabling utilization of temporal resolution on the order of 100\,ps - 1\,ns when simulating the dendritic response rather than the 1\,ps - 10\,ps time step commonly used when simulating JJs.
 
-The rate arrays presented in Fig.\,\ref{fig:dendrites__circuits__responses}(c) and (d) elucidate the response of the circuits. Cross sections in the $\Phi_{\mathrm{dr}}_a$ - $R_{\mathrm{fq}}$ plane with small values of $I_{\mathrm{di}}$ follow the sinusoidal response seen from the SQUID in Fig.\,\ref{fig:dendrites__squid}(c). As current accumulates in the DI loop, the feedback effect is pronounced. For a given value of $\Phi_{\mathrm{dr}}_a$, the rate begins high and gradually decays to zero as a function of $I^{\mathrm{di}}$, with an abrupt cessation at a saturation value $I^{\mathrm{di}}_{\mathrm{sat}}$. The important distinction between the two-junction dendrite and the four-junction dendrite is that $I^{\mathrm{di}}_{\mathrm{sat}}$ is a strong function of $\Phi_{\mathrm{dr}}_a$ in the two-junction case, while $I^{\mathrm{di}}_{\mathrm{sat}}$ is nearly independent of $\Phi_{\mathrm{dr}}_a$ in the three-junction circuit. This feature allows the total signal that can be accumulated in the DI loop to be nearly decoupled from the dendritic bias current, $I^{\mathrm{de}}$. In both cases, the rate of fluxon production is determined by the operating point in the rate array at a given time. 
+The rate arrays presented in Fig.\,\ref{fig:dendrites__circuits__responses}(c) and (d) elucidate the response of the circuits. Several qualitative aspects of these responses merit discussion. First consider the relationship between the dendrite of Fig.\,\ref{fig:dendrites__circuits__responses}(a) to the SQUID of Fig.\,\ref{fig:dendrites__squid}. The differences are that the dendrite takes multiple inputs, and, more consequentially, in the dendrite the output is coupled to the DI loop, which integrates and leaks the accumulated flux. Cross sections of the rate array in the $\Phi^{\mathrm{dr}}_a$ - $R_{\mathrm{fq}}$ plane with small values of $I_{\mathrm{di}}$ follow the sinusoidal response seen from the SQUID in Fig.\,\ref{fig:dendrites__squid}(c). However, as current accumulates in the DI loop, the feedback effect is pronounced. For a given value of $\Phi^{\mathrm{dr}}_a$, the rate begins high and gradually decays to zero as a function of $I^{\mathrm{di}}$, with an abrupt cessation at a saturation value $I^{\mathrm{di}}_{\mathrm{sat}}$. The important distinction between the two-junction dendrite and the four-junction dendrite is that $I^{\mathrm{di}}_{\mathrm{sat}}$ is a strong function of $\Phi^{\mathrm{dr}}_a$ in the two-junction case, while $I^{\mathrm{di}}_{\mathrm{sat}}$ is nearly independent of $\Phi^{\mathrm{dr}}_a$ in the three-junction circuit. This feature allows the total signal that can be accumulated in the DI loop to be nearly decoupled from the drives to the DR loop (including the applied flux, $\Phi^{\mathrm{dr}}_a$, as well as the dendritic bias current, $I^{\mathrm{de}}$). With the two-junction dendrite, a weak drive leads to a low value of $I^{\mathrm{di}}_{\mathrm{sat}}$, regardless of the duration of the applied signal. By contrast, a weak drive into the four-junction dendrite can lead to a large integrated current in the DI loop (large $I^{\mathrm{di}}_{\mathrm{sat}}$), provided the flux drive is applied for sufficiently long. Like any leaky integrator, the accumulated signal will depend on the relationship between the drive term and the leak rate. Both the two-junction and four-junction dendrites are leaky integrators. The only difference is the form of the drive term, $R_{\mathrm{fq}}$.
+
+The other qualitative feature of the rate arrays that plays an important role in synaptic, dendritic, and neuronal operation is the presence of a threshold value of applied flux below which the rate array is zero and above which the rate array activates, and the dendrite begins to accumulate signal in the DI loop. 
+
+
+\begin{figure*}[h!]
+\includegraphics[width=17.2cm]{figures/_fig__dendrites__comparison__2jj__main.pdf}
+\captionof{figure}{\label{fig:dendrites__comparison__2jj__main}Caption of fig:dendrites comparison 2jj main.}
+\end{figure*}
+To quantify the accuracy of the leaky-integrator model of dendrites, we compare to full circuit simulations conducted with WRSpice \cite{wh1991}. Calculations are carried out in the time domain for a variety of inputs to the dendrite as well as circuit configurations. Accuracy is quantified with a $\chi^2$ of the form
+\begin{equation}
+\label{eq:chi_squared}
+\chi^2 = \frac{\int dt \left|I^{\mathrm{si}}_{\mathrm{spice}}(t) - I^{\mathrm{si}}_{\mathrm{ode}}(t)\right|^2}{\int dt \left|I^{\mathrm{si}}_{\mathrm{spice}}(t)\right|^2},
+\end{equation}
+where the subscripts refer to the SPICE model and the ODE model of Eq.\,\ref{eq:dendrites__leaky_integrator}, respectively. Illustrative cases are shown in Figs.\,\ref{fig:dendrites__comparison__2jj__main} and \ref{fig:dendrites__comparison__4jj__main} for the two-junction and four-junction cases, respectively. Further case studies are shown in Appendix \ref{apx:dendrites_data}. 
+\begin{figure*}[h!]
+\includegraphics[width=17.2cm]{figures/_fig__dendrites__comparison__4jj__main.pdf}
+\captionof{figure}{\label{fig:dendrites__comparison__4jj__main}Caption of fig:dendrites comparison 4jj main.}
+\end{figure*}
+
+
+
+%In both cases, the rate of fluxon production is determined by the operating point in the rate array at a given time. 
 
 % summarize what inputs are and where they come from as well as what control knobs are available and what each does.
 
@@ -198,33 +224,6 @@ The rate arrays presented in Fig.\,\ref{fig:dendrites__circuits__responses}(c) a
 
 %--- end from synapses
 
-
-
-%--- from here
-
-To assess the leaky-integrator model, we compare it to SPICE circuit models \cite{wh1991} for various cases. To quantify the accuracy, we use a $\chi^2$ of the form
-\begin{equation}
-\label{eq:chi_squared}
-\chi^2 = \frac{\int dt \left|I^{\mathrm{si}}_{\mathrm{spice}}(t) - I^{\mathrm{si}}_{\mathrm{ode}}(t)\right|^2}{\int dt \left|I^{\mathrm{si}}_{\mathrm{spice}}(t)\right|^2},
-\end{equation}
-where the subscripts refer to the SPICE model and the ODE model of Eq.\,\ref{eq:dendrites__leaky_integrator}, respectively.
-
-%--- to here
-
-\begin{figure*}[h!]
-\includegraphics[width=17.2cm]{figures/_fig__dendrites__circuits__responses.pdf}
-\captionof{figure}{\label{fig:dendrites__circuits__responses}Caption of fig:dendrites responses.}
-\end{figure*}
-
-\begin{figure*}[h!]
-\includegraphics[width=17.2cm]{figures/_fig__dendrites__comparison__2jj__main.pdf}
-\captionof{figure}{\label{fig:dendrites__comparison__2jj__main}Caption of fig:dendrites comparison 2jj main.}
-\end{figure*}
-
-\begin{figure*}[h!]
-\includegraphics[width=17.2cm]{figures/_fig__dendrites__comparison__4jj__main.pdf}
-\captionof{figure}{\label{fig:dendrites__comparison__4jj__main}Caption of fig:dendrites comparison 4jj main.}
-\end{figure*}
 
 
 
@@ -296,6 +295,9 @@ While the model presented here is interesting to explore, it is intended as a to
 \appendix
 
 \section{\label{apx:dendrites_model}Further details regarding dendrite model}
+%discuss inductances in squid loop (DR), symmetric vs asymmetric, beta_L
+%discuss choice of beta_c, noise, further optimization possible
+%why four-junction dendrite instead of three?
 
 \subsection{Rate of production of fluxons by a Josephson junction}
 Throughout this work, the rate function, $R_{\mathrm{fq}}$, has been obtained numerically from circuit simulations. However, it is worth considering the origin of this term with closed-form expression to the extent possible. In this subsection we present an analytical model of the one-junction synapse and explain why the model is not extensible to synapses with additional junctions or to dendrites.

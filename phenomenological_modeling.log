@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.4)  31 AUG 2020 16:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.4)  1 SEP 2020 14:25
 entering extended mode
 **./phenomenological_modeling.tex
 (phenomenological_modeling.tex
@@ -459,13 +459,51 @@ Package pdftex.def Info: figures/_fig__dendrites_squid.pdf  used on input line
 
 pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__circuits__responses.p
 df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_fig__dendrites__circuits__responses.pdf, id=103, 380.59592pt x 280.96
+<figures/_fig__dendrites__circuits__responses.pdf, id=108, 380.59592pt x 280.96
 266pt>
 File: figures/_fig__dendrites__circuits__responses.pdf Graphic file (type pdf)
 <use figures/_fig__dendrites__circuits__responses.pdf>
 Package pdftex.def Info: figures/_fig__dendrites__circuits__responses.pdf  used
- on input line 214.
+ on input line 146.
 (pdftex.def)             Requested size: 489.38731pt x 361.27295pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <./figures/_fig__dendrites__circuits__responses.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__comparison__2jj__main
+.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
+d
+<figures/_fig__dendrites__comparison__2jj__main.pdf, id=473, 489.38733pt x 240.
+6069pt>
+File: figures/_fig__dendrites__comparison__2jj__main.pdf Graphic file (type pdf
+)
+<use figures/_fig__dendrites__comparison__2jj__main.pdf>
+Package pdftex.def Info: figures/_fig__dendrites__comparison__2jj__main.pdf  us
+ed on input line 173.
+(pdftex.def)             Requested size: 489.38731pt x 240.60997pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__comparison__4jj__main
+.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
+d
+<figures/_fig__dendrites__comparison__4jj__main.pdf, id=474, 489.38733pt x 240.
+6069pt>
+File: figures/_fig__dendrites__comparison__4jj__main.pdf Graphic file (type pdf
+)
+<use figures/_fig__dendrites__comparison__4jj__main.pdf>
+Package pdftex.def Info: figures/_fig__dendrites__comparison__4jj__main.pdf  us
+ed on input line 183.
+(pdftex.def)             Requested size: 489.38731pt x 240.60997pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -473,25 +511,28 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 pdfTeX warning: pdflatex (file ./figures/_fig__synapses__circuits__responses.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_fig__synapses__circuits__responses.pdf, id=104, 244.69417pt x 171.356
+<figures/_fig__synapses__circuits__responses.pdf, id=475, 244.69417pt x 171.356
 19pt>
 File: figures/_fig__synapses__circuits__responses.pdf Graphic file (type pdf)
 <use figures/_fig__synapses__circuits__responses.pdf>
 Package pdftex.def Info: figures/_fig__synapses__circuits__responses.pdf  used 
-on input line 222.
+on input line 232.
 (pdftex.def)             Requested size: 244.69386pt x 171.35837pt.
-[6]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 
 pdfTeX warning: pdflatex (file ./figures/_fig__synapses__comparison__1jj__main.
 pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<figures/_fig__synapses__comparison__1jj__main.pdf, id=108, 489.38733pt x 240.6
+<figures/_fig__synapses__comparison__1jj__main.pdf, id=476, 489.38733pt x 240.6
 069pt>
 File: figures/_fig__synapses__comparison__1jj__main.pdf Graphic file (type pdf)
 
 <use figures/_fig__synapses__comparison__1jj__main.pdf>
 Package pdftex.def Info: figures/_fig__synapses__comparison__1jj__main.pdf  use
-d on input line 232.
+d on input line 243.
 (pdftex.def)             Requested size: 489.38731pt x 240.60997pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -501,13 +542,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 pdfTeX warning: pdflatex (file ./figures/_fig__synapses__comparison__3jj__main.
 pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<figures/_fig__synapses__comparison__3jj__main.pdf, id=109, 489.38733pt x 240.6
+<figures/_fig__synapses__comparison__3jj__main.pdf, id=477, 489.38733pt x 240.6
 069pt>
 File: figures/_fig__synapses__comparison__3jj__main.pdf Graphic file (type pdf)
 
 <use figures/_fig__synapses__comparison__3jj__main.pdf>
 Package pdftex.def Info: figures/_fig__synapses__comparison__3jj__main.pdf  use
-d on input line 237.
+d on input line 248.
 (pdftex.def)             Requested size: 489.38731pt x 240.60997pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -517,17 +558,17 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 pdfTeX warning: pdflatex (file ./figures/_fig__point_neuron__one_synapse__schem
 atic__circuit.pdf): PDF inclusion: found PDF version <1.7>, but at most version
  <1.5> allowed
-<figures/_fig__point_neuron__one_synapse__schematic__circuit.pdf, id=110, 244.6
+<figures/_fig__point_neuron__one_synapse__schematic__circuit.pdf, id=478, 244.6
 9417pt x 268.00125pt>
 File: figures/_fig__point_neuron__one_synapse__schematic__circuit.pdf Graphic f
 ile (type pdf)
 <use figures/_fig__point_neuron__one_synapse__schematic__circuit.pdf>
 Package pdftex.def Info: figures/_fig__point_neuron__one_synapse__schematic__ci
-rcuit.pdf  used on input line 247.
+rcuit.pdf  used on input line 258.
 (pdftex.def)             Requested size: 244.69386pt x 268.00467pt.
 
-Underfull \hbox (badness 1472) in paragraph at lines 248--248
-[]\OT1/cmr/m/n/10 Figure 7: |[]Cap-tion of fig:point neu-ron one synapse
+Underfull \hbox (badness 1472) in paragraph at lines 259--259
+[]\OT1/cmr/m/n/10 Figure 9: |[]Cap-tion of fig:point neu-ron one synapse
  []
 
 
@@ -538,13 +579,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 pdfTeX warning: pdflatex (file ./figures/_fig__point_neuron__one_synapse__data.
 pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<figures/_fig__point_neuron__one_synapse__data.pdf, id=111, 489.38733pt x 478.0
+<figures/_fig__point_neuron__one_synapse__data.pdf, id=479, 489.38733pt x 478.0
 0583pt>
 File: figures/_fig__point_neuron__one_synapse__data.pdf Graphic file (type pdf)
 
 <use figures/_fig__point_neuron__one_synapse__data.pdf>
 Package pdftex.def Info: figures/_fig__point_neuron__one_synapse__data.pdf  use
-d on input line 252.
+d on input line 263.
 (pdftex.def)             Requested size: 489.38731pt x 478.01195pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -554,13 +595,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 pdfTeX warning: pdflatex (file ./figures/_fig__point_neuron__nine_synapses__sch
 ematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
 allowed
-<figures/_fig__point_neuron__nine_synapses__schematic.pdf, id=112, 244.69417pt 
+<figures/_fig__point_neuron__nine_synapses__schematic.pdf, id=480, 244.69417pt 
 x 165.74924pt>
 File: figures/_fig__point_neuron__nine_synapses__schematic.pdf Graphic file (ty
 pe pdf)
 <use figures/_fig__point_neuron__nine_synapses__schematic.pdf>
 Package pdftex.def Info: figures/_fig__point_neuron__nine_synapses__schematic.p
-df  used on input line 257.
+df  used on input line 268.
 (pdftex.def)             Requested size: 244.69386pt x 165.75134pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -570,108 +611,107 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 pdfTeX warning: pdflatex (file ./figures/_fig__point_neuron__nine_synapses__dat
 a.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<figures/_fig__point_neuron__nine_synapses__data.pdf, id=113, 489.38733pt x 478
+<figures/_fig__point_neuron__nine_synapses__data.pdf, id=481, 489.38733pt x 478
 .00583pt>
 File: figures/_fig__point_neuron__nine_synapses__data.pdf Graphic file (type pd
 f)
 <use figures/_fig__point_neuron__nine_synapses__data.pdf>
 Package pdftex.def Info: figures/_fig__point_neuron__nine_synapses__data.pdf  u
-sed on input line 262.
+sed on input line 273.
 (pdftex.def)             Requested size: 489.38731pt x 478.01195pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7 <./figures/_fig__dendrites__circuits__responses.pdf> <./figures/_fig__synap
-ses__circuits__responses.pdf
-
-pdfTeX warning: pdflatex (file ./figures/_fig__synapses__circuits__responses.pd
-f): PDF inclusion: multiple pdfs with page group included in a single page
->]
-
-LaTeX Warning: Citation `Wolfram_01' on page 8 undefined on input line 271.
+LaTeX Warning: Citation `Wolfram_01' on page 8 undefined on input line 282.
 
 
-LaTeX Warning: Citation `Wolfram_02' on page 8 undefined on input line 271.
+LaTeX Warning: Citation `Wolfram_02' on page 8 undefined on input line 282.
 
 
 LaTeX Warning: Citation `PhaseTransitionsBooks' on page 8 undefined on input li
-ne 271.
+ne 282.
 
-
+[8]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <./figures/_fig__synapses__comparison__1jj__main.pdf> <./figures/_fig__syna
-pses__comparison__3jj__main.pdf
+ [9 <./figures/_fig__dendrites__comparison__2jj__main.pdf> <./figures/_fig__den
+drites__comparison__4jj__main.pdf
 
-pdfTeX warning: pdflatex (file ./figures/_fig__synapses__comparison__3jj__main.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__comparison__4jj__main
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 
-LaTeX Warning: Reference `eq:synapses__leaky_integrator' on page 9 undefined on
- input line 291.
-
-[9 <./figures/_fig__point_neuron__one_synapse__schematic__circuit.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Reference `eq:synapses__leaky_integrator' on page 10 undefined o
+n input line 305.
 
 
 
 pdfTeX warning: pdflatex (file ./figures/_fig_apx__synapses__1jj_circuit.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_fig_apx__synapses__1jj_circuit.pdf, id=652, 244.69417pt x 139.32652pt
+<figures/_fig_apx__synapses__1jj_circuit.pdf, id=534, 244.69417pt x 139.32652pt
 >
 File: figures/_fig_apx__synapses__1jj_circuit.pdf Graphic file (type pdf)
 <use figures/_fig_apx__synapses__1jj_circuit.pdf>
 Package pdftex.def Info: figures/_fig_apx__synapses__1jj_circuit.pdf  used on i
-nput line 312.
+nput line 326.
 (pdftex.def)             Requested size: 244.69386pt x 139.3283pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+LaTeX Warning: Reference `eq:synapses__leaky_integrator' on page 10 undefined o
+n input line 343.
+
+
+Underfull \vbox (badness 5756) has occurred while \output is active []
+
+ [10 <./figures/_fig__synapses__circuits__responses.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10 <./figures/_fig__point_neuron__one_synapse__data.pdf>]
 
-LaTeX Warning: Reference `eq:synapses__leaky_integrator' on page 11 undefined o
-n input line 329.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11 <./figures/_fig__synapses__comparison__1jj__main.pdf> <./figures/_fig__syn
+apses__comparison__3jj__main.pdf
+
+pdfTeX warning: pdflatex (file ./figures/_fig__synapses__comparison__3jj__main.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: Reference `eq:synapses__leaky_integrator' on page 12 undefined o
+n input line 350.
 
 
-LaTeX Warning: Reference `eq:synapses__leaky_integrator' on page 11 undefined o
-n input line 336.
-
-[11 <./figures/_fig__point_neuron__nine_synapses__schematic.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 381--381
+Underfull \hbox (badness 10000) in paragraph at lines 396--396
 [][]\OT1/cmr/bx/n/14.4 Further de-tails re-gard-ing
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12 <./figures/_fig__point_neuron__nine_synapses__data.pdf>]
 
 pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__min_max__2jj.pdf): PD
 F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_fig__dendrites__min_max__2jj.pdf, id=810, 244.69417pt x 171.6011pt>
+<figures/_fig__dendrites__min_max__2jj.pdf, id=684, 244.69417pt x 171.6011pt>
 File: figures/_fig__dendrites__min_max__2jj.pdf Graphic file (type pdf)
 <use figures/_fig__dendrites__min_max__2jj.pdf>
 Package pdftex.def Info: figures/_fig__dendrites__min_max__2jj.pdf  used on inp
-ut line 447.
+ut line 462.
 (pdftex.def)             Requested size: 244.69386pt x 171.60329pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 
 pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__min_max__4jj.pdf): PD
 F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_fig__dendrites__min_max__4jj.pdf, id=811, 244.69417pt x 326.46268pt>
+<figures/_fig__dendrites__min_max__4jj.pdf, id=685, 244.69417pt x 326.46268pt>
 File: figures/_fig__dendrites__min_max__4jj.pdf Graphic file (type pdf)
 <use figures/_fig__dendrites__min_max__4jj.pdf>
 Package pdftex.def Info: figures/_fig__dendrites__min_max__4jj.pdf  used on inp
-ut line 452.
+ut line 467.
 (pdftex.def)             Requested size: 244.69386pt x 326.46684pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -680,25 +720,20 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 pdfTeX warning: pdflatex (file ./figures/_fig_apx__fan-in__circuits.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_fig_apx__fan-in__circuits.pdf, id=812, 244.69417pt x 298.75415pt>
+<figures/_fig_apx__fan-in__circuits.pdf, id=686, 244.69417pt x 298.75415pt>
 File: figures/_fig_apx__fan-in__circuits.pdf Graphic file (type pdf)
 <use figures/_fig_apx__fan-in__circuits.pdf>
 Package pdftex.def Info: figures/_fig_apx__fan-in__circuits.pdf  used on input 
-line 459.
+line 474.
 (pdftex.def)             Requested size: 244.69386pt x 298.75797pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13 <./figures/_fig_apx__synapses__1jj_circuit.pdf> <./figures/_fig__dendrites_
-_min_max__2jj.pdf
+[12 <./figures/_fig__point_neuron__one_synapse__schematic__circuit.pdf>]
+Underfull \vbox (badness 2443) has occurred while \output is active []
 
-pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__min_max__2jj.pdf): PD
-F inclusion: multiple pdfs with page group included in a single page
-> <./figures/_fig__dendrites__min_max__4jj.pdf
-
-pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__min_max__4jj.pdf): PD
-F inclusion: multiple pdfs with page group included in a single page
->] (phenomenological_modeling.bbl
+ [13 <./figures/_fig__point_neuron__one_synapse__data.pdf>] (phenomenological_m
+odeling.bbl
 Underfull \hbox (badness 2846) in paragraph at lines 10--13
 \OT1/cmr/m/n/10 Model of Mam-malian Tha-la-m-o-cor-ti-cal Sys-tems.
  []
@@ -718,7 +753,8 @@ Underfull \hbox (badness 1082) in paragraph at lines 60--66
 \OT1/cmr/m/n/10 S.-C. Liu, P. Dudek, P. H afliger, S. Re-naud,
  []
 
-[14 <./figures/_fig_apx__fan-in__circuits.pdf>]
+[14 <./figures/_fig__point_neuron__nine_synapses__schematic.pdf>] [15 <./figure
+s/_fig__point_neuron__nine_synapses__data.pdf>]
 Underfull \hbox (badness 3861) in paragraph at lines 152--156
 []\OT1/cmr/m/n/10 K.S. Kravtsov, M.P. Fok, P.R. Pruc-nal, and
  []
@@ -733,21 +769,29 @@ Underfull \hbox (badness 1062) in paragraph at lines 198--202
 \OT1/cmr/m/n/10 spik-ing neu-rosy-nap-tic net-works with self-learning
  []
 
-[15]) [16
+[16 <./figures/_fig_apx__synapses__1jj_circuit.pdf> <./figures/_fig__dendrites_
+_min_max__2jj.pdf
 
-] (phenomenological_modeling.aux)
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__min_max__2jj.pdf): PD
+F inclusion: multiple pdfs with page group included in a single page
+> <./figures/_fig__dendrites__min_max__4jj.pdf
+
+pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__min_max__4jj.pdf): PD
+F inclusion: multiple pdfs with page group included in a single page
+>]) [17 <./figures/_fig_apx__fan-in__circuits.pdf>]
+(phenomenological_modeling.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5758 strings out of 481225
- 88551 string characters out of 2906175
- 356521 words of memory out of 3000000
- 21230 multiletter control sequences out of 15000+200000
+ 5772 strings out of 481225
+ 89297 string characters out of 2906175
+ 360547 words of memory out of 3000000
+ 21242 multiletter control sequences out of 15000+200000
  547530 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,17n,77p,2200b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,17n,77p,2320b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\jeffr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1000.pk><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -773,9 +817,9 @@ Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.
 pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmti12.pfb>
-Output written on phenomenological_modeling.pdf (16 pages, 7212572 bytes).
+Output written on phenomenological_modeling.pdf (17 pages, 7431380 bytes).
 PDF statistics:
- 997 PDF objects out of 1000 (max. 8388607)
+ 1053 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
