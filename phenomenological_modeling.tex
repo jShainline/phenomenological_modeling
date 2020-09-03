@@ -32,7 +32,8 @@
 }
   
 \title{Modeling Loop Neurons as Systems of Leaky Integrators}
-\author[1]{\Large{Saeed Khan, Alexander N. Tait, and Jeffrey M. Shainline}
+%\author[1]{\Large{Saeed Khan, Alexander N. Tait, and Jeffrey M. Shainline}
+\author[1]{\Large{NIST Physics and Hardware for Intelligence}
 \\
 \textit{\large{National Institute of Standards and Technology}}
 \\
@@ -164,25 +165,26 @@ The function $R_{\mathrm{fq}} \left( \Phi^{\mathrm{dr}}_a(t),I^{\mathrm{di}}(t) 
 
 The dendrite model requires specification of the form of the function $R_{\mathrm{fq}}$. There are several methods to obtain this function, and for the reasons explained in Appendix\,\ref{apx:dendrites_model}, we employ a purely numerical technique based on circuit simulations. In brief, a series of time-domain circuit simulations are conducted to obtain a lookup table for $R_{\mathrm{fq}}$ at discrete values of $\Phi^{\mathrm{dr}}_a$ and $I^{\mathrm{di}}$. These rate arrays are shown in Fig.\,\ref{fig:dendrites__circuits__responses}(c) and (d). A small number of circuit simulations is required to construct these lookup tables, and they are applicable to arbitrary values of $L^{\mathrm{di}}$ and $r^{\mathrm{di}}$ as well as the entire dynamic range of $I^{\mathrm{de}}$. These arrays are accessed when stepping through Eq.\,\ref{eq:dendrites__leaky_integrator} in time, thereby replacing the differential equations that would otherwise be required, and enabling utilization of temporal resolution on the order of 100\,ps - 1\,ns when simulating the dendritic response rather than the 1\,ps - 10\,ps time step commonly used when simulating JJs.
 
-The rate arrays presented in Fig.\,\ref{fig:dendrites__circuits__responses}(c) and (d) elucidate the response of the circuits. Several qualitative aspects of these responses merit discussion. First consider the relationship between the dendrite of Fig.\,\ref{fig:dendrites__circuits__responses}(a) to the SQUID of Fig.\,\ref{fig:dendrites__squid}. The differences are that the dendrite takes multiple inputs, and, more consequentially, in the dendrite the output is coupled to the DI loop, which integrates and leaks the accumulated flux. Cross sections of the rate array in the $\Phi^{\mathrm{dr}}_a$ - $R_{\mathrm{fq}}$ plane with small values of $I_{\mathrm{di}}$ follow the sinusoidal response seen from the SQUID in Fig.\,\ref{fig:dendrites__squid}(c). However, as current accumulates in the DI loop, the feedback effect is pronounced. For a given value of $\Phi^{\mathrm{dr}}_a$, the rate begins high and gradually decays to zero as a function of $I^{\mathrm{di}}$, with an abrupt cessation at a saturation value $I^{\mathrm{di}}_{\mathrm{sat}}$. The important distinction between the two-junction dendrite and the four-junction dendrite is that $I^{\mathrm{di}}_{\mathrm{sat}}$ is a strong function of $\Phi^{\mathrm{dr}}_a$ in the two-junction case, while $I^{\mathrm{di}}_{\mathrm{sat}}$ is nearly independent of $\Phi^{\mathrm{dr}}_a$ in the three-junction circuit. This feature allows the total signal that can be accumulated in the DI loop to be nearly decoupled from the drives to the DR loop (including the applied flux, $\Phi^{\mathrm{dr}}_a$, as well as the dendritic bias current, $I^{\mathrm{de}}$). With the two-junction dendrite, a weak drive leads to a low value of $I^{\mathrm{di}}_{\mathrm{sat}}$, regardless of the duration of the applied signal. By contrast, a weak drive into the four-junction dendrite can lead to a large integrated current in the DI loop (large $I^{\mathrm{di}}_{\mathrm{sat}}$), provided the flux drive is applied for sufficiently long. Like any leaky integrator, the accumulated signal will depend on the relationship between the drive term and the leak rate. Both the two-junction and four-junction dendrites are leaky integrators. The only difference is the form of the drive term, $R_{\mathrm{fq}}$.
+The rate arrays presented in Fig.\,\ref{fig:dendrites__circuits__responses}(c) and (d) elucidate the response of the circuits. Several qualitative aspects of these responses merit discussion. A primary feature of the rate arrays that plays an important role in synaptic, dendritic, and neuronal operation is the presence of a threshold value of applied flux below which the rate of fluxon production is zero and above which the SQUID activates, and the dendrite begins to accumulate signal in the DI loop. In most applications of SQUIDs, the device is used as a sensitive detector of magnetic flux, so the SQUID is biased in a voltage state, either just above threshold or at the point of maximum slope in the response curve. When used as a neural component, the SQUID comprising the DR loop of the dendrite can be biased below threshold, providing a nonlinear response function with a threshold below which weak signals evoke zero response as well as the saturating behavior of the SQUID as the signal reaches $\Phi_0/2$. The inductive inputs to the DR loop can be chosen so the net flux just reaches this maximum level when all the inputs have reached saturation. Biasing the DR loops below threshold also has the advantage of zero static power dissipation. The specific bias point, and therefore threshold, of each dendrite plays a key role in the response function. The set of all these biases can be dynamically reconfigured based on network activity, leading to the ability for adaptation and learning.  
 
-The other qualitative feature of the rate arrays that plays an important role in synaptic, dendritic, and neuronal operation is the presence of a threshold value of applied flux below which the rate array is zero and above which the rate array activates, and the dendrite begins to accumulate signal in the DI loop. 
+First consider the relationship between the dendrite of Fig.\,\ref{fig:dendrites__circuits__responses}(a) to the SQUID of Fig.\,\ref{fig:dendrites__squid}. The differences are that the dendrite takes multiple inputs, and, more consequentially, in the dendrite the output is coupled to the DI loop, which integrates and leaks the accumulated flux. Cross sections of the rate array in the $\Phi^{\mathrm{dr}}_a$ - $R_{\mathrm{fq}}$ plane with small values of $I_{\mathrm{di}}$ follow the sinusoidal response seen from the SQUID in Fig.\,\ref{fig:dendrites__squid}(c). However, as current accumulates in the DI loop, the feedback effect is pronounced. For a given value of $\Phi^{\mathrm{dr}}_a$, the rate begins high and gradually decays to zero as a function of $I^{\mathrm{di}}$, with an abrupt cessation at a saturation value $I^{\mathrm{di}}_{\mathrm{sat}}$. The important distinction between the two-junction dendrite and the four-junction dendrite is that $I^{\mathrm{di}}_{\mathrm{sat}}$ is a strong function of $\Phi^{\mathrm{dr}}_a$ in the two-junction case, while $I^{\mathrm{di}}_{\mathrm{sat}}$ is nearly independent of $\Phi^{\mathrm{dr}}_a$ in the three-junction circuit. This feature allows the total signal that can be accumulated in the DI loop to be nearly decoupled from the drives to the DR loop (including the applied flux, $\Phi^{\mathrm{dr}}_a$, as well as the dendritic bias current, $I^{\mathrm{de}}$). By separating the current bias to the dendrite receiving loop, $I^{\mathrm{def}}$, from the current bias to the integration loop, $I^{\mathrm{sc}}$, the circuit decouples the threshold from the storage capacity. With the two-junction dendrite, a weak drive leads to a low value of $I^{\mathrm{di}}_{\mathrm{sat}}$, regardless of the duration of the applied signal. By contrast, a weak drive into the four-junction dendrite can lead to a large integrated current in the DI loop (large $I^{\mathrm{di}}_{\mathrm{sat}}$), provided $I^{\mathrm{sc}}$ is large and the flux drive is applied for sufficiently long. Like any leaky integrator, the accumulated signal will depend on the relationship between the drive term and the leak rate. Both the two-junction and four-junction dendrites are leaky integrators. The only difference is the form of the drive term, $R_{\mathrm{fq}}$.
+  
 
 
-\begin{figure*}[h!]
-\includegraphics[width=17.2cm]{figures/_fig__dendrites__comparison__2jj__main.pdf}
-\captionof{figure}{\label{fig:dendrites__comparison__2jj__main}Caption of fig:dendrites comparison 2jj main.}
-\end{figure*}
+%\begin{figure}[h!]
+%\includegraphics[width=8.6cm]{figures/_fig__dendrites__comparison__2jj__main.pdf}
+%\captionof{figure}{\label{fig:dendrites__comparison__2jj__main}Caption of fig:dendrites comparison 2jj main.}
+%\end{figure}
 To quantify the accuracy of the leaky-integrator model of dendrites, we compare to full circuit simulations conducted with WRSpice \cite{wh1991}. Calculations are carried out in the time domain for a variety of inputs to the dendrite as well as circuit configurations. Accuracy is quantified with a $\chi^2$ of the form
 \begin{equation}
 \label{eq:chi_squared}
 \chi^2 = \frac{\int dt \left|I^{\mathrm{si}}_{\mathrm{spice}}(t) - I^{\mathrm{si}}_{\mathrm{ode}}(t)\right|^2}{\int dt \left|I^{\mathrm{si}}_{\mathrm{spice}}(t)\right|^2},
 \end{equation}
 where the subscripts refer to the SPICE model and the ODE model of Eq.\,\ref{eq:dendrites__leaky_integrator}, respectively. Illustrative cases are shown in Figs.\,\ref{fig:dendrites__comparison__2jj__main} and \ref{fig:dendrites__comparison__4jj__main} for the two-junction and four-junction cases, respectively. Further case studies are shown in Appendix \ref{apx:dendrites_data}. 
-\begin{figure*}[h!]
-\includegraphics[width=17.2cm]{figures/_fig__dendrites__comparison__4jj__main.pdf}
+\begin{figure}[h!]
+\includegraphics[width=8.6cm]{figures/_fig__dendrites__comparison__4jj__main.pdf}
 \captionof{figure}{\label{fig:dendrites__comparison__4jj__main}Caption of fig:dendrites comparison 4jj main.}
-\end{figure*}
+\end{figure}
 
 
 
@@ -212,11 +214,7 @@ where the subscripts refer to the SPICE model and the ODE model of Eq.\,\ref{eq:
 %From this perspective, we can disambiguate several factors that contribute to the total drive from a synapse to a dendrite or neuron. First, with a fixed SPD bias current, the number of fluxons generated during a synapse event is determined by the synaptic bias current, $I^{\mathrm{sy}}$ , which can adapt dynamically in response to activity. Second, the total amount of current added to the SI loop
  
 
-
 %It is this counter-biasing that causes the SI loop to saturate as a function of $I^{\mathrm{si}}$. When $I^{\mathrm{si}}$ becomes sufficiently large, the fluxon generated by $J^{\mathrm{jtl}}$ does not provide enough current to drive $J^{\mathrm{si}}$ above $I_c$, and the stored flux in the SI loop must decay before subsequent synapse events can add to the integrated signal.
-
-
-
 
 %We begin with the hypothesis that the circuit can be modeled as a leaky integrator, with the primary dynamical quantity being the integrated current circulating in the SI loop, and a drive term resulting from photon detection events. When the SPD receives a photon, its bias current, $I_{\mathrm{spd}}$, is diverted to the synaptic firing junction, $J_{\mathrm{sf}}$. If the combination $I_{\mathrm{spd}}+I_{\mathrm{sy}}$ exceeds the critical current of $J_{\mathrm{sf}}$, a series of fluxons will be generated. At the circuit level, $J_{\mathrm{sf}}$ will first produce a fluxon. The current from this fluxon will drive $J_{\mathrm{jtl}}$ above $I_c$, causing it to produce a fluxon. Likewise, this fluxon will drive $J_{\mathrm{si}}$ above $I_c$, and the fluxon thus produced will be added to the SI loop, increasing the value of the dynamical variable of interest. After this fluxon has increased $I_{\mathrm{si}}$, if $J_{\mathrm{sf}}$ is still being held above $I_c$ by the combination of $I_{\mathrm{spd}}$ and $I_{\mathrm{sy}}$, another fluxon will be produced and propagate through the circuit in the same manner. Depending on the strength of the synaptic weight and the flux storage capacity of the SI loop, a single synapse event may add anywhere from a few fluxons up to over one thousand fluxons to the SI loop. Each fluxon adds $\Delta I_{\mathrm{si}} = \Phi_0/L_{\mathrm{si}}$ to the circulating current in the SI loop. $\Phi_0 = h/2e \approx 2\times10^{-15}\mathrm{V}\cdot\mathrm{s}$ is the magnetic flux quantum. The current in the SI loop decays with time constant $\tau_{\mathrm{si}} = L_{\mathrm{si}}/r_{\mathrm{si}}$. Given this picture of circuit operation, we can see a path toward modeling the synapse as a leaky integrator. The driving term is determined by the rate of fluxon production, and the leak term is governed by $\tau_{\mathrm{si}}$.
 
@@ -229,7 +227,7 @@ where the subscripts refer to the SPICE model and the ODE model of Eq.\,\ref{eq:
 
 \section{\label{sec:synapses}Synapses are Dendrites}
 \begin{figure}[h!]
-\includegraphics[width=8.6cm]{figures/_fig__synapses__circuits__responses.pdf}
+\includegraphics[width=8.6cm]{figures/_fig__synapses__circuit.pdf}
 \captionof{figure}{\label{fig:synapses__circuits__responses}Caption of fig:synapses circuits responses.}
 \end{figure}
 
@@ -432,8 +430,8 @@ $\tau_+ = L_{\mathrm{tot}}/(r_{\mathrm{1}}+r_{\mathrm{2}})$ and $\tau_- = L_{\ma
 %\end{figure*}
 %
 %\begin{figure*}[h!]
-%\includegraphics[width=17.2cm]{figures/_fig_apx__synapses__error_vs_dt__1jj.pdf}
-%\captionof{figure}{\label{fig:synapses__error_vs_dt__1jj}Caption of fig:synapses error vs dt 1jj.}
+%\includegraphics[width=17.2cm]{figures/_fig_apx__synapses__error_vs_dt__2jj.pdf}
+%\captionof{figure}{\label{fig:synapses__error_vs_dt__2jj}Caption of fig:synapses error vs dt 2jj.}
 %\end{figure*}
 %
 %\begin{figure*}[h!]
@@ -451,10 +449,10 @@ $\tau_+ = L_{\mathrm{tot}}/(r_{\mathrm{1}}+r_{\mathrm{2}})$ and $\tau_- = L_{\ma
 %\captionof{figure}{\label{fig:synapses__comparison__3jj__I_sy}Caption of fig:synapses comparison 3jj I sy.}
 %\end{figure*}
 %
-%\begin{figure*}[h!]
-%\includegraphics[width=17.2cm]{figures/_fig_apx__synapses__error_vs_dt__3jj.pdf}
-%\captionof{figure}{\label{fig:synapses__error_vs_dt__3jj}Caption of fig:synapses error vs dt 3jj.}
-%\end{figure*}
+\begin{figure*}[h!]
+\includegraphics[width=17.2cm]{figures/_fig_apx__synapses__error_vs_dt__4jj.pdf}
+\captionof{figure}{\label{fig:synapses__error_vs_dt__4jj}Caption of fig:synapses error vs dt 4jj.}
+\end{figure*}
 
 \section{\label{apx:dendrites}Further data regarding dendrite modeling}
 
@@ -470,12 +468,13 @@ $\tau_+ = L_{\mathrm{tot}}/(r_{\mathrm{1}}+r_{\mathrm{2}})$ and $\tau_- = L_{\ma
 
 \section{\label{apx:fan_in}Analysis of dendritic and neuronal fan-in}
 
+Fan-out and fan-in are primary considerations of neuronal circuits when assessing scaling potential. Consideration of fan-out has led to the proposal for photonic communication, which we have addressed in prior studies \cite{shbu2017,chbu2017,chbu2018,sh2018_ICRC,sh2019,sh2020}. The present study relates to models of dendrites and neurons, which perform fan-in through the synapto-dendritic tree. Analysis of the number of input connections to a dendrite or neuron cell body are therefore necessary to complete the study.
+
 \begin{figure}[h!]
 \includegraphics[width=8.6cm]{figures/_fig_apx__fan-in__circuits.pdf}
 \captionof{figure}{\label{fig:fan-in__circuits}Caption of fig:fan-in circuits.}
 \end{figure}
-
-We would like to know how to choose the inductors shown in Fig.\,\ref{fig:fan-in__circuits}(a) so the applied flux stays in the appropriate operating range as the number of synaptic connections, $N$, is modified. This consideration will identify the limit of how many synapses can be coupled to a single dendrite or neuron\textemdash the fan-in limit. 
+For synaptic or dendritic integration loops coupled directly to a dendritic or neuronal receiving loop, we would like to know how to choose the inductors shown in Fig.\,\ref{fig:fan-in__circuits}(a) so the applied flux stays in the appropriate operating range as the number of synaptic connections, $N$, is modified. This consideration will identify the limit of how many synapses can be coupled to a single dendrite or neuron\textemdash the fan-in limit. 
 
 We have seen that the operation of a dendrite (or neuron cell body) is significantly shaped by the inductance of the DR loop. We would therefore like to be able to increase the number of synaptic connections without changing the total inductance of this loop. This total inductance is given by
 \begin{equation}
@@ -497,21 +496,67 @@ In the case where all mutual inductors between synapses and the NR loop are equa
 \label{eq:fan-in__direct_input__flux_independent_of_N_2}
 \frac{ \Phi_{\mathrm{a}}^{\mathrm{nr}}(N) }{ I_0^{\mathrm{si}} } = N\,k\,\sqrt{ L_N^{\mathrm{si2}} \, L_N^{\mathrm{nr1}}},
 \end{equation}
-where $L_N^{\mathrm{si2}}$ and $L_N^{\mathrm{nr1}}$ are the value ofs $L^{\mathrm{si2}}$ and $L^{\mathrm{nr1}}$ that we should choose for the SI loop output inductor when there are $N$ synapses coupled directly to the NR loop. We have seen above that we need $L_N^{\mathrm{nr1}} = L_0^{\mathrm{nr1}}/N$ to maintain the inductance of the NR loop. Therefore, in order for Eq.\,\ref{eq:fan-in__direct_input__flux_independent_of_N_2} to satisfy Eq.\,\ref{eq:fan-in__direct_input__flux_independent_of_N}, we must also have $L_N^{\mathrm{si2}} = L_0^{\mathrm{si2}}/N$.
+where $L_N^{\mathrm{si2}}$ and $L_N^{\mathrm{nr1}}$ are the values of $L^{\mathrm{si2}}$ and $L^{\mathrm{nr1}}$ that we should choose for the SI loop output inductor when there are $N$ synapses coupled directly to the NR loop. We have seen above that we need $L_N^{\mathrm{nr1}} = L_0^{\mathrm{nr1}}/N$ to maintain the inductance of the NR loop. Therefore, in order for Eq.\,\ref{eq:fan-in__direct_input__flux_independent_of_N_2} to satisfy Eq.\,\ref{eq:fan-in__direct_input__flux_independent_of_N}, we must also have $L_N^{\mathrm{si2}} = L_0^{\mathrm{si2}}/N$.
 
-This consideration does not explicitly identify a fan-in limit. This limit arises due to practical considerations related to making $L^{\mathrm{si2}}$ and $L^{\mathrm{nr1}}$ exceedingly small as $N$ grows large. With $L_0 \approx 1$\,pH a rough lower limit on what we would like to fabricate, and $L_{\mathrm{tot}}^{\mathrm{nr}} \approx 20$\,pH, we see direct fan-in with this circuit design is limited to about 20. This limit can be straightforwardly overcome with an intermediate transformer collection coil, as shown in Fig.\,\ref{fig:fan-in__circuits}(b).
-
+This consideration does not explicitly identify a fan-in limit. This limit arises due to practical considerations related to making $L^{\mathrm{si2}}$ and $L^{\mathrm{nr1}}$ exceedingly small as $N$ grows large. Taking $L_0 \approx 1$\,pH as a rough lower limit on what we would like to fabricate, and $L_{\mathrm{tot}}^{\mathrm{nr}} \approx 20$\,pH, we see direct fan-in with this circuit design is limited to about 20. This limit can be straightforwardly overcome with an intermediate transformer collection coil, as shown in Fig.\,\ref{fig:fan-in__circuits}(b). In this configuration, the applied flux to the NR loop is
 \begin{equation}
-\label{eq:fan-in__transformer_collection}
-\frac{\Phi_{\mathrm{a}}^{\mathrm{nr}}}{I_0^\mathrm{si}} \approx \frac{ M^{\mathrm{si|nt}} \, M^{\mathrm{nt|nr}} }{L^{\mathrm{nt1}}} \left( 1-\epsilon \right) + \mathcal{O}(\epsilon^2)
+\label{eq:fan-in__transformer_collection__full}
+\Phi_{\mathrm{a}}^{\mathrm{nr}} = \frac{ M^{\mathrm{nr|nt}} \, \sum_i M^{\mathrm{nt|si}}_i I_i^{\mathrm{si}} }{ \sum_i L^{\mathrm{nt1}}_i + L^{\mathrm{nt2}} + L^{\mathrm{nt3}} }.
 \end{equation}
-$M^{\mathrm{si|nt}} = k\sqrt{L^{\mathrm{si2}} \, L^{\mathrm{nt1}}}$ and $M^{\mathrm{nt|nr}} = k\sqrt{L^{\mathrm{nt3}} \, L^{\mathrm{nr1}}}$
+The mutual inductors are $M^{\mathrm{si|nt}} = k\sqrt{L^{\mathrm{si2}} \, L^{\mathrm{nt1}}}$ and $M^{\mathrm{nt|nr}} = k\sqrt{L^{\mathrm{nt3}} \, L^{\mathrm{nr1}}}$. We are interested in how this flux scales with the number $N$ of input synapses to the neuronal transformer (NT) loop. Consider the case where the mutual inductors between all synapses and the NT loop are identical: $M^{\mathrm{nt|si}}_i = M^{\mathrm{nt|si}} = k \sqrt{L^{\mathrm{si2}}L^{\mathrm{nt1}}}$, and $L^{\mathrm{nt1}}_i = L^{\mathrm{nt1}}$. Further assume all synaptic integration loops carry the same current $I^{\mathrm{si}}_i = I^{\mathrm{si}}_0$. Such a case is rare in operation but is sufficient for scaling analysis. Equation \ref{eq:fan-in__transformer_collection__full} becomes
+\begin{equation}
+\label{eq:fan-in__transformer_collection__identical_synapses}
+\frac{ \Phi_{\mathrm{a}}^{\mathrm{nr}} }{ I^{\mathrm{si}}_0 } = \frac{ M^{\mathrm{nr|nt}} \, M^{\mathrm{nt|si}} }{ L^{\mathrm{nt1}} } \left( 1 + \frac{ L^{\mathrm{nt2}} + L^{\mathrm{nt3}} } { N L^{\mathrm{nt1}} } \right)^{-1}.
+\end{equation}
+From Eq.\,\ref{eq:fan-in__transformer_collection__identical_synapses} one can see the ratio of flux in the NR loop to current in each of the SI loop becomes nearly independent of $N$ for large $N$. 
 
+We can further elucidate the scaling by noting that the circuit of Fig.\,\ref{fig:fan-in__circuits}(b) has three types of inductors. Transformers are likely to be asymmetrical, with a larger inductor coupling flux into a smaller inductor to achieve a reasonable mutual inductance with a modest receiving loop inductance. We can therefore specify $M^{\mathrm{nr|nt}} = M^{\mathrm{nt|si}} = k \sqrt{ L_{\mathrm{m}} \, L_{\mathrm{s}}}$, where $L_{\mathrm{m}}$ refers to a medium-sized inductor, on the order of 100\,pH, and $L_{\mathrm{s}}$ is a small inductor, on the order of 10\,pH. Thus, $L^{\mathrm{si2}} = L^{\mathrm{nt3}} = L_{\mathrm{m}}$, and $L^{\mathrm{nt1}} = L^{\mathrm{nr1}} = L_{\mathrm{s}}$. The inductor $L^{\mathrm{nt2}}$ is a parasitic inductance that we anticipate being unavoidable in the fabrication of a large NT loop. We assume $L^{\mathrm{nt2}} = L_{\mathrm{m}}$. The third inductance in the circuit is $L^{\mathrm{si1}}$, a large self-inductance unassociated with a transformer, which we label as a big inductor, $L_{\mathrm{b}}$. This inductance will likely be in the range of 10\,nH - 10\,\textmu H, and for the sake of this analysis consideration of the value of 10\,nH is sufficient. The large value of this inductance gives the synapse (or dendrite in the case of a DI loop) an analog response. In hardware, such large values are made possible by high-kinetic-inductance materials \cite{}, wherein the inductance is a result of the motion of the current-carrying cooper pairs rather than the coupling between a current and the magnetic field it produces. With these simplifications, Eq.\,\ref{eq:fan-in__transformer_collection__identical_synapses} becomes
+\begin{equation}
+\label{eq:fan-in__transformer_collection__three_inductances}
+\frac{ \Phi_{\mathrm{a}}^{\mathrm{nr}} }{ I^{\mathrm{si}}_0 } = k^2 L_{\mathrm{m}} \left( 1 + \frac{2L_{\mathrm{m}}}{NL_{\mathrm{s}}} \right)^{-1}.
+\end{equation}
+The term $2L_{\mathrm{m}}/NL_{\mathrm{s}}$ is of order unity when $N\approx 10$ and becomes small when $N \approx 100$. In the large-$N$ limit we can make the approximation
+\begin{equation}
+\label{eq:fan-in__transformer_collection__large_N}
+\frac{ \Phi_{\mathrm{a}}^{\mathrm{nr}} }{ I^{\mathrm{si}}_0 } \approx k^2 L_{\mathrm{m}} \left( 1 - \epsilon \right) + \mathcal{O}(\epsilon^2),
+\end{equation}
+where
 \begin{equation}
 \label{eq:fan-in__transformer_collection__epsilon}
-\epsilon \equiv \frac{ L^{\mathrm{nt2}}+L^{\mathrm{nt3}} }{ N L^{\mathrm{nt1}} }
+\epsilon \equiv \frac{ 2L_{\mathrm{m}} }{ N L_{\mathrm{s}} }.
 \end{equation}
+Thus, a dendrite or neuron receiving input from $N$ synapses or dendrites, each containing current $I^{\mathrm{si}}_0$ in their integration loop, receives flux that is independent of $N$ to leading order. This appears to be an advantageous fan-in scenario, made possible by the shared transformer collection coil. We have seen above that roughly 20 synapses or dendrites can be directly coupled to a receiving loop. When 20 synapses or dendrites are coupled to a transformer collection coil, $\epsilon$ is on the order of unity, and therefore not sufficiently small as to be neglected for design purposes. Yet in this case the total applied flux to the receiving loop will be within a factor of two of the directly coupled case. Above 20 inputs, the situation only improves with $N$. Therefore, it appears fan-in is achievable for any number of inputs. 
 
+To gain further confidence in this conclusion, we must consider the ability of a collection of $N$ inputs to drive a dendrite or neuron to threshold as well as the cross talk between the inputs. Let us refer to the value of flux that will drive the neuron above threshold as $\Phi^{\mathrm{nr}}_{\mathrm{th}}$. As discussed in Sec.\,\ref{sec:dendrites}, this value is determined by circuit parameters and current biases, which are independent of the number of inputs. As a model of scaling potential, we would like to know what value of $I^{\mathrm{si}}_{\mathrm{th}}$ is required in each synapse of a homogeneous point neuron to achieve $\Phi^{\mathrm{nr}}_{\mathrm{th}}$. In the large-$N$ limit, we can straightforwardly rearrange Eq.\,\ref{eq:fan-in__transformer_collection__large_N} and apply the binomial approximation to arrive at
+\begin{equation}
+\label{eq:fan-in__transformer_collection__threshold_current}
+I^{\mathrm{nr}}_{\mathrm{th}} = \frac{1+\epsilon}{k^2 L_{\mathrm{m}}} \Phi^{\mathrm{nr}}_{\mathrm{th}}.
+\end{equation}
+Again we find the quantity of interest is independent of $N$ to leading order. The factor proportional to $\epsilon$ must be accounted for in design, but the scaling with large $N$ is favorable. 
+
+Consider the smallest number of synapses capable of achieving the threshold flux. There are $N$ synapses on the transformer collection coil, and we seek the number $P$ of them such that when those synapses reach saturation ($I^{\mathrm{si}} = I^{\mathrm{si}}_{\mathrm{sat}}$) the total applied flux reaches threshold ($\Phi^{\mathrm{nr}}_{\mathrm{a}} = \Phi^{\mathrm{nr}}_{\mathrm{th}}$). Here we begin with the exact expression of Eq.\,\ref{eq:fan-in__transformer_collection__full} rather than making a large-$N$ approximation. Assuming again identical synapses, and taking inductors to be small ($L_{\mathrm{s}}$), medium ($L_{\mathrm{m}}$), or big ($L_{\mathrm{b}}$), we can calculate the fraction of saturated synapses required to reach threshold, assuming all other synapses have zero integrated current.
+\begin{equation}
+\label{eq:fan-in__transformer_collection__fraction_for_threshold}
+\frac{P}{N} = \frac{ \Phi^{\mathrm{nr}}_{\mathrm{th}} }{ I^{\mathrm{si}}_{\mathrm{sat}} } \left( \frac{1}{ k^2 L_{\mathrm{m}} } + \frac{2}{ k^2 N L_{\mathrm{s}} }  \right).
+\end{equation}
+The leading term is again independent of $N$, and the correction term recedes as $1/N$. The fraction of synapses that must be active to drive a dendrite or neuron above threshold converges to a fixed value at large $N$. Using realistic numbers, in the small-$N$ limit, $P/N \approx 0.1$, and in the large-$N$ limit, $P/N \approx 0.03$.
+
+Finally, we consider cross talk between synapses or dendrites coupled to a common transformer receiving loop. Consider an NT loop with $N$ synaptic connections, $P$ of which contain current $I^{\mathrm{si}}_0$ in their SI loop. A net current will be induced in the NT loop due to the flux from the synapses,
+\begin{equation}
+\label{eq:fan-in__transformer_collection__I_nt}
+I^{\mathrm{nt}} = \frac{\Phi^{\mathrm{nt}}}{L^{\mathrm{nt}}}\rightarrow \frac{Pk\sqrt{L_{\mathrm{m}}\,L_{\mathrm{s}}}}{NL_{\mathrm{s}}+2L_{\mathrm{m}}},
+\end{equation}
+and this current will induce a current in each SI loop, $I^{\mathrm{si}}_{\mathrm{ind}} = \Phi^{\mathrm{si}}_{\mathrm{ind}}/L^{\mathrm{si}} = M^{\mathrm{si|nt}}I^{\mathrm{nt}}/(L^{\mathrm{si1}}+L^{\mathrm{si2}})$. Making the association $L^{\mathrm{si1}} = L_{\mathrm{b}}$, and approximating $L_{\mathrm{b}} + L_{\mathrm{m}} \approx L_{\mathrm{b}}$, we find the ratio of the induced current in each SI loop to the integrated current in one of the $P$ active synapses is
+\begin{equation}
+\label{eq:fan-in__transformer_collection__cross_talk}
+\frac{I^{\mathrm{si}}_{\mathrm{ind}}}{I^{\mathrm{si}}_0} = \frac{P}{N}\frac{k^2L_{\mathrm{m}}}{L_{\mathrm{b}}}\left( 1+\epsilon \right)^{-1}.
+\end{equation}
+As stated above, $L_{\mathrm{b}}$ is likely to be in the range of 10\,nH - 10\,\textmu H, while $L_{\mathrm{m}}$ is on the order of 100\,pH. The term $L_{\mathrm{m}}/L_{\mathrm{b}}$ will be less than 0.01, and typically much less than this value. The worst case for cross talk occurs when all synapses contain integrated current $I^{\mathrm{si}}_0$ so $P = N$. For rough estimate of scaling, we can ignore the $k^2$ term and the $\epsilon$ term, both of which act to reduce the cross talk. In the extreme limit where all $N$ SI loops contain the saturated current $I^{\mathrm{si}}_{\mathrm{sat}}$, the fraction of current induced in each loop scales as
+\begin{equation}
+\label{eq:fan-in__transformer_collection__cross_talk__worst_case}
+\frac{I^{\mathrm{si}}_{\mathrm{ind}}}{I^{\mathrm{si}}_{\mathrm{sat}}} \approx \frac{L_{\mathrm{m}}}{L_{\mathrm{b}}}.
+\end{equation}
+The key feature of loop neurons regarding cross talk is that the SI loop inductance is large, yet a small fraction of this inductance feeds into the mutual inductor. The asymmetry of the inductances between $L^{\mathrm{dr}}$ and $L^{\mathrm{di}}$ is necessary to reduce cross talk. This inductance imbalance is also precisely what enables the dendrite to produce an analog output. If one uses a dendrite or neuron to produce a binary, single-flux-quantum output, the inductance of the DI loop will be on the same order as the inductance of the inductors in the transformers, and cross talk will cause a problem for fan-in. However, leveraging high-kinetic-inductance materials and analog synapses and dendrites, cross talk is not a problem, and fan-in behaves favorably from a small number of inputs up to large $N$.
 
 \bibliographystyle{unsrt}
 \bibliography{phenomenological_modeling}
