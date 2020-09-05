@@ -133,8 +133,8 @@ As the subsequent sections will describe, within the framework of loop neurons, 
 \section{\label{sec:dendrites}Dendrites as Leaky Integrators}
 In biological neural systems, dendrites receive inputs from synapses and other dendrites and perform nonlinear transfer functions on those inputs. The computations performed include thresholding \cite{}, logic functions \cite{}, and sequence detection \cite{}. The specific spatio-temporal function performed by biological a dendrite depends on the morphology of the dendrite itself, the location and strength of synaptic connections, and the recent history of activity \cite{}. Analogous operations can be performed by a superconducting circuit. In loop neurons, these functions are adapted through circuit parameters, some of which are set in hardware, while others dynamic through current biases. In the world of loop neurons, the basic building block of the computational infrastructure is a dendrite.
 
-\begin{figure}[h!]
-\includegraphics[width=8.6cm]{figures/_fig__dendrites_squid.pdf}
+\begin{figure}[htb]
+\includegraphics[width=8.6cm]{figures/_fig__dendrites__squid.pdf}
 \captionof{figure}{\label{fig:dendrites__squid}Caption of fig: dendrites squid.}
 \end{figure}
 The core active element of superconducting electronic circuits is a Josephson junction (JJ), which comprises two superconducting leads connected by a thin barrier though which supercurrent can tunnel \cite{vatu1998,ka1999,ti1996}. A JJ can pass a current below a certain value without establishing a voltage. Above this critical current, referred to as $I_c$, the JJ will produce voltage pulses known as fluxons. These pulses carry a given current as well as magnetic flux. More detail regarding production of fluxons by a JJ is given in Appendix\,\ref{apx:dendrites_model} and in Refs.\,\onlinecite{vatu1998}, \onlinecite{ka1999}, and \onlinecite{ti1996}. To construct computational circuits, JJs work in conjunction with passive inductors, which store current and flux, as well as transformers, which couple computational blocks. 
@@ -143,12 +143,16 @@ The most ubiquitous and useful compound JJ circuit is a superconducting quantum 
 
 In the framework of loop neurons, a dendrite is a SQUID with its output fed into a flux-storage loop. The content of this loop is coupled through a transformer to drive further dendrites or the neuron cell body. Through selection of fixed circuit parameters as well as dynamic bias currents, the behavior of a dendrite can be shaped across a broad range. To predict such circuit behavior, it is common to solve circuit equations derived with the Josephson relations, which relate current and voltage to the phase of the superconducting wave function across the junction. As can be seen from the time scales in Fig.\,\ref{fig:dendrites__squid}(b), these equations must be stepped through with a 1\,ps-10\,ps time step. In the context of superconducting neurons, this time scale is the fastest in the system. Yet activity of interest will persist far longer. We would like to simulate the temporal evolution of systems with as many neurons as possible, each hosting a complex dendritic tree, over as long of time spans as possible. Reduction of the time step to 100\,ps-1\,ns would be helpful in this regard. To construct such a model, exact circuit equations tracking the superconducting phase cannot be employed. The circuit must be represented as a more abstract element.
 
-\begin{figure*}[h!]
-\includegraphics[width=17.2cm]{figures/_fig__dendrites__circuits__responses.pdf}
-\captionof{figure}{\label{fig:dendrites__circuits__responses}Caption of fig:dendrites responses.}
+\begin{figure*}[t]
+\includegraphics[width=17.2cm]{figures/_fig__dendrites__circuits__squid_responses.pdf}
+\captionof{figure}{\label{fig:dendrites__circuits__responses}Caption of fig:dendrites squid responses.}
 \end{figure*}
 The objective of this section is to express the output of a dendrite as a function of the input without solving the explicit circuit equations. We would like to capture the behavior of each dendrite with a single ODE, rather than a system of coupled ODEs which is required to exactly model the circuit. We would also like to enable the ODE to be stepped through in time with as large a time step as possible, rather than requiring simulation on the picosecond time scale as required to accurately capture the dynamics of the Josephson junction. The dendrite circuit under consideration is shown in Fig.\,\ref{fig:dendrites__circuits__responses}(a), with a slightly modified version in Fig.\,\ref{fig:dendrites__circuits__responses}(b). We refer to the SQUID loop as the dendritic receiving (DR) loop and the output storage loop as the dendritic integration (DI) loop. These circuits can be modeled with a leaky-integrator equation, where the quantity being integrated and leaking is the current circulating in the DI loop, $I^{\mathrm{di}}$. The DR loop produces fluxons at a rate determined by the applied flux and the current bias, these fluxons are accumulated in the DI loop, and this integrated signal leaks with time constant $\tau_{\mathrm{dr}} = L_{\mathrm{dr}}/r_{\mathrm{dr}}$. This exponential decay is straightforward to model. The content of the storage loop feeds back to the SQUID in a negative manner, providing a saturating nonlinearity. This nonlinearity is more difficult to model. To formulate the behavior as a leaky integrator, the primary challenge is to construct the input drive term, analogous to $f(t)$ in Eq.\,\ref{eq:leaky_integrator}, which captures the positive response to flux coupled into the DR loop as well as the negative feedback when the DI loop approaches saturation.
 
+\begin{figure*}[t]
+\includegraphics[width=17.2cm]{figures/_fig__dendrites__rate_arrays.pdf}
+\captionof{figure}{\label{fig:dendrites__circuits__responses}Caption of fig: dendrites rate arrays.}
+\end{figure*}
 In the present work, we construct the drive term as the rate at which fluxons are added to the storage loop as a function of the input flux and the current integrated in the storage loop: $f(t)\rightarrow R_{\mathrm{fq}}(\Phi_a^{\mathrm{dr}},I^{\mathrm{di}})$. The temporal rate of change of current in the DI loop is given by
 \begin{equation}
 \label{eq:dendrites__leaky_integrator}
@@ -537,21 +541,21 @@ Again we find the quantity of interest is independent of $N$ to leading order. T
 Consider the smallest number of synapses capable of achieving the threshold flux. There are $N$ synapses on the transformer collection coil, and we seek the number $P$ of them such that when those synapses reach saturation ($I^{\mathrm{si}} = I^{\mathrm{si}}_{\mathrm{sat}}$) the total applied flux reaches threshold ($\Phi^{\mathrm{nr}}_{\mathrm{a}} = \Phi^{\mathrm{nr}}_{\mathrm{th}}$). Here we begin with the exact expression of Eq.\,\ref{eq:fan-in__transformer_collection__full} rather than making a large-$N$ approximation. Assuming again identical synapses, and taking inductors to be small ($L_{\mathrm{s}}$), medium ($L_{\mathrm{m}}$), or big ($L_{\mathrm{b}}$), we can calculate the fraction of saturated synapses required to reach threshold, assuming all other synapses have zero integrated current.
 \begin{equation}
 \label{eq:fan-in__transformer_collection__fraction_for_threshold}
-\frac{P}{N} = \frac{ \Phi^{\mathrm{nr}}_{\mathrm{th}} }{ I^{\mathrm{si}}_{\mathrm{sat}} } \left( \frac{1}{ k^2 L_{\mathrm{m}} } + \frac{2}{ k^2 N L_{\mathrm{s}} }  \right).
+\frac{P}{N} = \frac{ \Phi^{\mathrm{nr}}_{\mathrm{th}} }{ k^2  I^{\mathrm{si}}_{\mathrm{sat}} } \left( \frac{1}{ L_{\mathrm{m}} } + \frac{2}{ N L_{\mathrm{s}} }  \right).
 \end{equation}
 The leading term is again independent of $N$, and the correction term recedes as $1/N$. The fraction of synapses that must be active to drive a dendrite or neuron above threshold converges to a fixed value at large $N$. Using realistic numbers, in the small-$N$ limit, $P/N \approx 0.1$, and in the large-$N$ limit, $P/N \approx 0.03$.
 
-Finally, we consider cross talk between synapses or dendrites coupled to a common transformer receiving loop. Consider an NT loop with $N$ synaptic connections, $P$ of which contain current $I^{\mathrm{si}}_0$ in their SI loop. A net current will be induced in the NT loop due to the flux from the synapses,
+Finally, we consider cross talk between synapses or dendrites coupled to a common transformer receiving loop. Consider an NT loop with $N$ synaptic connections, $n$ of which contain current $I^{\mathrm{si}}_0$ in their SI loop. A net current will be induced in the NT loop due to the flux from the synapses,
 \begin{equation}
 \label{eq:fan-in__transformer_collection__I_nt}
-I^{\mathrm{nt}} = \frac{\Phi^{\mathrm{nt}}}{L^{\mathrm{nt}}}\rightarrow \frac{Pk\sqrt{L_{\mathrm{m}}\,L_{\mathrm{s}}}}{NL_{\mathrm{s}}+2L_{\mathrm{m}}},
+I^{\mathrm{nt}} = \frac{\Phi^{\mathrm{nt}}}{L^{\mathrm{nt}}}\rightarrow \frac{ n k \sqrt{L_{\mathrm{m}}\,L_{\mathrm{s}}}}{NL_{\mathrm{s}}+2L_{\mathrm{m}}},
 \end{equation}
 and this current will induce a current in each SI loop, $I^{\mathrm{si}}_{\mathrm{ind}} = \Phi^{\mathrm{si}}_{\mathrm{ind}}/L^{\mathrm{si}} = M^{\mathrm{si|nt}}I^{\mathrm{nt}}/(L^{\mathrm{si1}}+L^{\mathrm{si2}})$. Making the association $L^{\mathrm{si1}} = L_{\mathrm{b}}$, and approximating $L_{\mathrm{b}} + L_{\mathrm{m}} \approx L_{\mathrm{b}}$, we find the ratio of the induced current in each SI loop to the integrated current in one of the $P$ active synapses is
 \begin{equation}
 \label{eq:fan-in__transformer_collection__cross_talk}
-\frac{I^{\mathrm{si}}_{\mathrm{ind}}}{I^{\mathrm{si}}_0} = \frac{P}{N}\frac{k^2L_{\mathrm{m}}}{L_{\mathrm{b}}}\left( 1+\epsilon \right)^{-1}.
+\frac{I^{\mathrm{si}}_{\mathrm{ind}}}{I^{\mathrm{si}}_0} = \frac{n}{N}\frac{k^2L_{\mathrm{m}}}{L_{\mathrm{b}}}\left( 1+\epsilon \right)^{-1}.
 \end{equation}
-As stated above, $L_{\mathrm{b}}$ is likely to be in the range of 10\,nH - 10\,\textmu H, while $L_{\mathrm{m}}$ is on the order of 100\,pH. The term $L_{\mathrm{m}}/L_{\mathrm{b}}$ will be less than 0.01, and typically much less than this value. The worst case for cross talk occurs when all synapses contain integrated current $I^{\mathrm{si}}_0$ so $P = N$. For rough estimate of scaling, we can ignore the $k^2$ term and the $\epsilon$ term, both of which act to reduce the cross talk. In the extreme limit where all $N$ SI loops contain the saturated current $I^{\mathrm{si}}_{\mathrm{sat}}$, the fraction of current induced in each loop scales as
+As stated above, $L_{\mathrm{b}}$ is likely to be in the range of 10\,nH - 10\,\textmu H, while $L_{\mathrm{m}}$ is on the order of 100\,pH. The term $L_{\mathrm{m}}/L_{\mathrm{b}}$ will be less than 0.01, and typically much less than this value. The worst case for cross talk occurs when all synapses contain integrated current $I^{\mathrm{si}}_0$ so $n = N$. For rough estimate of scaling, we can ignore the $k^2$ term and the $\epsilon$ term, both of which act to reduce the cross talk. In the extreme limit where all $N$ SI loops contain the saturated current $I^{\mathrm{si}}_{\mathrm{sat}}$, the fraction of current induced in each loop scales as
 \begin{equation}
 \label{eq:fan-in__transformer_collection__cross_talk__worst_case}
 \frac{I^{\mathrm{si}}_{\mathrm{ind}}}{I^{\mathrm{si}}_{\mathrm{sat}}} \approx \frac{L_{\mathrm{m}}}{L_{\mathrm{b}}}.
