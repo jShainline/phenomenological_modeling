@@ -144,15 +144,15 @@ The most ubiquitous and useful compound JJ circuit is a superconducting quantum 
 In the framework of loop neurons, a dendrite is a SQUID with its output fed into a flux-storage loop. The content of this loop is coupled through a transformer to drive further dendrites or the neuron cell body. Through selection of fixed circuit parameters as well as dynamic bias currents, the behavior of a dendrite can be shaped across a broad range. To predict such circuit behavior, it is common to solve circuit equations derived with the Josephson relations, which relate current and voltage to the phase of the superconducting wave function across the junction. As can be seen from the time scales in Fig.\,\ref{fig:dendrites__squid}(b), these equations must be stepped through with a 1\,ps-10\,ps time step. In the context of superconducting neurons, this time scale is the fastest in the system. Yet activity of interest will persist far longer. We would like to simulate the temporal evolution of systems with as many neurons as possible, each hosting a complex dendritic tree, over as long of time spans as possible. Reduction of the time step to 100\,ps-1\,ns would be helpful in this regard. To construct such a model, exact circuit equations tracking the superconducting phase cannot be employed. The circuit must be represented as a more abstract element.
 
 \begin{figure*}[t]
-\includegraphics[width=17.2cm]{figures/_fig__dendrites__circuits__squid_responses.pdf}
-\captionof{figure}{\label{fig:dendrites__circuits__responses}Caption of fig:dendrites squid responses.}
+\includegraphics[width=17.2cm]{figures/_fig__dendrites__circuits__responses__2jj.pdf}
+\captionof{figure}{\label{fig:dendrites__circuits__responses__2jj}Caption of fig:dendrites circuits responses 2jj.}
 \end{figure*}
 The objective of this section is to express the output of a dendrite as a function of the input without solving the explicit circuit equations. We would like to capture the behavior of each dendrite with a single ODE, rather than a system of coupled ODEs which is required to exactly model the circuit. We would also like to enable the ODE to be stepped through in time with as large a time step as possible, rather than requiring simulation on the picosecond time scale as required to accurately capture the dynamics of the Josephson junction. The dendrite circuit under consideration is shown in Fig.\,\ref{fig:dendrites__circuits__responses}(a), with a slightly modified version in Fig.\,\ref{fig:dendrites__circuits__responses}(b). We refer to the SQUID loop as the dendritic receiving (DR) loop and the output storage loop as the dendritic integration (DI) loop. These circuits can be modeled with a leaky-integrator equation, where the quantity being integrated and leaking is the current circulating in the DI loop, $I^{\mathrm{di}}$. The DR loop produces fluxons at a rate determined by the applied flux and the current bias, these fluxons are accumulated in the DI loop, and this integrated signal leaks with time constant $\tau_{\mathrm{dr}} = L_{\mathrm{dr}}/r_{\mathrm{dr}}$. This exponential decay is straightforward to model. The content of the storage loop feeds back to the SQUID in a negative manner, providing a saturating nonlinearity. This nonlinearity is more difficult to model. To formulate the behavior as a leaky integrator, the primary challenge is to construct the input drive term, analogous to $f(t)$ in Eq.\,\ref{eq:leaky_integrator}, which captures the positive response to flux coupled into the DR loop as well as the negative feedback when the DI loop approaches saturation.
 
-\begin{figure*}[t]
-\includegraphics[width=17.2cm]{figures/_fig__dendrites__rate_arrays.pdf}
-\captionof{figure}{\label{fig:dendrites__circuits__responses}Caption of fig: dendrites rate arrays.}
-\end{figure*}
+%\begin{figure*}[t]
+%\includegraphics[width=17.2cm]{figures/_fig__dendrites__rate_arrays.pdf}
+%\captionof{figure}{\label{fig:dendrites__circuits__responses}Caption of fig: dendrites rate arrays.}
+%\end{figure*}
 In the present work, we construct the drive term as the rate at which fluxons are added to the storage loop as a function of the input flux and the current integrated in the storage loop: $f(t)\rightarrow R_{\mathrm{fq}}(\Phi_a^{\mathrm{dr}},I^{\mathrm{di}})$. The temporal rate of change of current in the DI loop is given by
 \begin{equation}
 \label{eq:dendrites__leaky_integrator}
@@ -171,24 +171,19 @@ The dendrite model requires specification of the form of the function $R_{\mathr
 
 The rate arrays presented in Fig.\,\ref{fig:dendrites__circuits__responses}(c) and (d) elucidate the response of the circuits. Several qualitative aspects of these responses merit discussion. A primary feature of the rate arrays that plays an important role in synaptic, dendritic, and neuronal operation is the presence of a threshold value of applied flux below which the rate of fluxon production is zero and above which the SQUID activates, and the dendrite begins to accumulate signal in the DI loop. In most applications of SQUIDs, the device is used as a sensitive detector of magnetic flux, so the SQUID is biased in a voltage state, either just above threshold or at the point of maximum slope in the response curve. When used as a neural component, the SQUID comprising the DR loop of the dendrite can be biased below threshold, providing a nonlinear response function with a threshold below which weak signals evoke zero response as well as the saturating behavior of the SQUID as the signal reaches $\Phi_0/2$. The inductive inputs to the DR loop can be chosen so the net flux just reaches this maximum level when all the inputs have reached saturation. Biasing the DR loops below threshold also has the advantage of zero static power dissipation. The specific bias point, and therefore threshold, of each dendrite plays a key role in the response function. The set of all these biases can be dynamically reconfigured based on network activity, leading to the ability for adaptation and learning.  
 
-First consider the relationship between the dendrite of Fig.\,\ref{fig:dendrites__circuits__responses}(a) to the SQUID of Fig.\,\ref{fig:dendrites__squid}. The differences are that the dendrite takes multiple inputs, and, more consequentially, in the dendrite the output is coupled to the DI loop, which integrates and leaks the accumulated flux. Cross sections of the rate array in the $\Phi^{\mathrm{dr}}_a$ - $R_{\mathrm{fq}}$ plane with small values of $I_{\mathrm{di}}$ follow the sinusoidal response seen from the SQUID in Fig.\,\ref{fig:dendrites__squid}(c). However, as current accumulates in the DI loop, the feedback effect is pronounced. For a given value of $\Phi^{\mathrm{dr}}_a$, the rate begins high and gradually decays to zero as a function of $I^{\mathrm{di}}$, with an abrupt cessation at a saturation value $I^{\mathrm{di}}_{\mathrm{sat}}$. The important distinction between the two-junction dendrite and the four-junction dendrite is that $I^{\mathrm{di}}_{\mathrm{sat}}$ is a strong function of $\Phi^{\mathrm{dr}}_a$ in the two-junction case, while $I^{\mathrm{di}}_{\mathrm{sat}}$ is nearly independent of $\Phi^{\mathrm{dr}}_a$ in the three-junction circuit. This feature allows the total signal that can be accumulated in the DI loop to be nearly decoupled from the drives to the DR loop (including the applied flux, $\Phi^{\mathrm{dr}}_a$, as well as the dendritic bias current, $I^{\mathrm{de}}$). By separating the current bias to the dendrite receiving loop, $I^{\mathrm{def}}$, from the current bias to the integration loop, $I^{\mathrm{sc}}$, the circuit decouples the threshold from the storage capacity. With the two-junction dendrite, a weak drive leads to a low value of $I^{\mathrm{di}}_{\mathrm{sat}}$, regardless of the duration of the applied signal. By contrast, a weak drive into the four-junction dendrite can lead to a large integrated current in the DI loop (large $I^{\mathrm{di}}_{\mathrm{sat}}$), provided $I^{\mathrm{sc}}$ is large and the flux drive is applied for sufficiently long. Like any leaky integrator, the accumulated signal will depend on the relationship between the drive term and the leak rate. Both the two-junction and four-junction dendrites are leaky integrators. The only difference is the form of the drive term, $R_{\mathrm{fq}}$.
-  
+First consider the relationship between the dendrite of Fig.\,\ref{fig:dendrites__circuits__responses}(a) to the SQUID of Fig.\,\ref{fig:dendrites__squid}. The differences are that the dendrite takes multiple inputs, and, more consequentially, in the dendrite the output is coupled to the DI loop, which integrates and leaks the accumulated flux. Cross sections of the rate array in the $\Phi^{\mathrm{dr}}_a$ - $R_{\mathrm{fq}}$ plane with small values of $I_{\mathrm{di}}$ follow the sinusoidal response seen from the SQUID in Fig.\,\ref{fig:dendrites__squid}(c). However, as current accumulates in the DI loop, the feedback effect is pronounced. For a given value of $\Phi^{\mathrm{dr}}_a$, the rate begins high and gradually decays to zero as a function of $I^{\mathrm{di}}$, with an abrupt cessation at a saturation value $I^{\mathrm{di}}_{\mathrm{sat}}$. The important distinction between the two-junction dendrite and the four-junction dendrite is that $I^{\mathrm{di}}_{\mathrm{sat}}$ is a strong function of $\Phi^{\mathrm{dr}}_a$ in the two-junction case, while $I^{\mathrm{di}}_{\mathrm{sat}}$ is nearly independent of $\Phi^{\mathrm{dr}}_a$ in the three-junction circuit. This feature allows the total signal that can be accumulated in the DI loop to be nearly decoupled from the drives to the DR loop (including the applied flux, $\Phi^{\mathrm{dr}}_a$, as well as the dendritic bias current, $I^{\mathrm{de}}$). By separating the current bias to the dendrite receiving loop, $I^{\mathrm{def}}$, from the current bias to the integration loop, $I^{\mathrm{sc}}$, the circuit decouples the threshold from the storage capacity. With the two-junction dendrite, a weak drive leads to a low value of $I^{\mathrm{di}}_{\mathrm{sat}}$, regardless of the duration of the applied signal. By contrast, a weak drive into the four-junction dendrite can lead to a large integrated current in the DI loop (large $I^{\mathrm{di}}_{\mathrm{sat}}$), provided $I^{\mathrm{sc}}$ is large and the flux drive is applied for sufficiently long. Like any leaky integrator, the accumulated signal will depend on the relationship between the drive term and the leak rate. Both the two-junction and four-junction dendrites are leaky integrators. The only difference is the form of the drive term, $R_{\mathrm{fq}}$.  
 
-
-%\begin{figure}[h!]
-%\includegraphics[width=8.6cm]{figures/_fig__dendrites__comparison__2jj__main.pdf}
-%\captionof{figure}{\label{fig:dendrites__comparison__2jj__main}Caption of fig:dendrites comparison 2jj main.}
-%\end{figure}
+\begin{figure}[h!]
+\includegraphics[width=8.6cm]{figures/_fig__dendrites__comparison__2jj__main.pdf}
+\captionof{figure}{\label{fig:dendrites__comparison__2jj__main}Caption of fig:dendrites comparison 2jj main.}
+\end{figure}
 To quantify the accuracy of the leaky-integrator model of dendrites, we compare to full circuit simulations conducted with WRSpice \cite{wh1991}. Calculations are carried out in the time domain for a variety of inputs to the dendrite as well as circuit configurations. Accuracy is quantified with a $\chi^2$ of the form
 \begin{equation}
 \label{eq:chi_squared}
 \chi^2 = \frac{\int dt \left|I^{\mathrm{si}}_{\mathrm{spice}}(t) - I^{\mathrm{si}}_{\mathrm{ode}}(t)\right|^2}{\int dt \left|I^{\mathrm{si}}_{\mathrm{spice}}(t)\right|^2},
 \end{equation}
-where the subscripts refer to the SPICE model and the ODE model of Eq.\,\ref{eq:dendrites__leaky_integrator}, respectively. Illustrative cases are shown in Figs.\,\ref{fig:dendrites__comparison__2jj__main} and \ref{fig:dendrites__comparison__4jj__main} for the two-junction and four-junction cases, respectively. Further case studies are shown in Appendix \ref{apx:dendrites_data}. 
-\begin{figure}[h!]
-\includegraphics[width=8.6cm]{figures/_fig__dendrites__comparison__4jj__main.pdf}
-\captionof{figure}{\label{fig:dendrites__comparison__4jj__main}Caption of fig:dendrites comparison 4jj main.}
-\end{figure}
+where the subscripts refer to the SPICE model and the ODE model of Eq.\,\ref{eq:dendrites__leaky_integrator}, respectively. Illustrative cases are shown in Figs.\,\ref{fig:dendrites__comparison__2jj__main}. Similar data from the four-junction circuit is shown in Appendix \ref{apx:dendrites_additional_data}. %Further case studies are shown in Appendix \ref{apx:dendrites_data}. 
+
 
 
 
@@ -232,7 +227,7 @@ where the subscripts refer to the SPICE model and the ODE model of Eq.\,\ref{eq:
 \section{\label{sec:synapses}Synapses are Dendrites}
 \begin{figure}[h!]
 \includegraphics[width=8.6cm]{figures/_fig__synapses__circuit.pdf}
-\captionof{figure}{\label{fig:synapses__circuits__responses}Caption of fig:synapses circuits responses.}
+\captionof{figure}{\label{fig:synapses__circuit}Synapse circuit.}
 \end{figure}
 
 %In the world of loop neurons, a dendrite is much like a synapse, except the input current from an SPD is replaced by input flux from an SI loop, and instead of a single input, many are possible. Dendrite circuits are shown in Fig.\,\ref{fig:dendrites__circuits__responses} (a) and (b). Like the case of synapses, we consider a simple implementation where the firing junction is embedded in the flux-integration output loop as well as an extended version where the receiving loop and storage loop are separated.
@@ -241,18 +236,15 @@ where the subscripts refer to the SPICE model and the ODE model of Eq.\,\ref{eq:
 
 %In both cases, the number of fluxons produced in a synapse event is determined by the operating point in the rate array at the moment the synapse event occurs. Assuming fixed bias to the SPD, this rate of fluxon addition to the SI loop is uniquely determined by the synaptic bias current, $I^{\mathrm{sy}}$, and the total integrated current in the SI loop, $I^{\mathrm{si}}$. For the one junction synapse, $I^{\mathrm{sy}}$ affects the synaptic efficacy by determining the rate during a synapse event and by setting the saturation point, whereas in the three-junction synapse the saturation point is nearly independent of the synaptic bias current. In this case, the saturation current in the SI loop, $I^{\mathrm{si}}_{\mathrm{sat}}$, is primarily affected by the the saturation control bias current, $I^{\mathrm{sc}}$. With these two degrees of freedom decoupled, the number of fluxons generated in a synapse event is determined primarily by $I^{\mathrm{sy}}$, while the maximum signal that can be integrated at the synapse is primarily determined by $I^{\mathrm{sc}}$. In the three-junction case, a large number of weak synapse events can lead to as large of a signal as a small number of strong synapse events. This is not the case on the one-junction synapse. The computational significance of this circuit feature remains to be assessed.
 
-\begin{figure*}[h!]
-\includegraphics[width=17.2cm]{figures/_fig__synapses__comparison__1jj__main.pdf}
-\captionof{figure}{\label{fig:synapses__comparison__1jj__main}Caption of fig:synapses comparison 1jj main.}
-\end{figure*}
+\begin{figure}[h!]
+\includegraphics[width=8.6cm]{figures/_fig__synapses__comparison__2jj__single_pulse.pdf}
+\captionof{figure}{\label{fig:synapses__comparison__2jj__one_pulse}synapses comparison 2jj one pulse.}
+\end{figure}
 
-\begin{figure*}[h!]
-\includegraphics[width=17.2cm]{figures/_fig__synapses__comparison__3jj__main.pdf}
-\captionof{figure}{\label{fig:synapses__comparison__3jj__main}Caption of fig:synapses comparison 3jj main.}
-\end{figure*}
-
-
-
+\begin{figure}[h!]
+\includegraphics[width=8.6cm]{figures/_fig__synapses__comparison__2jj__pulse_sequence.pdf}
+\captionof{figure}{\label{fig:synapses__comparison__2jj__pulse_sequence}synapses comparison 2jj pulse sequence.}
+\end{figure}
 
 \section{\label{sec:neurons}Neurons are Dendrites}
 
@@ -271,10 +263,10 @@ where the subscripts refer to the SPICE model and the ODE model of Eq.\,\ref{eq:
 \captionof{figure}{\label{fig:point_neuron__nine_synapses__schematic__circuit}Caption of fig:point neuron  nine  synapses  schematic.}
 \end{figure}
 
-\begin{figure*}[h!]
-\includegraphics[width=17.2cm]{figures/_fig__point_neuron__nine_synapses__data.pdf}
-\captionof{figure}{\label{fig:point_neuron__nine_synapses__data}Caption of fig:point neuron  nine synapses  data.}
-\end{figure*}
+%\begin{figure*}[h!]
+%\includegraphics[width=17.2cm]{figures/_fig__point_neuron__nine_synapses__data.pdf}
+%\captionof{figure}{\label{fig:point_neuron__nine_synapses__data}Caption of fig:point neuron  nine synapses  data.}
+%\end{figure*}
 
 Need conversation of homeostatic plasticity as similar to refraction with different adaptation rate and time constant.
 
@@ -324,79 +316,60 @@ V^{\mathrm{sf}}(I^{\mathrm{sf}}) = \begin{cases} V_0\left[ \left( \frac{I^{\math
 \end{equation} 
 The notation $I > (I_c-I_r)_+$ refers to currents $I$ that have exceeded $I_c$, driving the junction into the resistive state, and have yet to drop below $I_c-I_r$, and are therefore demonstrating hysteresis. Likewise, $I < (I_c)_-$ refers to currents that are below $I_c$ while the junction is not in the hysteretic state. $I_r = 1.1768$\,\textmu A is the reset current associated with hysteresis on $J_{\mathrm{sf}}$ due to the fact that $\beta_c = 0.95 > 0$. The values $\mu_1$, $\mu_2$, and $V_0$ depend on the specific parameters of the shunt resistance and capacitance in the RCSJ model. For the junctions considered here, fits to WRSpice data give $\mu_1 = 3.464271$, $\mu_2 = 0.306768$, and $V_0 = 233.966$\,\textmu V. From Eqs.\,\ref{eq:jj__fluxon_production} and \ref{eq:jj__current_voltage} we can obtain $R^{\mathrm{fq}}$. In the case where $I^{(\mathrm{sf})}$ is slowly varying compared to $t^{\mathrm{fq}}$, $R^{\mathrm{fq}} = V^{(\mathrm{sf})}/\Phi_0$. The voltage given by Eq.\,\ref{eq:jj__current_voltage} is only meaningful as a time-averaged approximation, and it ignores the phase of the present across the junction. 
 
-\begin{figure}[h!]
-\includegraphics[width=8.6cm]{figures/_fig_apx__synapses__1jj_circuit.pdf}
-\captionof{figure}{\label{fig:apx__synapses__1jj_circuit}Caption of fig:apx synapses 1jj circuit. Need to put all correct labels in this figure (see pg 11 of green lab notebook)}
-\end{figure}
-By using the explicit form for the voltage on the synaptic firing junction, we can obtain a pair of coupled ODEs that determine the time evolution of the circuit. A labeled diagram of the circuit under consideration is shown in Fig.\,\ref{fig:apx__synapses__1jj_circuit}. The coupled ODEs are:
-\begin{equation}
-\label{eq:syn_1jj_analytical_1}
-\frac{d I^{\mathrm{si}}}{dt} = \frac{V^{\mathrm{sf}}( I^{\mathrm{sf}} - I^{\mathrm{si}} )}{L^{\mathrm{si}}} - \frac{r^{\mathrm{si}}}{L^{\mathrm{si}}} I^{\mathrm{si}},
-\end{equation}
-and
-\begin{equation}
-\label{eq:syn_1jj_analytical_2}
-\begin{split}
-\frac{d I^{\mathrm{sf}}}{dt} & = \frac{r^{\mathrm{spd1}}}{L^{\mathrm{spd}}} \left( I^{\mathrm{spd}}+^{\mathrm{sy}}-I^{\mathrm{sf}} \right) \\
-& -\frac{r^{\mathrm{spd2}}}{L^{\mathrm{spd}}} \left( I^{\mathrm{sf}}-I^{\mathrm{sy}} \right) \\
-& -\frac{1}{L^{\mathrm{spd}}} V^{\mathrm{sf}}(I^{\mathrm{sf}}-I^{\mathrm{si}}).
-\end{split}
-\end{equation}
-Note that Eq.\,\ref{eq:syn_1jj_analytical_1} is a leaky integrator ODE for the current in the SI loop, just as Eq.\,\ref{eq:synapses__leaky_integrator} in the main text. Here it is coupled to Eq.\,\ref{eq:syn_1jj_analytical_2}, which captures the current through the synaptic firing junction due to the response of the SPD as well as the current circulating in the SI loop. By stepping through Eqs.\,\ref{eq:syn_1jj_analytical_1} and \ref{eq:syn_1jj_analytical_2}, satisfactory agreement is found with SPICE circuit simulations that do not ignore the phase across the Josephson junction. However, to obtain agreement, a short time step on the order of a picosecond is required. The goals of the synaptic model are to reduce the system to a single ODE that can be stepped on a longer time scale. Simulating the model of Eqs.\,\ref{eq:syn_1jj_analytical_1} and \ref{eq:syn_1jj_analytical_2} on a 1\,ps time grid accomplishes neither of these goals. 
-
-In addition to these shortcomings of the analytical approach to a synapse model, the time-averaged approximation for the voltage across a junction (Eq.\,\ref{eq:jj__current_voltage}) provides a poor model for any circuit wherein two JJs interact with each other. Aside from the one-junction synapse, all other circuits considered in this work rely on multiple coupled JJs. In such circuits, the phases across the junctions cannot be ignored. For these reasons, we resort to numerical means of obtaining the rate functions ($R_{fq}$) for synapses and dendrites, as discussed in the following subsection.
+%\begin{figure}[h!]
+%\includegraphics[width=8.6cm]{figures/_fig_apx__synapses__1jj_circuit.pdf}
+%\captionof{figure}{\label{fig:apx__synapses__1jj_circuit}Caption of fig:apx synapses 1jj circuit. Need to put all correct labels in this figure (see pg 11 of green lab notebook)}
+%\end{figure}
+%By using the explicit form for the voltage on the synaptic firing junction, we can obtain a pair of coupled ODEs that determine the time evolution of the circuit. A labeled diagram of the circuit under consideration is shown in Fig.\,\ref{fig:apx__synapses__1jj_circuit}. The coupled ODEs are:
+%\begin{equation}
+%\label{eq:syn_1jj_analytical_1}
+%\frac{d I^{\mathrm{si}}}{dt} = \frac{V^{\mathrm{sf}}( I^{\mathrm{sf}} - I^{\mathrm{si}} )}{L^{\mathrm{si}}} - \frac{r^{\mathrm{si}}}{L^{\mathrm{si}}} I^{\mathrm{si}},
+%\end{equation}
+%and
+%\begin{equation}
+%\label{eq:syn_1jj_analytical_2}
+%\begin{split}
+%\frac{d I^{\mathrm{sf}}}{dt} & = \frac{r^{\mathrm{spd1}}}{L^{\mathrm{spd}}} \left( I^{\mathrm{spd}}+^{\mathrm{sy}}-I^{\mathrm{sf}} \right) \\
+%& -\frac{r^{\mathrm{spd2}}}{L^{\mathrm{spd}}} \left( I^{\mathrm{sf}}-I^{\mathrm{sy}} \right) \\
+%& -\frac{1}{L^{\mathrm{spd}}} V^{\mathrm{sf}}(I^{\mathrm{sf}}-I^{\mathrm{si}}).
+%\end{split}
+%\end{equation}
+%Note that Eq.\,\ref{eq:syn_1jj_analytical_1} is a leaky integrator ODE for the current in the SI loop, just as Eq.\,\ref{eq:synapses__leaky_integrator} in the main text. Here it is coupled to Eq.\,\ref{eq:syn_1jj_analytical_2}, which captures the current through the synaptic firing junction due to the response of the SPD as well as the current circulating in the SI loop. By stepping through Eqs.\,\ref{eq:syn_1jj_analytical_1} and \ref{eq:syn_1jj_analytical_2}, satisfactory agreement is found with SPICE circuit simulations that do not ignore the phase across the Josephson junction. However, to obtain agreement, a short time step on the order of a picosecond is required. The goals of the synaptic model are to reduce the system to a single ODE that can be stepped on a longer time scale. Simulating the model of Eqs.\,\ref{eq:syn_1jj_analytical_1} and \ref{eq:syn_1jj_analytical_2} on a 1\,ps time grid accomplishes neither of these goals. 
+%
+%In addition to these shortcomings of the analytical approach to a synapse model, the time-averaged approximation for the voltage across a junction (Eq.\,\ref{eq:jj__current_voltage}) provides a poor model for any circuit wherein two JJs interact with each other. Aside from the one-junction synapse, all other circuits considered in this work rely on multiple coupled JJs. In such circuits, the phases across the junctions cannot be ignored. For these reasons, we resort to numerical means of obtaining the rate functions ($R_{fq}$) for synapses and dendrites, as discussed in the following subsection.
 
 \subsection{Determining the form of the rate function with circuit simulations}
-the rate at which current is added to the SI loop depends on the total current biasing the junction ($I_{\mathrm{sf}}$), which depends on the drive ($I_{\mathrm{drive}} = I_{\mathrm{spd}}+I_{\mathrm{sy}}$) and the integrated current in the SI loop ($I_{\mathrm{si}}$). We therefore wish to form an array with values of $R_{\mathrm{fq}}$ corresponding to points in the $I_{\mathrm{sf}}$ - $I_{\mathrm{drive}}$ plane, as shown in Fig.\,\ref{fig:synapses__circuits__responses}(c). To obtain such an array, we replace the SPD and the resistor $r^{\mathrm{spd}}$ with a current source. We choose a large value for $L^{\mathrm{si}}$ so that many fluxons are required to saturate the SI loop, and we let $r^{\mathrm{si}} \rightarrow 0$ so the loop has no leak. We then simulate the circuit in time. For a given value of $I^{\mathrm{drive}}$, one obtains a list of values of $R_{\mathrm{fq}}$ as a nearly continuous function of $I^{\mathrm{si}}$ as the loop fills to saturation. With this approach, there are multiple methods of calculating the rate. One may find all voltage peaks corresponding to fluxons, and determine the time between them. Alternatively, one may track the phase across $J_{\mathrm{sf}}$ or the quantity $I^{\mathrm{si}}/I_{\mathrm{fq}}$, and differentiate with respect in time. If one wishes to calculate the rate based on fluxon times, high temporal resolution is necessary, and the output data files can become large. The rate arrays used in this work have been obtained by smoothing the quantity $I^{\mathrm{si}}/I_{\mathrm{fq}}$ with a Savitzky–Golay filter and then differentiating in time provides. By repeating this procedure for multiple values of $I^{\mathrm{drive}}$, one can build up a representation of $R_{\mathrm{fq}}(I^{\mathrm{drive}},I^{\mathrm{si}})$, as shown in Fig.\,\ref{fig:dendrites__circuits__responses}(c). In this work, we have used WRSpice \cite{wh1991} to perform the circuit simulations. The netlist was edited with Python scripts to facilitate looping over $I^{\mathrm{drive}}$.
+The rate at which current is added to the SI loop depends on the total current biasing the junction ($I_{\mathrm{sf}}$), which depends on the drive ($I_{\mathrm{drive}} = I_{\mathrm{spd}}+I_{\mathrm{sy}}$) and the integrated current in the SI loop ($I_{\mathrm{si}}$). We therefore wish to form an array with values of $R_{\mathrm{fq}}$ corresponding to points in the $I_{\mathrm{sf}}$ - $I_{\mathrm{drive}}$ plane, as shown in Fig.\,\ref{fig:synapses__circuits__responses}(c). To obtain such an array, we replace the SPD and the resistor $r^{\mathrm{spd}}$ with a current source. We choose a large value for $L^{\mathrm{si}}$ so that many fluxons are required to saturate the SI loop, and we let $r^{\mathrm{si}} \rightarrow 0$ so the loop has no leak. We then simulate the circuit in time. For a given value of $I^{\mathrm{drive}}$, one obtains a list of values of $R_{\mathrm{fq}}$ as a nearly continuous function of $I^{\mathrm{si}}$ as the loop fills to saturation. With this approach, there are multiple methods of calculating the rate. One may find all voltage peaks corresponding to fluxons, and determine the time between them. Alternatively, one may track the phase across $J_{\mathrm{sf}}$ or the quantity $I^{\mathrm{si}}/I_{\mathrm{fq}}$, and differentiate with respect in time. If one wishes to calculate the rate based on fluxon times, high temporal resolution is necessary, and the output data files can become large. The rate arrays used in this work have been obtained by smoothing the quantity $I^{\mathrm{si}}/I_{\mathrm{fq}}$ with a Savitzky–Golay filter and then differentiating in time provides. By repeating this procedure for multiple values of $I^{\mathrm{drive}}$, one can build up a representation of $R_{\mathrm{fq}}(I^{\mathrm{drive}},I^{\mathrm{si}})$, as shown in Fig.\,\ref{fig:dendrites__circuits__responses}(c). In this work, we have used WRSpice \cite{wh1991} to perform the circuit simulations. The netlist was edited with Python scripts to facilitate looping over $I^{\mathrm{drive}}$.
 
 A beneficial aspect of this method of determining the rate array is that it applies directly to the three-junction synapse as well. To obtain the rate array shown in Fig.\,\ref{fig:synapses__circuits__responses}(d), the same method of replacing the SPD with a static current source was used to construct each trace of $R_{\mathrm{fq}}$ versus $I^{\mathrm{si}}$. We have used a resolution of 250\,nA in $I^{\mathrm{drive}}$. Therefore, with this technique, roughly 40 circuit simulations are sufficient to obtain a rate array with sufficient resolution to provide the accuracy of synaptic responses presented here. Each circuit simulation captures 1\,\textmu s of simulated time, requiring $xy$\,s of CPU time. Once these simulations are run and the rate array has been constructed, it is used as a lookup table on each time step of the simulation of the synaptic ODE, Eq.\,\ref{eq:synapses__leaky_integrator}. A different lookup table must be constructed for the one-junction and three-junction circuits, but each table is applicable to a broad range of values of the circuit parameters $L^{\mathrm{si}}$, $r^{\mathrm{si}}$, and $I^{\mathrm{sy}}$. The table used in this work for the one-junction synapse is 536\,kB, while that for the three-junction synapse is 739\,kB.
 
 One of the inputs to the rate array, $R_{\mathrm{fq}}$, is $I^{\mathrm{drive}}$, which is the sum of the synaptic bias current, $I^{\mathrm{sy}}$, and the current diverted from the SPD upon detection of a synapse event, $I^{\mathrm{spd}}$. When an SPD detects a photon, it develops a large resistive section ($\approx 5$\,k$\Omega$) for a brief duration ($\approx 200\,$\,ps) \cite{}. This resistance returns to zero once superconductivity is restored. Accurately modeling the temporal response of the current $I^{\mathrm{spd}}$ following a synapse event unfortunately requires knowledge of the voltage across $J^{\mathrm{sf}}$ on the picosecond time scale. To avoid adding this burden to our numerical scheme, we also resort to a lookup-table approach for $I^{\mathrm{spd}}$. Here we simulate the circuits of Fig.\,\ref{fig:synapses__circuits__responses}(a) and (b) with the SPD modeled as a 200\,ps, 5\,k$\Omega$ resistive segment following a detection event. We use a large SI inductance to ensure self-feedback is negligible, and we simulate the circuit for roughly 40 values of $I^{\mathrm{sy}}$ to obtain $I^{\mathrm{spd}}$ as a function of time following a synapse event. This lookup table is then used to determine the drive to $R_{\mathrm{fq}}$ following a synapse event. While this approach to determining the SPD response leads to acceptable accuracy and speed when used to simulate synapses, it is by far the least elegant aspect of the model.
 
-\subsection{\label{apx:dendrites_data}Additional Dendrite Case Studies}
-%\begin{figure}[h!]
-%\includegraphics[width=8.6cm]{figures/_fig_apx__dendrites__comparison__2jj__lin_ramp.pdf}
-%\captionof{figure}{\label{fig:dendrites__comparison__2jj__lin_ramp}Caption of fig:dendrites comparison 2jj lin ramp.}
-%\end{figure}
-%
-%\begin{figure}[h!]
-%\includegraphics[width=8.6cm]{figures/_fig_apx__dendrites__comparison__2jj__exp_pls_seq.pdf}
-%\captionof{figure}{\label{fig:dendrites__comparison__2jj__exp_pls_seq}Caption of fig:dendrites comparison exp pls seq.}
-%\end{figure}
-%
-%\begin{figure}[h!]
-%\includegraphics[width=8.6cm]{figures/_fig_apx__dendrites__comparison__2jj__sq_pls_seq.pdf}
-%\captionof{figure}{\label{fig:dendrites__comparison__2jj__sq_pls_seq}Caption of fig:dendrites comparison sq pls seq.}
-%\end{figure}
-%
-%\begin{figure}[h!]
-%\includegraphics[width=8.6cm]{figures/_fig_apx__dendrites__comparison__4jj__lin_ramp.pdf}
-%\captionof{figure}{\label{fig:dendrites__comparison__4jj__lin_ramp}Caption of fig:dendrites comparison 4jj lin ramp.}
-%\end{figure}
-%
-%\begin{figure}[h!]
-%\includegraphics[width=8.6cm]{figures/_fig_apx__dendrites__comparison__4jj__sq_pls_seq.pdf}
-%\captionof{figure}{\label{fig:dendrites__comparison__4jj__sq_pls_seq}Caption of fig:dendrites comparison 4jj sq pls seq.}
-%\end{figure}
-%
-%\begin{figure}[h!]
-%\includegraphics[width=8.6cm]{figures/_fig_apx__dendrites__comparison__4jj__exp_pls_seq.pdf}
-%\captionof{figure}{\label{fig:dendrites__comparison__4jj__exp_pls_seq}Caption of fig:dendrites comparison 4jj exp pls seq.}
-%\end{figure}
-%
-%\begin{figure}[h!]
-%\includegraphics[width=8.6cm]{figures/_fig_apx__dendrites__error_vs_dt__2jj.pdf}
-%\captionof{figure}{\label{fig:dendrites__error_vs_dt__2jj}Caption of fig:dendrites 2jj error vs dt.}
-%\end{figure}
-%
-%\begin{figure}[h!]
-%\includegraphics[width=8.6cm]{figures/_fig_apx__dendrites__error_vs_dt__4jj.pdf}
-%\captionof{figure}{\label{fig:dendrites__error_vs_dt__4jj}Caption of fig:dendrites 4jj error vs dt.}
-%\end{figure}
+\subsection{\label{apx:dendrites_additional_data}Additional Dendrite Data}
 
-\section{\label{apx:synapses_model}Further details regarding synapse
- model}
-The response of the SPD circuit upon detection of a photon is given by
+
+\begin{figure*}[t]
+\includegraphics[width=17.2cm]{figures/_fig__dendrites__circuits__responses__4jj.pdf}
+\captionof{figure}{\label{fig:dendrites__circuits__responses__4jj}Caption of fig:dendrites circuits responses 4jj.}
+\end{figure*}
+
+\begin{figure}[h!]
+\includegraphics[width=8.6cm]{figures/_fig__dendrites__comparison__4jj__main.pdf}
+\captionof{figure}{\label{fig:dendrites__comparison__4jj__main}Caption of fig:dendrites comparison 4jj main.}
+\end{figure}
+
+\begin{figure}[h!]
+\includegraphics[width=8.6cm]{figures/_fig__dendrites__error_vs_dt__2jj.pdf}
+\captionof{figure}{\label{fig:dendrites__error_vs_dt__2jj}dend error vs dt 2jj.}
+\end{figure}
+
+\begin{figure}[h!]
+\includegraphics[width=8.6cm]{figures/_fig__dendrites__error_vs_dt__4jj.pdf}
+\captionof{figure}{\label{fig:dendrites__error_vs_dt__4jj}dend error vs dt 4jj.}
+\end{figure}
+
+\section{\label{apx:synapses_model}Response of the Single-Photon Detector}
+The response of the SPD circuit of Fig.\,\ref{fig:synapses__circuit} upon detection of a photon is given by
 \begin{equation}
 \label{eq:syn__spd_current}
 I_{\mathrm{2}}(t) = \begin{cases} I_{\mathrm{spd}} \frac{r_{\mathrm{1}}}{r_{\mathrm{1}} + r_{\mathrm{2}}} \left( 1 - e^{-t/\tau_+} \right), & \text{for } 0 \le t \le t_0 \\[10pt]
@@ -409,9 +382,24 @@ where
 I_0 = I_{\mathrm{spd}}\frac{r_{\mathrm{1}}}{r_{\mathrm{1}} + r_{\mathrm{2}}}\left( 1 - e^{-t_0/\tau_+} \right),
 \end{equation}
 with
-$\tau_+ = L_{\mathrm{tot}}/(r_{\mathrm{1}}+r_{\mathrm{2}})$ and $\tau_- = L_{\mathrm{tot}}/r_{\mathrm{2}}$. $L_{\mathrm{tot}} = L_{\mathrm{1}}+L_{\mathrm{2}}+L_{\mathrm{3}}$, and $L_{\mathrm{3}}$ is the inductor on the left side of the mutual inductor, $M_{\mathrm{sy}}$, in Fig.\,\ref{fig:synapses__circuits__responses}. In this model, $t_0$ is the duration during which superconductivity is broken in the SPD following the absorption of a photon, which we take to be 200\,ps, following the model of Ref.\,\onlinecite{yake2007}.
+$\tau_+ = L_{\mathrm{tot}}/(r_{\mathrm{1}}+r_{\mathrm{2}})$ and $\tau_- = L_{\mathrm{tot}}/r_{\mathrm{2}}$. $L_{\mathrm{tot}} = L_{\mathrm{1}}+L_{\mathrm{2}}+L_{\mathrm{3}}$, and $L_{\mathrm{3}}$ is the inductor on the left side of the mutual inductor, $M_{\mathrm{sy}}$, in Fig.\,\ref{fig:synapses__circuit}. In this model, $t_0$ is the duration during which superconductivity is broken in the SPD following the absorption of a photon, which we take to be 200\,ps, following the model of Ref.\,\onlinecite{yake2007}.
 
-\subsection{\label{apx:synapses_data}Additional Synapse Case Studies}
+\subsection{\label{apx:synapses_additional}Additional Synapse Data}
+
+\begin{figure}[h!]
+\includegraphics[width=8.6cm]{figures/_fig__synapses__comparison__4jj__single_pulse.pdf}
+\captionof{figure}{\label{fig:synapses__comparison__4jj__one_pulse}synapses comparison 4jj one pulse.}
+\end{figure}
+
+\begin{figure}[h!]
+\includegraphics[width=8.6cm]{figures/_fig__synapses__comparison__4jj__pulse_sequence.pdf}
+\captionof{figure}{\label{fig:synapses__comparison__4jj__pulse_sequence}synapses comparison 4jj pulse sequence.}
+\end{figure}
+
+\begin{figure}[h!]
+\includegraphics[width=8.6cm]{figures/_fig__synapses__nfq_vs_Ide.pdf}
+\captionof{figure}{\label{fig:synapses__nfq_vs_Ide}nfq vs Ide.}
+\end{figure}
 
 %\begin{figure}[h!]
 %\includegraphics[width=8.6cm]{figures/_fig_apx__synapses__spd__responses.pdf}
@@ -453,22 +441,22 @@ $\tau_+ = L_{\mathrm{tot}}/(r_{\mathrm{1}}+r_{\mathrm{2}})$ and $\tau_- = L_{\ma
 %\captionof{figure}{\label{fig:synapses__comparison__3jj__I_sy}Caption of fig:synapses comparison 3jj I sy.}
 %\end{figure*}
 %
-\begin{figure*}[h!]
-\includegraphics[width=17.2cm]{figures/_fig_apx__synapses__error_vs_dt__4jj.pdf}
-\captionof{figure}{\label{fig:synapses__error_vs_dt__4jj}Caption of fig:synapses error vs dt 4jj.}
-\end{figure*}
+%\begin{figure*}[h!]
+%\includegraphics[width=17.2cm]{figures/_fig_apx__synapses__error_vs_dt__4jj.pdf}
+%\captionof{figure}{\label{fig:synapses__error_vs_dt__4jj}Caption of fig:synapses error vs dt 4jj.}
+%\end{figure*}
 
-\section{\label{apx:dendrites}Further data regarding dendrite modeling}
+%\section{\label{apx:dendrites}Further data regarding dendrite modeling}
 
-\begin{figure}[h!]
-\includegraphics[width=8.6cm]{figures/_fig__dendrites__min_max__2jj.pdf}
-\captionof{figure}{\label{fig:dendrites_min_max__2jj}Caption of fig:dendrites min max 2jj.}
-\end{figure}
-
-\begin{figure}[h!]
-\includegraphics[width=8.6cm]{figures/_fig__dendrites__min_max__4jj.pdf}
-\captionof{figure}{\label{fig:dendrites_min_max__4jj}Caption of fig:dendrites min max 4jj.}
-\end{figure}
+%\begin{figure}[h!]
+%\includegraphics[width=8.6cm]{figures/_fig__dendrites__min_max__2jj.pdf}
+%\captionof{figure}{\label{fig:dendrites_min_max__2jj}Caption of fig:dendrites min max 2jj.}
+%\end{figure}
+%
+%\begin{figure}[h!]
+%\includegraphics[width=8.6cm]{figures/_fig__dendrites__min_max__4jj.pdf}
+%\captionof{figure}{\label{fig:dendrites_min_max__4jj}Caption of fig:dendrites min max 4jj.}
+%\end{figure}
 
 \section{\label{apx:fan_in}Analysis of dendritic and neuronal fan-in}
 
