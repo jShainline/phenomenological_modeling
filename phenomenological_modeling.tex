@@ -180,7 +180,7 @@ First consider the relationship between the dendrite of Fig.\,\ref{fig:dendrites
 To quantify the accuracy of the leaky-integrator model of dendrites, we compare to full circuit simulations conducted with WRSpice \cite{wh1991}. Calculations are carried out in the time domain for a variety of inputs to the dendrite as well as circuit configurations. Accuracy is quantified with a $\chi^2$ of the form
 \begin{equation}
 \label{eq:chi_squared}
-\chi^2 = \frac{\int dt \left|I^{\mathrm{si}}_{\mathrm{spice}}(t) - I^{\mathrm{si}}_{\mathrm{ode}}(t)\right|^2}{\int dt \left|I^{\mathrm{si}}_{\mathrm{spice}}(t)\right|^2},
+\chi^2 = \frac{\int dt \left|I^{\mathrm{di}}_{\mathrm{wr}}(t) - I^{\mathrm{di}}_{\mathrm{ode}}(t)\right|^2}{\int dt \left|I^{\mathrm{di}}_{\mathrm{wr}}(t)\right|^2},
 \end{equation}
 where the subscripts refer to the SPICE model and the ODE model of Eq.\,\ref{eq:dendrites__leaky_integrator}, respectively. Illustrative cases are shown in Figs.\,\ref{fig:dendrites__comparison__2jj__main}. Similar data from the four-junction circuit is shown in Appendix \ref{apx:dendrites_additional_data}. %Further case studies are shown in Appendix \ref{apx:dendrites_data}. 
 
@@ -248,10 +248,19 @@ where the subscripts refer to the SPICE model and the ODE model of Eq.\,\ref{eq:
 
 \section{\label{sec:neurons}Neurons are Dendrites}
 
-\begin{figure}[h!]
-\includegraphics[width=8.6cm]{figures/_fig__neuron__one_synapse__schematic__circuit.pdf}
+
+
+Here we quantify accuracy by comparing the inter-spike intervals calculated with the model to those calculated with WRSpice. For this assessment we use a $\chi^2$ of the form
+\begin{equation}
+\label{eq:chi_squared__ISI}
+\chi^2 = \frac{ \sum_i \left| \Delta t_i^{\mathrm{ode}} - \Delta t_i^{\mathrm{wr}} \right|^2 }{ \sum_i \left| \Delta t_i^{\mathrm{wr}} \right|^2 },
+\end{equation}
+where $\Delta t_i$ is the inter-spike interval between spike $i$ and $i+1$. For instances wherein a single neuronal spike results from the synaptic event, accuracy is quantified as the difference in onset spike times obtained from the two calculation techniques divided by the refractory time, set by the $L/r$ time constant of the neuronal firing circuit, taken to be 50\,ns.
+
+\begin{figure*}[h!]
+\includegraphics[width=17.2cm]{figures/_fig__neuron__one_synapse__schematic__circuit.pdf}
 \captionof{figure}{\label{fig:neuron__one_synapse__schematic__circuit}Caption of fig:point neuron  one synapse  schematic  circuit.}
-\end{figure}
+\end{figure*}
 
 \begin{figure*}[h!]
 \includegraphics[width=17.2cm]{figures/_fig__neuron__one_synapse__time_traces__phase_portraits.pdf}
@@ -457,6 +466,15 @@ $\tau_+ = L_{\mathrm{tot}}/(r_{\mathrm{1}}+r_{\mathrm{2}})$ and $\tau_- = L_{\ma
 %\includegraphics[width=8.6cm]{figures/_fig__dendrites__min_max__4jj.pdf}
 %\captionof{figure}{\label{fig:dendrites_min_max__4jj}Caption of fig:dendrites min max 4jj.}
 %\end{figure}
+
+\subsection{\label{apx:neuronal_thresholding}Details regarding neuronal thresholding}
+\begin{equation}
+\label{eq:neuronal_thresholding}
+\begin{split}
+\frac{dI^{\mathrm{th}}_2}{dt} = & - \frac{r}{L^{\mathrm{th}}_{\mathrm{t}}} + \frac{M^{\mathrm{\mathrm{nt}}|\mathrm{ni}}}{L^{\mathrm{nt}}_{\mathrm{t}}} \frac{dI^{\mathrm{ni}}}{dt} \\
+& - \frac{ M^{\mathrm{nt}|\mathrm{nr}} M^{\mathrm{\mathrm{nr}}|\mathrm{si}} }{ L^{\mathrm{nr}}_{\mathrm{t}} L^{\mathrm{nt}}_{\mathrm{t}} } \frac{dI^{\mathrm{si}}}{dt}.
+\end{split}
+\end{equation}
 
 \section{\label{apx:fan_in}Analysis of dendritic and neuronal fan-in}
 
