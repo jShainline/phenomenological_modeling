@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.4)  30 SEP 2020 13:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.4)  14 OCT 2020 16:21
 entering extended mode
 **./phenomenological_modeling.tex
 (phenomenological_modeling.tex
@@ -381,64 +381,65 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 pdfTeX warning: pdflatex (file ./figures/_fig__schematics.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_fig__schematics.pdf, id=13, 244.69417pt x 341.4326pt>
+<figures/_fig__schematics.pdf, id=16, 244.69417pt x 341.4326pt>
 File: figures/_fig__schematics.pdf Graphic file (type pdf)
 <use figures/_fig__schematics.pdf>
-Package pdftex.def Info: figures/_fig__schematics.pdf  used on input line 84.
+Package pdftex.def Info: figures/_fig__schematics.pdf  used on input line 88.
 (pdftex.def)             Requested size: 244.69386pt x 341.43697pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `fig:schematic' on page 2 undefined on input line 88.
+LaTeX Warning: Reference `fig:schematic' on page 2 undefined on input line 92.
 
 
-LaTeX Warning: Reference `fig:schematic' on page 2 undefined on input line 88.
+LaTeX Warning: Reference `fig:schematic' on page 2 undefined on input line 92.
 
 
-LaTeX Warning: Citation `sh2019_jap' on page 2 undefined on input line 88.
+LaTeX Warning: Citation `sh2019_jap' on page 2 undefined on input line 92.
 
 
-LaTeX Warning: Reference `fig:schematic' on page 2 undefined on input line 88.
+LaTeX Warning: Reference `fig:schematic' on page 2 undefined on input line 92.
 
 
-LaTeX Warning: Citation `sh2019_jstqe' on page 2 undefined on input line 88.
+LaTeX Warning: Citation `sh2019_jstqe' on page 2 undefined on input line 92.
 
 
-LaTeX Warning: Reference `fig:circuits' on page 2 undefined on input line 90.
+LaTeX Warning: Reference `fig:circuits' on page 2 undefined on input line 94.
 
 [2]
 
-LaTeX Warning: Reference `fig:circuits' on page 3 undefined on input line 98.
+LaTeX Warning: Reference `fig:circuits' on page 3 undefined on input line 102.
 
 
-LaTeX Warning: Reference `fig:circuits' on page 3 undefined on input line 98.
-
-
-LaTeX Warning: Citation `sh2018_full' undefined on input line 98.
-
-
-LaTeX Warning: Citation `sh2018_full' on page 3 undefined on input line 98.
-
-
-LaTeX Warning: Reference `fig:schematic' on page 3 undefined on input line 98.
-
-[3 <./figures/_fig__schematics.pdf>]
-
-LaTeX Warning: Reference `fig:schematic' on page 4 undefined on input line 102.
-
+LaTeX Warning: Reference `fig:circuits' on page 3 undefined on input line 102.
 
 
 LaTeX Warning: Citation `sh2018_full' undefined on input line 102.
 
 
-LaTeX Warning: Citation `sh2018_full' on page 4 undefined on input line 102.
+LaTeX Warning: Citation `sh2018_full' on page 3 undefined on input line 102.
 
 
-LaTeX Warning: Citation `sh2019_ne' undefined on input line 102.
+LaTeX Warning: Reference `fig:schematic' on page 3 undefined on input line 102.
 
 
-LaTeX Warning: Citation `sh2019_ne' on page 4 undefined on input line 102.
+[3 <./figures/_fig__schematics.pdf>]
+
+LaTeX Warning: Reference `fig:schematic' on page 4 undefined on input line 106.
+
+
+
+LaTeX Warning: Citation `sh2018_full' undefined on input line 106.
+
+
+LaTeX Warning: Citation `sh2018_full' on page 4 undefined on input line 106.
+
+
+LaTeX Warning: Citation `sh2019_ne' undefined on input line 106.
+
+
+LaTeX Warning: Citation `sh2019_ne' on page 4 undefined on input line 106.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -451,7 +452,7 @@ sion: found PDF version <1.7>, but at most version <1.5> allowed
 File: figures/_fig__dendrites__squid.pdf Graphic file (type pdf)
 <use figures/_fig__dendrites__squid.pdf>
 Package pdftex.def Info: figures/_fig__dendrites__squid.pdf  used on input line
- 137.
+ 141.
 (pdftex.def)             Requested size: 244.69386pt x 444.8195pt.
 [5 <./figures/_fig__dendrites__squid.pdf>]
 
@@ -464,24 +465,24 @@ File: figures/_fig__dendrites__circuits__responses__2jj.pdf Graphic file (type
 pdf)
 <use figures/_fig__dendrites__circuits__responses__2jj.pdf>
 Package pdftex.def Info: figures/_fig__dendrites__circuits__responses__2jj.pdf 
- used on input line 147.
+ used on input line 151.
 (pdftex.def)             Requested size: 489.38731pt x 322.86232pt.
 
 LaTeX Warning: Reference `fig:dendrites__circuits__responses' on page 6 undefin
-ed on input line 150.
+ed on input line 154.
 
 
 LaTeX Warning: Reference `fig:dendrites__circuits__responses' on page 6 undefin
-ed on input line 150.
+ed on input line 154.
 
 [6]
 
 LaTeX Warning: Reference `fig:dendrites__circuits__responses' on page 7 undefin
-ed on input line 170.
+ed on input line 174.
 
 
 LaTeX Warning: Reference `fig:dendrites__circuits__responses' on page 7 undefin
-ed on input line 172.
+ed on input line 176.
 
 
 Underfull \vbox (badness 6396) has occurred while \output is active []
@@ -489,7 +490,7 @@ Underfull \vbox (badness 6396) has occurred while \output is active []
 
 
 LaTeX Warning: Reference `fig:dendrites__circuits__responses' on page 7 undefin
-ed on input line 174.
+ed on input line 178.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -505,7 +506,7 @@ File: figures/_fig__dendrites__comparison__2jj__main.pdf Graphic file (type pdf
 )
 <use figures/_fig__dendrites__comparison__2jj__main.pdf>
 Package pdftex.def Info: figures/_fig__dendrites__comparison__2jj__main.pdf  us
-ed on input line 177.
+ed on input line 181.
 (pdftex.def)             Requested size: 244.69386pt x 365.35661pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -518,7 +519,7 @@ usion: found PDF version <1.7>, but at most version <1.5> allowed
 File: figures/_fig__synapses__circuit.pdf Graphic file (type pdf)
 <use figures/_fig__synapses__circuit.pdf>
 Package pdftex.def Info: figures/_fig__synapses__circuit.pdf  used on input lin
-e 229.
+e 233.
 (pdftex.def)             Requested size: 244.69386pt x 171.35837pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -534,7 +535,7 @@ File: figures/_fig__synapses__comparison__2jj__single_pulse.pdf Graphic file (t
 ype pdf)
 <use figures/_fig__synapses__comparison__2jj__single_pulse.pdf>
 Package pdftex.def Info: figures/_fig__synapses__comparison__2jj__single_pulse.
-pdf  used on input line 240.
+pdf  used on input line 244.
 (pdftex.def)             Requested size: 244.69386pt x 307.3823pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -550,7 +551,7 @@ File: figures/_fig__synapses__comparison__2jj__pulse_sequence.pdf Graphic file
 (type pdf)
 <use figures/_fig__synapses__comparison__2jj__pulse_sequence.pdf>
 Package pdftex.def Info: figures/_fig__synapses__comparison__2jj__pulse_sequenc
-e.pdf  used on input line 245.
+e.pdf  used on input line 249.
 (pdftex.def)             Requested size: 244.69386pt x 307.3823pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -566,7 +567,7 @@ File: figures/_fig__neuron__one_synapse__schematic__circuit.pdf Graphic file (t
 ype pdf)
 <use figures/_fig__neuron__one_synapse__schematic__circuit.pdf>
 Package pdftex.def Info: figures/_fig__neuron__one_synapse__schematic__circuit.
-pdf  used on input line 261.
+pdf  used on input line 265.
 (pdftex.def)             Requested size: 489.38731pt x 118.88063pt.
 [8 <./figures/_fig__dendrites__comparison__2jj__main.pdf> <./figures/_fig__syna
 pses__circuit.pdf
@@ -588,7 +589,7 @@ File: figures/_fig__neuron__one_synapse__time_traces__phase_portraits.pdf Graph
 ic file (type pdf)
 <use figures/_fig__neuron__one_synapse__time_traces__phase_portraits.pdf>
 Package pdftex.def Info: figures/_fig__neuron__one_synapse__time_traces__phase_
-portraits.pdf  used on input line 266.
+portraits.pdf  used on input line 270.
 (pdftex.def)             Requested size: 489.38731pt x 478.01195pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -604,20 +605,20 @@ File: figures/_fig__neuron__nine_synapses__schematic.pdf Graphic file (type pdf
 )
 <use figures/_fig__neuron__nine_synapses__schematic.pdf>
 Package pdftex.def Info: figures/_fig__neuron__nine_synapses__schematic.pdf  us
-ed on input line 271.
+ed on input line 275.
 (pdftex.def)             Requested size: 244.69386pt x 165.75134pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Citation `Wolfram_01' on page 9 undefined on input line 285.
+LaTeX Warning: Citation `Wolfram_01' on page 9 undefined on input line 289.
 
 
-LaTeX Warning: Citation `Wolfram_02' on page 9 undefined on input line 285.
+LaTeX Warning: Citation `Wolfram_02' on page 9 undefined on input line 289.
 
 
 LaTeX Warning: Citation `PhaseTransitionsBooks' on page 9 undefined on input li
-ne 285.
+ne 289.
 
 
 Underfull \vbox (badness 5592) has occurred while \output is active []
@@ -650,54 +651,54 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 LaTeX Warning: Reference `eq:synapses__leaky_integrator' on page 11 undefined o
-n input line 308.
+n input line 312.
 
 
 LaTeX Warning: Reference `fig:synapses__circuits__responses' on page 11 undefin
-ed on input line 351.
+ed on input line 355.
 
 
 LaTeX Warning: Reference `fig:dendrites__circuits__responses' on page 11 undefi
-ned on input line 351.
+ned on input line 355.
 
 [11 <./figures/_fig__neuron__nine_synapses__schematic.pdf>]
 
 LaTeX Warning: Reference `fig:synapses__circuits__responses' on page 12 undefin
-ed on input line 353.
+ed on input line 357.
 
 
 LaTeX Warning: Reference `eq:synapses__leaky_integrator' on page 12 undefined o
-n input line 353.
+n input line 357.
 
 
 LaTeX Warning: Reference `fig:synapses__circuits__responses' on page 12 undefin
-ed on input line 355.
+ed on input line 359.
 
 
 
 pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__circuits__responses__
 4jj.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
 owed
-<figures/_fig__dendrites__circuits__responses__4jj.pdf, id=792, 489.38733pt x 3
+<figures/_fig__dendrites__circuits__responses__4jj.pdf, id=796, 489.38733pt x 3
 22.8582pt>
 File: figures/_fig__dendrites__circuits__responses__4jj.pdf Graphic file (type 
 pdf)
 <use figures/_fig__dendrites__circuits__responses__4jj.pdf>
 Package pdftex.def Info: figures/_fig__dendrites__circuits__responses__4jj.pdf 
- used on input line 361.
+ used on input line 365.
 (pdftex.def)             Requested size: 489.38731pt x 322.86232pt.
 
 
 pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__comparison__4jj__main
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<figures/_fig__dendrites__comparison__4jj__main.pdf, id=793, 244.69417pt x 365.
+<figures/_fig__dendrites__comparison__4jj__main.pdf, id=797, 244.69417pt x 365.
 35194pt>
 File: figures/_fig__dendrites__comparison__4jj__main.pdf Graphic file (type pdf
 )
 <use figures/_fig__dendrites__comparison__4jj__main.pdf>
 Package pdftex.def Info: figures/_fig__dendrites__comparison__4jj__main.pdf  us
-ed on input line 366.
+ed on input line 370.
 (pdftex.def)             Requested size: 244.69386pt x 365.35661pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -706,12 +707,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__error_vs_dt__2jj.pdf)
 : PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_fig__dendrites__error_vs_dt__2jj.pdf, id=794, 244.69417pt x 354.86676
+<figures/_fig__dendrites__error_vs_dt__2jj.pdf, id=798, 244.69417pt x 354.86676
 pt>
 File: figures/_fig__dendrites__error_vs_dt__2jj.pdf Graphic file (type pdf)
 <use figures/_fig__dendrites__error_vs_dt__2jj.pdf>
 Package pdftex.def Info: figures/_fig__dendrites__error_vs_dt__2jj.pdf  used on
- input line 371.
+ input line 375.
 (pdftex.def)             Requested size: 244.69386pt x 354.87129pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -720,12 +721,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 pdfTeX warning: pdflatex (file ./figures/_fig__dendrites__error_vs_dt__4jj.pdf)
 : PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_fig__dendrites__error_vs_dt__4jj.pdf, id=795, 244.69417pt x 354.86676
+<figures/_fig__dendrites__error_vs_dt__4jj.pdf, id=799, 244.69417pt x 354.86676
 pt>
 File: figures/_fig__dendrites__error_vs_dt__4jj.pdf Graphic file (type pdf)
 <use figures/_fig__dendrites__error_vs_dt__4jj.pdf>
 Package pdftex.def Info: figures/_fig__dendrites__error_vs_dt__4jj.pdf  used on
- input line 376.
+ input line 380.
 (pdftex.def)             Requested size: 244.69386pt x 354.87129pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -735,13 +736,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 pdfTeX warning: pdflatex (file ./figures/_fig__synapses__comparison__4jj__singl
 e_pulse.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5>
  allowed
-<figures/_fig__synapses__comparison__4jj__single_pulse.pdf, id=796, 244.69417pt
+<figures/_fig__synapses__comparison__4jj__single_pulse.pdf, id=800, 244.69417pt
  x 302.67278pt>
 File: figures/_fig__synapses__comparison__4jj__single_pulse.pdf Graphic file (t
 ype pdf)
 <use figures/_fig__synapses__comparison__4jj__single_pulse.pdf>
 Package pdftex.def Info: figures/_fig__synapses__comparison__4jj__single_pulse.
-pdf  used on input line 399.
+pdf  used on input line 403.
 (pdftex.def)             Requested size: 244.69386pt x 302.67664pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -751,13 +752,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 pdfTeX warning: pdflatex (file ./figures/_fig__synapses__comparison__4jj__pulse
 _sequence.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.
 5> allowed
-<figures/_fig__synapses__comparison__4jj__pulse_sequence.pdf, id=797, 244.69417
+<figures/_fig__synapses__comparison__4jj__pulse_sequence.pdf, id=801, 244.69417
 pt x 302.67278pt>
 File: figures/_fig__synapses__comparison__4jj__pulse_sequence.pdf Graphic file 
 (type pdf)
 <use figures/_fig__synapses__comparison__4jj__pulse_sequence.pdf>
 Package pdftex.def Info: figures/_fig__synapses__comparison__4jj__pulse_sequenc
-e.pdf  used on input line 404.
+e.pdf  used on input line 408.
 (pdftex.def)             Requested size: 244.69386pt x 302.67664pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -766,11 +767,11 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 pdfTeX warning: pdflatex (file ./figures/_fig__synapses__nfq_vs_Ide.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_fig__synapses__nfq_vs_Ide.pdf, id=798, 244.69417pt x 147.93568pt>
+<figures/_fig__synapses__nfq_vs_Ide.pdf, id=802, 244.69417pt x 147.93568pt>
 File: figures/_fig__synapses__nfq_vs_Ide.pdf Graphic file (type pdf)
 <use figures/_fig__synapses__nfq_vs_Ide.pdf>
 Package pdftex.def Info: figures/_fig__synapses__nfq_vs_Ide.pdf  used on input 
-line 409.
+line 413.
 (pdftex.def)             Requested size: 244.69386pt x 147.93755pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -779,11 +780,11 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 pdfTeX warning: pdflatex (file ./figures/_fig_apx__fan-in__circuits.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/_fig_apx__fan-in__circuits.pdf, id=803, 244.69417pt x 298.75415pt>
+<figures/_fig_apx__fan-in__circuits.pdf, id=807, 244.69417pt x 298.75415pt>
 File: figures/_fig_apx__fan-in__circuits.pdf Graphic file (type pdf)
 <use figures/_fig_apx__fan-in__circuits.pdf>
 Package pdftex.def Info: figures/_fig_apx__fan-in__circuits.pdf  used on input 
-line 484.
+line 488.
 (pdftex.def)             Requested size: 244.69386pt x 298.75797pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -859,11 +860,11 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  5796 strings out of 481225
  90802 string characters out of 2906175
- 358608 words of memory out of 3000000
+ 358719 words of memory out of 3000000
  21264 multiletter control sequences out of 15000+200000
  547530 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,18n,77p,2371b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,18n,77p,2371b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\jeffr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1000.pk><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -889,9 +890,9 @@ Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.
 pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmti10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmti12.pfb>
-Output written on phenomenological_modeling.pdf (19 pages, 7809315 bytes).
+Output written on phenomenological_modeling.pdf (19 pages, 7857695 bytes).
 PDF statistics:
- 1425 PDF objects out of 1440 (max. 8388607)
+ 1429 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
