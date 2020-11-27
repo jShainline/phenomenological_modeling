@@ -63,16 +63,22 @@ Superconducting optoelectronic loop neurons are a class of circuits potentially 
 \setcounter{secnumdepth}{4}
 %\tableofcontents
 
-\section{Section}
-\subsection{Subsection}
-\subsubsection{Subsubsection}
-\paragraph{Paragraph}
-
-\begin{equation}
-\Phi_{\mathrm{a}} = M I_{\mathrm{a}}
-\end{equation}
-
 \section{\label{sec:introduction}Introduction}
+$L_{\mathrm{s}} =$ small
+
+\noindent $L_{\mathrm{m}} =$ medium
+
+\noindent $L_{\mathrm{b}} =$ big
+
+\noindent $L_{\mathrm{s}} \approx$\,10\,pH
+
+\noindent $L_{\mathrm{m}} \approx$\,100\,pH
+
+\noindent $L_{\mathrm{b}} >$\,100\,nH
+
+\noindent $L_{\mathrm{s}}, L_{\mathrm{m}}\!\!:$ Nb
+
+\noindent $L_{\mathrm{b}}\!\!:$ MoSi
 
 % this introduction is too long-winded
 Comprehensive knowledge of large-scale neural systems is a grand scientific challenge with relevance to neuroscience, artificial intelligence, and the physics of critical systems \cite{elst2012,ized2008,br2017,fama2019,eide2019}. The lack of an efficient, artificial, brain-scale experimental test bed is a barrier to progress. Experiments with living systems bring challenges, including the difficulty of obtaining data from large numbers of individual neurons, let alone synapses. Data acquired at the scale of the entire network has low resolution, while it is difficult to obtain data with high spatial and temporal resolution at the device and network levels simultaneously. The invasive nature of experiments on functioning systems is also problematic. The ability to adjust device, circuit, and network parameters of biological neural systems is limited, limiting the potential of controlled experiments. An artificial platform capable of realizing networks at the scale and complexity of the brains of intelligent organisms would be a tool of supreme scientific utility.
@@ -165,12 +171,12 @@ The objective of this section is to express the output of a dendrite as a functi
 In the present work, we construct the drive term as the rate at which fluxons are added to the storage loop as a function of the input flux and the current integrated in the storage loop: $f(t)\rightarrow R_{\mathrm{fq}}(\Phi_a^{\mathrm{dr}},I^{\mathrm{di}})$. The temporal rate of change of current in the DI loop is given by
 \begin{equation}
 \label{eq:dendrites__leaky_integrator}
-\frac{dI^{\mathrm{di}}(t)}{dt} = I_{\mathrm{fq}}\,R_{\mathrm{fq}} \left( \Phi^{\mathrm{dr}}_a(t),I^{\mathrm{di}}(t) \right) - \frac{I^{\mathrm{di}}(t)}{\tau^{\mathrm{di}}}.
+\frac{dI^{\mathrm{di}}(t)}{dt} = I_{\mathrm{fq}}\,R_{\mathrm{fq}}\! \left( \Phi^{\mathrm{dr}}_{\mathrm{a}}(t),I^{\mathrm{di}}(t) \right) - \frac{I^{\mathrm{di}}(t)}{\tau^{\mathrm{di}}}.
 \end{equation}
-$R_{\mathrm{fq}} \left( \Phi^{\mathrm{dr}}_a(t),I^{\mathrm{di}}(t) \right)$ is the rate function, and $\Phi^{\mathrm{dr}}_a(t)$ is the total applied flux to the dendritic receiving loop:
+$R_{\mathrm{fq}}\! \left( \Phi^{\mathrm{dr}}_{\mathrm{a}}(t),I^{\mathrm{di}}(t) \right)$ is the rate function, and $\Phi^{\mathrm{dr}}_{\mathrm{a}}(t)$ is the total applied flux to the dendritic receiving loop:
 \begin{equation}
 \label{eq:dendrites__applied_flux}
-\Phi^{\mathrm{dr}}_a(t) = \sum_i M_i I_i^{\mathrm{si/di}}(t).
+\Phi^{\mathrm{dr}}_{\mathrm{a}}(t) = \sum_i M_i I_i^{\mathrm{si/di}}(t).
 \end{equation}
 The sum runs over all inputs to the dendritic receiving loop, and the superscript notation $I_i^{\mathrm{si/di}}$ indicates that inputs may be from synaptic or dendritic integration loops.
 
@@ -577,7 +583,7 @@ and this current will induce a current in each SI loop, $I^{\mathrm{si}}_{\mathr
 As stated above, $L_{\mathrm{b}}$ is likely to be in the range of 10\,nH - 10\,\textmu H, while $L_{\mathrm{m}}$ is on the order of 100\,pH. The term $L_{\mathrm{m}}/L_{\mathrm{b}}$ will be less than 0.01, and typically much less than this value. The worst case for cross talk occurs when all synapses contain integrated current $I^{\mathrm{si}}_0$ so $n = N$. For rough estimate of scaling, we can ignore the $k^2$ term and the $\epsilon$ term, both of which act to reduce the cross talk. In the extreme limit where all $N$ SI loops contain the saturated current $I^{\mathrm{si}}_{\mathrm{sat}}$, the fraction of current induced in each loop scales as
 \begin{equation}
 \label{eq:fan-in__transformer_collection__cross_talk__worst_case}
-\frac{I^{\mathrm{si}}_{\mathrm{ind}}}{I^{\mathrm{si}}_{\mathrm{sat}}} \approx \frac{L_{\mathrm{m}}}{L_{\mathrm{b}}}.
+\frac{I^{\mathrm{si}}_{\mathrm{ind}}}{I^{\mathrm{si}}_{\mathrm{sat}}} \approx \frac{L_{\mathrm{m}}}{L_{\mathrm{b}}} < 10^{-3}.
 \end{equation}
 The key feature of loop neurons regarding cross talk is that the SI loop inductance is large, yet a small fraction of this inductance feeds into the mutual inductor. The asymmetry of the inductances between $L^{\mathrm{dr}}$ and $L^{\mathrm{di}}$ is necessary to reduce cross talk. This inductance imbalance is also precisely what enables the dendrite to produce an analog output. If one uses a dendrite or neuron to produce a binary, single-flux-quantum output, the inductance of the DI loop will be on the same order as the inductance of the inductors in the transformers, and cross talk will cause a problem for fan-in. However, leveraging high-kinetic-inductance materials and analog synapses and dendrites, cross talk is not a problem, and fan-in behaves favorably from a small number of inputs up to large $N$.
 
