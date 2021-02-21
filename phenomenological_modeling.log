@@ -1,277 +1,274 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.4)  10 DEC 2020 10:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.29)  29 DEC 2020 14:24
 entering extended mode
 **./phenomenological_modeling.tex
 (phenomenological_modeling.tex
-LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-07-17>
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
-Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
-File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-12-07> xparse <2020-03-03>
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count168
-\c@section=\count169
-\c@subsection=\count170
-\c@subsubsection=\count171
-\c@paragraph=\count172
-\c@subparagraph=\count173
-\c@figure=\count174
-\c@table=\count175
+\c@part=\count177
+\c@section=\count178
+\c@subsection=\count179
+\c@subsubsection=\count180
+\c@paragraph=\count181
+\c@subparagraph=\count182
+\c@figure=\count183
+\c@table=\count184
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
-\bibindent=\dimen134
+\bibindent=\dimen138
 )
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count176
-\Gm@cntv=\count177
-\c@Gm@tempcnt=\count178
-\Gm@bindingoffset=\dimen135
-\Gm@wd@mp=\dimen136
-\Gm@odd@mp=\dimen137
-\Gm@even@mp=\dimen138
-\Gm@layoutwidth=\dimen139
-\Gm@layoutheight=\dimen140
-\Gm@layouthoffset=\dimen141
-\Gm@layoutvoffset=\dimen142
+\Gm@cnth=\count185
+\Gm@cntv=\count186
+\c@Gm@tempcnt=\count187
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
 \Gm@dimlist=\toks16
 
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/cite\cite.sty
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/cite\cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2020/05/30 v3.4k Customizing captions (AR)
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
 
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
-Package: caption3 2020/07/20 v1.12b caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen143
-\captionmargin@=\dimen144
-\captionwidth=\dimen145
-\caption@tempdima=\dimen146
-\caption@indent=\dimen147
-\caption@parindent=\dimen148
-\caption@hangindent=\dimen149
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen147
+\captionmargin@=\dimen148
+\captionwidth=\dimen149
+\caption@tempdima=\dimen150
+\caption@indent=\dimen151
+\caption@parindent=\dimen152
+\caption@hangindent=\dimen153
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count179
-\c@continuedfloat=\count180
+\c@caption@flags=\count188
+\c@continuedfloat=\count189
 )
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
-fg
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cf
+g
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen150
-\Gin@req@width=\dimen151
-) (C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
-Package: amsmath 2020/01/20 v2.17e AMS math features
+\Gin@req@height=\dimen154
+\Gin@req@width=\dimen155
+) (C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip49
+
 For additional information on amsmath, use the `?' option.
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
-\ex@=\dimen152
+\ex@=\dimen156
 ))
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen153
+\pmbraise@=\dimen157
 )
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count181
-LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count182
-\leftroot@=\count183
-LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count184
-\DOTSCASE@=\count185
-LaTeX Info: Redefining \ldots on input line 486.
-LaTeX Info: Redefining \dots on input line 489.
-LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box45
-\strutbox@=\box46
-\big@size=\dimen154
-LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count186
-\c@MaxMatrixCols=\count187
+\inf@bad=\count190
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count191
+\leftroot@=\count192
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count193
+\DOTSCASE@=\count194
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen158
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count195
+\c@MaxMatrixCols=\count196
 \dotsspace@=\muskip16
-\c@parentequation=\count188
-\dspbrk@lvl=\count189
+\c@parentequation=\count197
+\dspbrk@lvl=\count198
 \tag@help=\toks18
-\row@=\count190
-\column@=\count191
-\maxfields@=\count192
+\row@=\count199
+\column@=\count266
+\maxfields@=\count267
 \andhelp@=\toks19
-\eqnshift@=\dimen155
-\alignsep@=\dimen156
-\tagshift@=\dimen157
-\tagwidth@=\dimen158
-\totwidth@=\dimen159
-\lineht@=\dimen160
+\eqnshift@=\dimen159
+\alignsep@=\dimen160
+\tagshift@=\dimen161
+\tagwidth@=\dimen162
+\totwidth@=\dimen163
+\lineht@=\dimen164
 \@envbody=\toks20
 \multlinegap=\skip50
 \multlinetaggap=\skip51
 \mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2859.
-LaTeX Info: Redefining \] on input line 2860.
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
 )
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+))
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/preprint\authblk.sty
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/preprint\authblk.sty
 Package: authblk 2001/02/27 1.3 (PWD)
 \affilsep=\skip52
 \@affilsep=\skip53
-\c@Maxaffil=\count193
-\c@authors=\count194
-\c@affil=\count195
+\c@Maxaffil=\count268
+\c@authors=\count269
+\c@affil=\count270
 )
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/datetime\datetime.sty
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/datetime\datetime.sty
 Package: datetime 2015/03/20 v2.60 Date Time Package
 
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
-Package: etoolbox 2020/07/15 v2.5i e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count196
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count271
 )
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fmtcount.sty
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fmtcount.sty
 Package: fmtcount 2020/01/30 v3.07
 
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
-Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
 \XKV@toks=\toks22
 \XKV@tempa@toks=\toks23
 )
-\XKV@depth=\count197
+\XKV@depth=\count272
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fcprefix.sty
+)) (C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fcprefix.sty
 Package: fcprefix 2012/09/28
 
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fcnumparser.st
-y
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fcnumparser.sty
 Package: fcnumparser 2017/06/15
-\fc@digit@counter=\count198
+\fc@digit@counter=\count273
 ))
-\c@padzeroesN=\count199
-\fc@tmpcatcode=\count266
-\@DT@modctr=\count267
-\@ordinalctr=\count268
-\@orgargctr=\count269
-\@strctr=\count270
-\@tmpstrctr=\count271
-\@DT@loopN=\count272
-\@DT@X=\count273
+\c@padzeroesN=\count274
+\fc@tmpcatcode=\count275
+\@DT@modctr=\count276
+\@ordinalctr=\count277
+\@orgargctr=\count278
+\@strctr=\count279
+\@tmpstrctr=\count280
+\@DT@loopN=\count281
+\@DT@X=\count282
 )
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/datetime\datetime-defau
-lts.sty
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/datetime\datetime-defaul
+ts.sty
 Package: datetime-defaults 2013/09/10
 )
-\@day=\count274
-\@month=\count275
-\@year=\count276
-\c@HOUR=\count277
-\c@HOURXII=\count278
-\c@MINUTE=\count279
-\c@TOHOUR=\count280
-\c@TOMINUTE=\count281
-\c@SECOND=\count282
-\currenthour=\count283
-\currentminute=\count284
-\currentsecond=\count285
+\@day=\count283
+\@month=\count284
+\@year=\count285
+\c@HOUR=\count286
+\c@HOURXII=\count287
+\c@MINUTE=\count288
+\c@TOHOUR=\count289
+\c@TOMINUTE=\count290
+\c@SECOND=\count291
+\currenthour=\count292
+\currentminute=\count293
+\currentsecond=\count294
 Package datetime Info: No datetime.cfg file found, using default settings on in
 put line 308.
-\@dtctr=\count286
-\dayofyear=\count287
-\dayofweek=\count288
+\@dtctr=\count295
+\dayofyear=\count296
+\dayofweek=\count297
 LaTeX Info: Redefining \today on input line 736.
 \dt@a=\toks24
 \dt@b=\toks25
-)
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/was\gensymb.sty
+) (C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/was\gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
-)
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
-\wrapoverhang=\dimen161
-\WF@size=\dimen162
-\c@WF@wrappedlines=\count289
-\WF@box=\box47
+) (C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen165
+\WF@size=\dimen166
+\c@WF@wrappedlines=\count298
+\WF@box=\box49
 \WF@everypar=\toks26
 Package: wrapfig 2003/01/31  v 3.6
 )
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen163
-\lightrulewidth=\dimen164
-\cmidrulewidth=\dimen165
-\belowrulesep=\dimen166
-\belowbottomsep=\dimen167
-\aboverulesep=\dimen168
-\abovetopsep=\dimen169
-\cmidrulesep=\dimen170
-\cmidrulekern=\dimen171
-\defaultaddspace=\dimen172
-\@cmidla=\count290
-\@cmidlb=\count291
-\@aboverulesep=\dimen173
-\@belowrulesep=\dimen174
-\@thisruleclass=\count292
-\@lastruleclass=\count293
-\@thisrulewidth=\dimen175
+\heavyrulewidth=\dimen167
+\lightrulewidth=\dimen168
+\cmidrulewidth=\dimen169
+\belowrulesep=\dimen170
+\belowbottomsep=\dimen171
+\aboverulesep=\dimen172
+\abovetopsep=\dimen173
+\cmidrulesep=\dimen174
+\cmidrulekern=\dimen175
+\defaultaddspace=\dimen176
+\@cmidla=\count299
+\@cmidlb=\count300
+\@aboverulesep=\dimen177
+\@belowrulesep=\dimen178
+\@thisruleclass=\count301
+\@lastruleclass=\count302
+\@thisrulewidth=\dimen179
 )
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-mode.def
-File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count294
-\l__pdf_internal_box=\box48
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdft
+ex.def
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count303
+\l__pdf_internal_box=\box50
 ) (phenomenological_modeling.aux)
 \openout1 = `phenomenological_modeling.aux'.
 
@@ -328,28 +325,28 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
+i
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count295
-\scratchdimen=\dimen176
-\scratchbox=\box49
-\nofMPsegments=\count296
-\nofMParguments=\count297
+\scratchcounter=\count304
+\scratchdimen=\dimen180
+\scratchbox=\box51
+\nofMPsegments=\count305
+\nofMParguments=\count306
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count298
-\MPscratchDim=\dimen177
-\MPnumerator=\count299
-\makeMPintoPDFobject=\count300
+\MPscratchCnt=\count307
+\MPscratchDim=\dimen181
+\MPnumerator=\count308
+\makeMPintoPDFobject=\count309
 \everyMPtoPDFconversion=\toks28
 )
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
-ase.sty
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-ba
+se.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fc-english.def
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fc-english.def
 File: fc-english.def 2016/01/12
 )
 \symgns@font=\mathgroup6
@@ -365,18 +362,18 @@ Package gensymb Info: Using \textohm for \ohm on input line 48.
 Package gensymb Info: Using \textmu for \micro on input line 48.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
 
- (C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
 
 
-(C:\Users\jeffr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+(C:\Users\jms4\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Underfull \vbox (badness 2277) has occurred while \output is active []
 
- [1{C:/Users/jeffr/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+ [1{C:/Users/jms4/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 
 ]
@@ -857,39 +854,39 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5797 strings out of 481225
- 90813 string characters out of 2906175
- 358601 words of memory out of 3000000
- 21265 multiletter control sequences out of 15000+200000
- 547530 words of font info for 74 fonts, out of 3000000 for 9000
+ 5925 strings out of 479697
+ 94857 string characters out of 2867607
+ 403272 words of memory out of 3000000
+ 22910 multiletter control sequences out of 15000+200000
+ 415872 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,18n,77p,2371b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\jeffr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
-1000.pk><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmbx10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmbx12.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmbx9.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jeffr/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jeffr/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/jeffr/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/j
-effr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
-/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12
-.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmr17.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmr5.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr7.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/jeffr/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/jeffr/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/jeffr/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/je
-ffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/
-Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.
-pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmti10.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmti12.pfb>
-Output written on phenomenological_modeling.pdf (19 pages, 7912844 bytes).
+ 80i,18n,85p,2371b,366s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\jms4\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1
+000.pk><C:/Users/jms4/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb><C:/Users/jms4/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmbx12.pfb><C:/Users/jms4/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmbx9.pfb><C:/Users/jms4/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jms4/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jms4/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/jms4/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/jms4/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jm
+s4/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/U
+sers/jms4/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pf
+b><C:/Users/jms4/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr5.pfb><C:/Users/jms4/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr7.pfb><C:/Users/jms4/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmr8.pfb><C:/Users/jms4/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr9.pfb><C:/Users/jms4/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmss10.pfb><C:/Users/jms4/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/jms4/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jms4/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/jms4/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/jms4/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/User
+s/jms4/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+
+Output written on phenomenological_modeling.pdf (19 pages, 7912988 bytes).
 PDF statistics:
  1436 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
