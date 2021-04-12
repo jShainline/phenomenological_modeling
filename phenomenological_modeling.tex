@@ -560,7 +560,7 @@ Finally, we consider cross talk between synapses or dendrites coupled to a commo
 \label{eq:fan-in__transformer_collection__I_nt}
 I^{\mathrm{nt}} = \frac{\Phi^{\mathrm{nt}}}{L^{\mathrm{nt}}}\rightarrow \frac{ n k \sqrt{L_{\mathrm{m}}\,L_{\mathrm{s}}}}{NL_{\mathrm{s}}+2L_{\mathrm{m}}},
 \end{equation}
-and this current will induce a current in each SI loop, $I^{\mathrm{si}}_{\mathrm{ind}} = \Phi^{\mathrm{si}}_{\mathrm{ind}}/L^{\mathrm{si}} = M^{\mathrm{si|nt}}I^{\mathrm{nt}}/(L^{\mathrm{si1}}+L^{\mathrm{si2}})$. Making the association $L^{\mathrm{si1}} = L_{\mathrm{b}}$, and approximating $L_{\mathrm{b}} + L_{\mathrm{m}} \approx L_{\mathrm{b}}$, we find the ratio of the induced current in each SI loop to the integrated current in one of the $P$ active synapses is
+and this current will induce a current in each SI loop, $I^{\mathrm{si}}_{\mathrm{ind}} = \Phi^{\mathrm{si}}_{\mathrm{ind}}/L^{\mathrm{si}} = M^{\mathrm{si|nt}}I^{\mathrm{nt}}/(L^{\mathrm{si1}}+L^{\mathrm{si2}})$. Making the association $L^{\mathrm{si1}} = L_{\mathrm{b}}$, and approximating $L_{\mathrm{b}} + L_{\mathrm{m}} \approx L_{\mathrm{b}}$, we find the ratio of the induced current in each SI loop to the integrated current in one of the $n$ active synapses is
 \begin{equation}
 \label{eq:fan-in__transformer_collection__cross_talk}
 \frac{I^{\mathrm{si}}_{\mathrm{ind}}}{I^{\mathrm{si}}_0} = \frac{n}{N}\frac{k^2L_{\mathrm{m}}}{L_{\mathrm{b}}}\left( 1+\epsilon \right)^{-1}.
@@ -571,6 +571,9 @@ As stated above, $L_{\mathrm{b}}$ is likely to be in the range of 10\,nH - 10\,\
 \frac{I^{\mathrm{si}}_{\mathrm{ind}}}{I^{\mathrm{si}}_{\mathrm{sat}}} \approx \frac{L_{\mathrm{m}}}{L_{\mathrm{b}}} < 10^{-3}.
 \end{equation}
 The key feature of loop neurons regarding cross talk is that the SI loop inductance is large, yet a small fraction of this inductance feeds into the mutual inductor. The asymmetry of the inductances between $L^{\mathrm{dr}}$ and $L^{\mathrm{di}}$ is necessary to reduce cross talk. This inductance imbalance is also precisely what enables the dendrite to produce an analog output. If one uses a dendrite or neuron to produce a binary, single-flux-quantum output, the inductance of the DI loop will be on the same order as the inductance of the inductors in the transformers, and cross talk will cause a problem for fan-in. However, leveraging high-kinetic-inductance materials and analog synapses and dendrites, cross talk is not a problem, and fan-in behaves favorably from a small number of inputs up to large $N$.
+
+\vspace{3em}
+significance of subthreshold oscillations, amongst other things \cite{azca2018}
 
 \bibliographystyle{unsrt}
 \bibliography{phenomenological_modeling}
